@@ -1,5 +1,8 @@
 
-Welcome to the WFO PlantList documentation site
+Welcome to the WFO PlantList documentation site.
+
+This website acts as a documentation hub, a single point of truth, for 
+the different projects that
 
 Why does this exist?
 

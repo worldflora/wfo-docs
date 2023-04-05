@@ -2,7 +2,50 @@
 title: Concepts
 ---
 
-Important discussion of concepts...
+The WFO Plant List is an implementation of a subset of the rules and recommendations outlined in the [International Code of Nomenclature for Algae, Fungi and Plants](https://www.iapt-taxon.org/nomen/main.php) (ICNAFP).
+
+This is a description of how we have modelled the ICNAFP. Our main concern is the management of complexity. This is reflected in two principles. Firstly we only manage data that is specifically related to the names and their placement in the taxonomy. We do not, for example, model data about people, literature or specimens. Secondly we do not seek to implement the whole of the ICNAFP but only enough to build a working checklist of the worlds plants. The on going cost of maintaining complexity is very high and this is always taken into account.
+
+- [Separation of Names and Taxa](#separation-of-names-and-taxa)
+  - [Side box: Taxon Concept Model](#side-box-taxon-concept-model)
+- [What is a name?](#what-is-a-name)
+- [WFO IDs and Names](#wfo-ids-and-names)
+- [WFO IDs and Taxa](#wfo-ids-and-taxa)
+- [Name Parts](#name-parts)
+- [Nomeclatural status of Names](#nomeclatural-status-of-names)
+- [Taxonomic status = role](#taxonomic-status--role)
+- [More on deprecation](#more-on-deprecation)
+- [More on synonyms](#more-on-synonyms)
+  - [Homotypic synonyms](#homotypic-synonyms)
+  - [Heterotypic synonyms](#heterotypic-synonyms)
+  - [Automatic synonyms](#automatic-synonyms)
+  - [Informal synonyms](#informal-synonyms)
+- [Homonyms, isonyms and ex authorship](#homonyms-isonyms-and-ex-authorship)
+  - [Isonyms](#isonyms)
+  - [ex Authorship](#ex-authorship)
+  - [Homonyms](#homonyms)
+- [Duplicates and deduplication](#duplicates-and-deduplication)
+    - [FIXME: Notes for expansion](#fixme-notes-for-expansion)
+- [Placement of Names](#placement-of-names)
+  - [Placement Actions](#placement-actions)
+  - [Placement Destinations](#placement-destinations)
+- [Names are only alphabetical characters without diacritics](#names-are-only-alphabetical-characters-without-diacritics)
+- [Integrity Checks on Saving a Name](#integrity-checks-on-saving-a-name)
+- [Integrity Checks on Saving a Taxon](#integrity-checks-on-saving-a-taxon)
+- [Autonyms](#autonyms)
+- [Ranks](#ranks)
+  - [Unranked Names](#unranked-names)
+- [Authentication](#authentication)
+- [Authorization](#authorization)
+- [References](#references)
+  - [What if I don't have a URI for my reference?](#what-if-i-dont-have-a-uri-for-my-reference)
+    - [Database](#database)
+    - [Literature](#literature)
+    - [Person](#person)
+    - [Specimens](#specimens)
+  - [Taxonomic Sources](#taxonomic-sources)
+  - [Nomenclatural References](#nomenclatural-references)
+
 
 ## Separation of Names and Taxa
 
@@ -97,7 +140,7 @@ Systems have often confused taxonomic and nomenclatural statuses. In Rhakhis we 
 
 When names first enter Rhakhis they are unplaced. They are then assessed and either deprecated or placed on the taxonomic tree as accepted names of taxa or synonyms.
 
-## More on Deprecation
+## More on deprecation
 
 The nomenclatural status of __deprecated__ is introduced primarily as an internal device. This is not a nomenclatural status according to the botanical code. It is meant in the modern sense of the word particularly with regard to software:
 
@@ -106,31 +149,33 @@ The nomenclatural status of __deprecated__ is introduced primarily as an interna
 We use deprecated for names we choose not to place in our taxonomy either as accepted names of taxa or synonyms. There are two main reasons for deprecation:
 
 1. We believe the name has been created in error and we can't attribute clear meaning to it. Perhaps we can't find an original publication (did it ever exist?) or the type or common usage and therefore can't make a judgement as to where to place the name in our taxonomy and don't believe we ever will be able to. This kind of deprecated name will occur mainly at the species and lower level.
-1. We don't recognize a taxon at that rank in our hierarchy and therefore can't synonymize it. An example is [*Rhododendron* subsect. *Albiflora* Batta](https://list.worldfloraonline.org/wfo-3000001713). We don't don't have a subsectional level in our *Rhododendron* classification and so this name cannot be equated to any particular accepted taxon. It may be a valid name in another classification but as the hierarchy of type taxa may not be recognized by us either (that would need researching) it is better we do not even assert a nomenclatural status for it. This type of deprecated name occurs above the species level.
+1. We don't recognize a taxon at that rank in our hierarchy and therefore can't synonymize it. An example is [*Rhododendron* subsect. *Albiflora* Batta](https://list.worldfloraonline.org/wfo-3000001713). We don't have a subsectional level in our *Rhododendron* classification and so this name cannot be equated to any particular accepted taxon. It may be a valid name in another classification but as the hierarchy of type taxa may not be recognized by us either (that would need researching) it is better we do not even assert a nomenclatural status for it. In other words the actual nomenclatural status is null for us but might be something else for other users of the name. This type of deprecated name occurs above the species level.
+
+Where possible the reason for deprecation will be recorded in the comments section of the name.
 
 The status deprecated was introduced to quell the plague of zombie names. These are names that may have occurred in the literature or a database just once and have subsequently been propagated from one list to the next without ever dying a natural death, just soaking up time and resources. Zombie names are particularly problematic in the age of big data. If we delete them they will keep coming back again from different data sources like bad pennies.
 
-## Synonyms
+## More on synonyms
 
-All synonyms are handled in the same generic way within the data model. A taxonomic editor asserts that a name should be treated as a synonym within a taxon by making a placement of that name. There are, however, at least three different kinds of synonyms and these are still accounted for in the following ways.
+All synonyms are handled in the same generic way within the data model. A taxonomic editor asserts that a name should be treated as a synonym within a taxon by making a placement of that name. There are, however, at least three different kinds of synonyms and these are still accounted for:
 
-### Homotypic Synonyms
+### Homotypic synonyms
 
-If a name has the same type specimen as the accepted name of a taxon then it becomes a synonym within that taxon automatically - because name placement is governed by specimen placement. Rhakhis tracks basionym relationships in the names table but doesn't enforce them in the synonym because many of them are not yet known about. As the data improves we will introduce tools to encourage and enforce correct homotypic synonymy. On export it is already possible to list homotypic synonyms separately from other synonyms where the basionym relationships have been entered.
+If a name has the same type specimen as the accepted name of a taxon then it should become a synonym within that taxon automatically - because name placement is governed by specimen placement. Rhakhis tracks basionym relationships in the names table but doesn't enforce them in the synonym because many of them are not yet known about. As the data improves we will introduce tools to encourage and enforce correct homotypic synonymy. On export it is already possible to list homotypic synonyms separately from other synonyms where the basionym relationships have been entered.
 
-### Heterotypic Synonyms
+### Heterotypic synonyms
 
 If the name has a different type specimen to the accepted name but the type specimen is judged to belong within the circumscription of the taxon then the synonym is declared by placement in the normal way. To be a true heterotypic synonym the name needs to be validly published and have a type. On export heterotypic synonyms can be listed separately because they are the synonyms that are valid names but not homotypic with the accepted name.
 
-### Automatic Synonyms
+### Automatic synonyms
 
 If a heterotypic synonym is created and that name has a basionym relationship with another name then that other name should also, automatically, become a synonym within the taxon. If it is already placed somewhere else in the classification then a data validity error needs to be raised. This functionality will be added as control of homotypic synonyms is introduced. On export automatic synonyms can be treated in the same way as heterotypic synonyms.
 
-### Informal Synonyms
+### Informal synonyms
 
 It is common for taxonomic experts to want to express the relationship between a name that is invalid or illegitimate in some way and an accepted taxon. This might be because it is commonly used for this taxon or because the available description would place it within this taxon. Typically the name may be listed as a note in a flora or monograph if it isn't included as a regular synonym. In Rhakhis the name is simply flagged with the appropriate nomenclatural status and placed as a synonym. On export these synonyms can be listed separately from homotypic and heterotypic synonyms based on their nomenclatural status.
 
-## Homonyms, Isonyms and ex Authorship
+## Homonyms, isonyms and ex authorship
 
 The code has the following note under point 6.3
 
@@ -150,7 +195,7 @@ To distinguish between homonyms and isonyms we need to know the types of both na
 
  Unfortunately, like with names/designations, we don't have a word in the code for this class of names. 
  
- ### Isonyms in the WFO Plant List
+### Isonyms
  
 Isonyms are the "same name" according to the code so they should only have one Name Record in the list. The majority of isonyms are created by the author publishing the name again (perhaps in a paper and in a flora or catalogue) and so have the same Authors String. There is no scope for taxonomic confusion and the only scope for nomenclatural confusion caused by isonyms is citing the wrong reference as a place of original publication.
 
