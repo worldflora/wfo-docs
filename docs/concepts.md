@@ -4,10 +4,11 @@ title: Concepts
 
 The WFO Plant List is an implementation of a subset of the rules and recommendations outlined in the [International Code of Nomenclature for Algae, Fungi and Plants](https://www.iapt-taxon.org/nomen/main.php) (ICNAFP).
 
-This is a description of how we have modelled the ICNAFP. Our main concern is the management of complexity. This is reflected in two principles. Firstly we only manage data that is specifically related to the names and their placement in the taxonomy. We do not, for example, model data about people, literature or specimens. Secondly we do not seek to implement the whole of the ICNAFP but only enough to build a working checklist of the worlds plants. The on going cost of maintaining complexity is very high and this is always taken into account.
+This is a description of how we have modelled the ICNAFP. Our main concern is the management of complexity. This is addressed in two ways. Firstly we only manage data that is specifically related to the names and their placement in the taxonomy. We do not, for example, model data about literature. Secondly we do not seek to implement the whole of the ICNAFP but only enough to build a working checklist of the worlds plants. The on going cost of maintaining complexity is very high and this is always taken into account.
 
+- [Terminology](#terminology)
 - [Separation of Names and Taxa](#separation-of-names-and-taxa)
-  - [Side box: Taxon Concept Model](#side-box-taxon-concept-model)
+  - [Aside: Taxon Concept Model](#aside-taxon-concept-model)
 - [What is a name?](#what-is-a-name)
 - [WFO IDs and Names](#wfo-ids-and-names)
 - [WFO IDs and Taxa](#wfo-ids-and-taxa)
@@ -46,17 +47,27 @@ This is a description of how we have modelled the ICNAFP. Our main concern is th
   - [Taxonomic Sources](#taxonomic-sources)
   - [Nomenclatural References](#nomenclatural-references)
 
+## Terminology
+
+There are a few terms that we use in specific ways. 
+
+  * __Backbone__  - a checklist that is being used to organise data, such as descriptions or occurrences, in another system.
+  * __Checklist__ - a list of plant names some or all of which have been placed into a classification.
+  * __Classification__ - used interchangably with taxonomy.
+  * __Placement__ - the act of specifying where in the taxonomy a name should reside.
+  * __Nomenclature__ - the rules regarding the validity of names.
+  * __Taxonomy__ - a hierarchy of taxa. Used interchangably with __classification__.
 
 ## Separation of Names and Taxa
 
-The core principle that informed the design of Rhakhis was the separation of nomenclature from taxonomy. This is a  consequence of applying the rules of the __International Code of Nomenclature for algae, fungi, and plants (ICNafp)__. Names are created via nomenclatural events (being validly published either for the first time or in a new combination) and bound to a type specimen (possibly via lectotypification). Taxa are created by authors using combinations of descriptions (characters) and example specimens. Names are bound to taxa via the rule of priority, the first published name who's type specimen falls within the taxon is the accepted name of that taxon (barring special instances of conservation).
+The core principle that informed the design of Rhakhis was the separation of nomenclature from taxonomy. This is a  consequence of applying the rules of the ICNAFP. Names are created via nomenclatural events (being validly published either for the first time or in a new combination) and bound to a type specimen (possibly via lectotypification). Taxa are created by authors using combinations of descriptions (characters) and example specimens. Names are bound to taxa via the rule of priority, the first published name who's type specimen falls within the taxon is the accepted name of that taxon (barring special instances of conservation).
 
 **Analogy #1:** Each name is written on an index card. The card contains all the information of when and where that name was published and what the type specimen is. There are around 1.5 million of these index cards stored alphabetically. To build a taxonomy the name cards are taken and placed into a hierarchical set of folders, one folder for each taxon. Each folder has a key card which is the accepted name for that taxon. The other cards in the folder are the synonyms. Placing the cards in the folders does not affect what is written on them but what is written on them may govern which folders they can be placed in. e.g. If the genus part of the name does not match the genus folder in which it is placed as an accepted name.
 
 **Analogy #2:** Each name is a Christmas tree decoration in a big box waiting to be hung on the tree. The taxonomy is the Christmas tree. We are all collaborating in decorating the tree!
 
 
-### Side box: Taxon Concept Model
+### Aside: Taxon Concept Model
 If you are familiar with the Taxon Concept models that were proposed at the turn of the century and the subsequent Taxon Concept Schema TDWG standard this approach will be familiar to you. From one perspective Rhakhis is __not__ a taxon concept based approach as only a single classification is currently modelled and no attempt is made to delimit the taxa, either by listing specimens or with descriptions. From another perspective it __is__ a taxon concept based approach because their is an implied delimitation of the taxa based on the types of the names placed in them as well as the taxonomic references provided. The Plant List API takes more of a concept based approach because it stores each copy of the taxonomy that is published and maps between them, on the basis of their names, using "replaces" and "isReplacedBy" assertions. The concept based approach can either be embraced or ignored and it makes no difference to building a shared taxonomic backbone. 
 
 ## What is a name?
@@ -65,7 +76,7 @@ The common meaning of the word "name" (Oxford English definition)
 
 > a word or set of words by which a person or thing is known, addressed, or referred to.
 
-The ICNafp rather unhelpfully uses the word "name" in the definition of the word "name", From the glossary:
+The ICNAFP rather unhelpfully uses the word "name" in the definition of the word "name", From the glossary:
 
 > __name__. A name that has been validly published, whether it is legitimate or illegitimate (Art. 6.3) (see also designation).
 
@@ -116,22 +127,22 @@ This structure can be mapped onto any arbitrary use of names found in different 
 
 ## Nomeclatural status of Names
 
-Names can have a nomenclatural status. This is separate from their taxonomic status (within the currently accepted taxonomy). Some of these statuses may preclude their use as accepted names of taxa in the taxonomy.
+Names can have a nomenclatural status. This is separate from their "taxonomic status" (see below). Some of these statuses may preclude their use as accepted names of taxa in the taxonomy.
 
-1. illegitimate - can't be used as accepted name in taxonomy as accepted name.
-1. later_homonym - can't be used as accepted name in taxonomy as accepted name.
-1. superfluous - can't be used as accepted name in taxonomy as accepted name.
-1. conserved - a later homonym that has been explicitly flagged as available for use under the code.
-1. rejected - can't be used as accepted name in taxonomy as accepted name.
-1. sanctioned - fungi specific version of conserved
-1. valid - a correctly published name.
-1. invalid - can't be used as accepted name in taxonomy as accepted name.
-1. deprecated - can't be used as accepted name in taxonomy at all.
-1. unknown - not recommended for placement in taxonomy
+1. __illegitimate__ - can't be used as accepted name in taxonomy as accepted name.
+1. __later_homonym__ - can't be used as accepted name in taxonomy as accepted name.
+1. __superfluous__ - can't be used as accepted name in taxonomy as accepted name.
+1. __conserved__ - a later homonym that has been explicitly flagged as available for use under the code.
+1. __rejected__ - can't be used as accepted name in taxonomy as accepted name.
+1. __sanctioned__ - fungi specific version of conserved
+1. __valid__ - a correctly published name.
+1. __invalid__ - can't be used as accepted name in taxonomy as accepted name.
+2. __deprecated__ - won't be placed in taxonomy at all.
+3. __unknown__ - not recommended for placement in taxonomy
 
 ## Taxonomic status = role
 
-Systems have often confused taxonomic and nomenclatural statuses. In Rhakhis we have simplified this down to a name playing one of four possible roles within the classification at any one time.
+Systems have often confused taxonomic and nomenclatural statuses. In Rhakhis we have simplified this down to a name playing one of four possible roles within the classification at any one time. These are separate from but related to nomenclatural statuses.
 
 1. __Accepted__. The name is placed in the taxonomy as the correct name for a taxon. A taxon can only have one of these and they have to agree with the rules regarding placement. The nomenclatural status of the name must be valid, conserved or sanctioned.
 1. __Synonym__ The name is placed in the taxonomy as a synonym within a taxon. A taxon can have many of these. They can be of any nomenclatural status apart from deprecated. (Note that whether synonyms are homotypic or heterotypic are tracked separately and discoverable through basionym links - see below)
@@ -153,7 +164,7 @@ We use deprecated for names we choose not to place in our taxonomy either as acc
 
 Where possible the reason for deprecation will be recorded in the comments section of the name.
 
-The status deprecated was introduced to quell the plague of zombie names. These are names that may have occurred in the literature or a database just once and have subsequently been propagated from one list to the next without ever dying a natural death, just soaking up time and resources. Zombie names are particularly problematic in the age of big data. If we delete them they will keep coming back again from different data sources like bad pennies.
+The status deprecated was introduced to quell the plague of zombie names. These are names that may have occurred in the literature or a database just once or they may have been created for a long discredited classification. They have subsequently been propagated from one list to the next without ever dying a natural death, just soaking up time and resources. Zombie names are particularly problematic in the age of big data. If we delete them they will keep coming back again from different data sources like bad pennies.
 
 ## More on synonyms
 
@@ -161,7 +172,7 @@ All synonyms are handled in the same generic way within the data model. A taxono
 
 ### Homotypic synonyms
 
-If a name has the same type specimen as the accepted name of a taxon then it should become a synonym within that taxon automatically - because name placement is governed by specimen placement. Rhakhis tracks basionym relationships in the names table but doesn't enforce them in the synonym because many of them are not yet known about. As the data improves we will introduce tools to encourage and enforce correct homotypic synonymy. On export it is already possible to list homotypic synonyms separately from other synonyms where the basionym relationships have been entered.
+If a name has the same type specimen as the accepted name of a taxon then it should become a synonym within that taxon automatically - because name placement is governed by specimen placement. Rhakhis tracks basionym relationships in the names table but doesn't enforce them in the synonymy because many of them are not yet known about. As the data improves we will introduce tools to encourage and enforce correct homotypic synonymy. On export it is already possible to list homotypic synonyms separately from other synonyms where the basionym relationships have been entered.
 
 ### Heterotypic synonyms
 
@@ -173,7 +184,7 @@ If a heterotypic synonym is created and that name has a basionym relationship wi
 
 ### Informal synonyms
 
-It is common for taxonomic experts to want to express the relationship between a name that is invalid or illegitimate in some way and an accepted taxon. This might be because it is commonly used for this taxon or because the available description would place it within this taxon. Typically the name may be listed as a note in a flora or monograph if it isn't included as a regular synonym. In Rhakhis the name is simply flagged with the appropriate nomenclatural status and placed as a synonym. On export these synonyms can be listed separately from homotypic and heterotypic synonyms based on their nomenclatural status.
+It is common for taxonomic experts to want to express the relationship between a name that is invalid or illegitimate in some way and an accepted taxon. This might be because it is commonly used for this taxon or because the available description would place it within this taxon. Typically the name may be listed as a note in a flora or monograph if it isn't included as a regular synonym. In the WFO Plant List the name is simply flagged with the appropriate nomenclatural status and placed as a synonym. On export these synonyms can be listed separately from homotypic and heterotypic synonyms based on their nomenclatural status.
 
 ## Homonyms, isonyms and ex authorship
 
