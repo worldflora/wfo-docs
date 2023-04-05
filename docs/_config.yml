@@ -2,6 +2,8 @@ theme: minima
 minima:
   skin: dark
 title: "WFO PlantList Documentation"
+description: "Documentation project for the WFO PlantList infrastructure"
+author:
+  - name: "Roger Hyam"
+  - email: "rhyam@rbge.org.uk"
 header_pages:
-  - about.md
-  - portfolio.md
