@@ -1,5 +1,5 @@
 [[Concepts and the ICNAFP]]
-[[Rhakhis overview]]
+[Rhakhis overview](rhakhis/Rhakhis overview.md)
 
 This is the top level documentation for the World Flora Online Plant List system. It is an overview of how the data is modelled and the rules of the nomenclatural code are implemented.
 
