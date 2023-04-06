@@ -5,15 +5,11 @@ The  [World Flora Online (WFO)](http://www.worldfloraonline.org/) is the interna
 
 The [WFO PlantList (WfoPlantList)](https://wfoplantlist.org/) is a collaborative project within the WFO to maintain a consensus nomenclature and classification of plants to act as a __taxonomic backbone__ for the WFO and other projects.
 
-This website acts as a documentation hub for the different applications and repositories that are used to compile and publish the WFO PlantList. 
+This website acts as a documentation hub for the different applications and repositories that are used to compile and publish the WFO PlantList. What you need to know should either be here or linked to from here. If something is missing please [contact us](contact.md).
 
+The WFO PlantList is compiled from multiple sources and published to multiple places. Technically this involves a series of components that are described below. These components may change through time but the [conceptual model](concepts.md) that describes the nomenclature and classification is common across these components and should persist. If this is your first visit we recommend you familiarize yourself with the problem domain and how we approach it by reviewing the [concepts page](concepts.md) now.
 
-  
-## Conceptual model
-
-The most important thing to understand
-
-## Main components
+## Main components and data flow
 
 ### 1. Rhakhis - editing platform
 
