@@ -1,4 +1,4 @@
-## Rhakhis Users Handbook
+### Rhakhis Users Handbook
 
 Guide to Using Rhakhis - the World Flora Online's taxonomic backbone curation tool.
 
@@ -18,35 +18,19 @@ You will now have Viewer rights. This allows you to navigate the data, view stat
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/b2350023-eba3-49ff-9354-bf21adb7eeae/image.png)
 
-  
+>The [A-Z tab](https://list.worldfloraonline.org/rhakhis/ui/#alpha) you can just start typing the name you are interested in and matching names will be suggested - like looking it up in an index.
 
-The [A-Z tab](https://list.worldfloraonline.org/rhakhis/ui/#alpha) you can just start typing the name you are interested in and matching names will be suggested - like looking it up in an index.
+>If you want to find a name that you might not be sure of the ending you can use the [Matching tab](https://list.worldfloraonline.org/rhakhis/ui/#match).
 
-  
+>The [Browse tab](https://list.worldfloraonline.org/rhakhis/ui/#browse) allows you to navigate the hierarchy of names and synonyms.
 
-If you want to find a name that you might not be sure of the ending you can use the [Matching tab](https://list.worldfloraonline.org/rhakhis/ui/#match).
+>[Add Name](https://list.worldfloraonline.org/rhakhis/ui/index.html#add). Allows you add a new name to the backbone, but check if it is already in. It forces an acknowledgement if there is a homonym.
 
-  
+>[Stats](https://list.worldfloraonline.org/rhakhis/ui/index.html#stats) tab generates a table of how name accepted taxa, synonyms, genera, species etc there are at the selected rank.
 
-The [Browse tab](https://list.worldfloraonline.org/rhakhis/ui/#browse) allows you to navigate the hierarchy of names and synonyms.
+>[Users](https://list.worldfloraonline.org/rhakhis/ui/index.html#users) tab lists who has signed up, a link to their ORCID profile and the groups they have been assigned to curate.
 
-  
-
-[Add Name](https://list.worldfloraonline.org/rhakhis/ui/index.html#add). Allows you add a new name to the backbone, but check if it is already in. It forces an acknowledgement if there is a homonym.
-
-  
-
-[Stats](https://list.worldfloraonline.org/rhakhis/ui/index.html#stats) tab generates a table of how name accepted taxa, synonyms, genera, species etc there are at the selected rank.
-
-  
-
-[Users](https://list.worldfloraonline.org/rhakhis/ui/index.html#users) tab lists who has signed up, a link to their ORCID profile and the groups they have been assigned to curate.
-
-  
-
-Under the [Data tab](https://list.worldfloraonline.org/rhakhis/ui/#data) you'll find snapshot of data in different formats to download.
-
-  
+>Under the [Data tab](https://list.worldfloraonline.org/rhakhis/ui/#data) you'll find snapshot of data in different formats to download.
 
 **Curators**
 ------------
