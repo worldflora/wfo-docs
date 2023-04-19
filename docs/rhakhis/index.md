@@ -1,26 +1,10 @@
-# Rhakhis Users Handbook
+## Rhakhis Users Handbook
 
 Guide to Using Rhakhis - the World Flora Online's taxonomic backbone curation tool.
-
-  
-
-  
-
-  
 
 Rhakhis Greenbook can be found here. This explains the reasons and process behind Rhakhis' functionality.
 
   
-
-[
-
-wfo-backbone-management/README.md at main · rogerhyam/wfo-backbone-management
-
-A system for managing botanical nomenclature and the World Flora Online taxonomic backbone. - wfo-backbone-management/README.md at main · rogerhyam/wfo-backbone-management
-
-![](https://www.google.com/s2/favicons?domain_url=https%3A%2F%2Fgithub.com%2Frogerhyam%2Fwfo-backbone-management%2Fblob%2Fmain%2Fgreen_book%2FREADME.md%23references)https://github.com/rogerhyam/wfo-backbone-management/blob/main/green\_book/README.md#references
-
-](https://github.com/rogerhyam/wfo-backbone-management/blob/main/green_book/README.md#references)
 
 # Getting Started
 
