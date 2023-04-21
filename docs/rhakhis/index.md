@@ -259,7 +259,8 @@ The default nomenclatural Status is **Unknown**. Please select what is correct. 
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/97d2b9ad-d3ae-4bec-9bcb-4a3e5bae63e4/image.png)
 
-  
+
+
 
 **conserved -** These names have been conserved for continued use to improved nomenclatural stability. See [https://naturalhistory2.si.edu/botany/codes-proposals/](https://naturalhistory2.si.edu/botany/codes-proposals/)
 
@@ -301,33 +302,31 @@ Using advanced search and the Author Tab.
 
   
 
-Wall. for Nathaniel Wallich
+>Wall. for Nathaniel Wallich
 
-B.Z.Duan for Bao Zhong Duan.
-
-  
+>B.Z.Duan for Bao Zhong Duan.
 
 WFO is aiming for the **fullest authorship** for a name record so please include ex authors.
 
   
 
-(Wall.) Hook.f. & Benth. ex Cleghorn
+>(Wall.) Hook.f. & Benth. ex Cleghorn
 
-Steud. ex [A.Rich](http://A.Rich).
+>Steud. ex [A.Rich](A.Rich).
 
-A.Cunn. ex Benth.
+>A.Cunn. ex Benth.
 
   
 
 We are looking for no spaces between author's initials and last name.
 
-B.Z.Duan not B. Z. Duan
+>B.Z.Duan not B. Z. Duan
 
   
 
 If you find errors in IPNI please feed back authorship corrections directly to IPNI editors.
 
-###   
+
 
 ### Protologue information
 
