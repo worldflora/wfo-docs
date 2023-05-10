@@ -4,7 +4,9 @@ title: Concepts
 
 The WFO Plant List is an implementation of a subset of the rules and recommendations outlined in the [International Code of Nomenclature for Algae, Fungi and Plants](https://www.iapt-taxon.org/nomen/main.php) (ICNAFP).
 
-This is a description of how we have modelled the ICNAFP. Our main concern is the management of complexity. This is addressed in two ways. Firstly we only manage data that is specifically related to the names and their placement in the taxonomy. We do not, for example, model data about literature. Secondly we do not seek to implement the whole of the ICNAFP but only enough to build a working checklist of the worlds plants. The on going cost of maintaining complexity is very high and this is always taken into account.
+This is a narrative description of how we have modelled the ICNAFP. Our main concern is the management of complexity. This is addressed in two ways. Firstly we only manage data that is specifically related to the names and their placement in the taxonomy. We do not, for example, model data about literature. Secondly we do not seek to implement the whole of the ICNAFP but only enough to build a working checklist of the worlds plants. The ongoing cost of maintaining complexity is very high and this is always taken into account.
+
+## Contents <!-- omit in toc -->
 
 - [Terminology](#terminology)
 - [Separation of Names and Taxa](#separation-of-names-and-taxa)
