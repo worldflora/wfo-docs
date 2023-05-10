@@ -28,13 +28,10 @@ This is a narrative description of how we have modelled the ICNAFP. Our main con
   - [ex Authorship](#ex-authorship)
   - [Homonyms](#homonyms)
 - [Duplicates and deduplication](#duplicates-and-deduplication)
-    - [FIXME: Notes for expansion](#fixme-notes-for-expansion)
 - [Placement of Names](#placement-of-names)
   - [Placement Actions](#placement-actions)
   - [Placement Destinations](#placement-destinations)
 - [Names are only alphabetical characters without diacritics](#names-are-only-alphabetical-characters-without-diacritics)
-- [Integrity Checks on Saving a Name](#integrity-checks-on-saving-a-name)
-- [Integrity Checks on Saving a Taxon](#integrity-checks-on-saving-a-taxon)
 - [Autonyms](#autonyms)
 - [Ranks](#ranks)
   - [Unranked Names](#unranked-names)
@@ -248,23 +245,11 @@ There is also the chance that the list doesn't yet include the ex Authors
 
 > Rhakhis should not have name records that have identical name-parts, rank and author string. If such records exist it is an error. If two records exist in this state we should merge one into the other or differentiate them by correcting one of them. We should prevent such records from being created.
 
- FIXME: Aspiration for each WFO to equate to a unique full name string of Does not make WFO-ID redundant as a WFO-ID only applies to one record and therefore one normative name string. A name string could be matched to multiple WFO-IDs based on approximation.
-
- #### FIXME: Notes for expansion
-
- Bring on the crazy edge cases!
+The aspiration for each WFO to equate to a unique full name string of does not make WFO-ID redundant as a WFO-ID only applies to one record and therefore one normative name string. A name string could be matched to multiple WFO-IDs based on approximation.
  
-1.	Spelling variants (correctable) – There are corrections specified in the code (e.g. 'ä' becomes 'ae'). These should be automatically corrected on the way into Rhakhis and on searching so are effectively the same string. Nothing to see here.
-2.	Spelling variants (common) – It may be desirable to include common miss spellings of names as invalid or nom nud and synonymised to the correct spelling. But this is a judgement call and the subject of loads of work Mark has to do talking to people. It doesn’t affect the rule because, by definition, they have different name parts. (We could add a “spelling error” nomenclatural status but I’m reluctant to do that – a separate discussion).
-3.	Aus bus Koch ex Koch implies we could also have Aus bus Koch as the root name but this doesn’t affect the rule. We could have two Name Records one with Koch (nom nud?) and one with Koch ex Koch and synonymise them. If someone searches for Aus bus Koch they would get it as a synonym of Aus bus Koch ex Koch if they didn’t just go straight to the original because Aus bus Koch is an accepted name. I see no issues.
-4.	Author publishes same name with same type in multiple places - typically in a paper and in a flora account – maybe in same year.
-a.	The flora account will typically have different authors and therefore a different authors string so it can have a different record and be synonymised.
-b.	If the paper and flora account have exactly the same author and it is imperative to have two records then the superfluous record can be bastardised with and “in Flora Bulgaria” to differentiate it. (I struggle a bit with why we would want to include two records here. If the second publication of a name isn’t a nomenclatural act but merely a use of the name that people mistakenly believe was the initial publication then we aren’t talking about two names at all but a correction of the place of publication of one name. We wouldn’t track all errors in places of publication with new records! If it is a nomenclatural act then we would have an “ex” in the author string and so the rule applies and the earlier name would not be valid. See Koch ex Kock.)
- 
-
 ## Placement of Names
 
-There are rules governing how and when names can be placed in the taxonomy. There are five possible actions  In addition there are some rules that prevent names being moved.
+There are rules governing how and when names can be placed in the taxonomy. There are five possible actions. In addition there are some rules that prevent names being moved.
 
 
 ### Placement Actions
@@ -288,49 +273,17 @@ There are three rules that govern where a name can be placed in the taxonomy
 
 ## Names are only alphabetical characters without diacritics 
 
-60.1. The original spelling of a name or epithet is to be retained, except for the correction of typographical or orthographical errors and the standardizations imposed by Art. 60.4 (letters and ligatures foreign to classical Latin), 60.5 and 60.6 (interchange between u/v, i/j, or eu/ev), 60.7 (diacritical signs and ligatures), 60.8 (terminations; see also Art. 32.2), 60.9 (intentional latinizations), 60.10 (compounding forms), 60.11 and 60.12 (hyphens), 60.13 (apostrophes and full stops), 60.14 (abbreviations), and F.9.1 (epithets of fungal names) (see also Art. 14.8, 14.11, and F.3.2).
+>60.1. The original spelling of a name or epithet is to be retained, except for the correction of typographical or orthographical errors and the standardizations imposed by Art. 60.4 (letters and ligatures foreign to classical Latin), 60.5 and 60.6 (interchange between u/v, i/j, or eu/ev), 60.7 (diacritical signs and ligatures), 60.8 (terminations; see also Art. 32.2), 60.9 (intentional latinizations), 60.10 (compounding forms), 60.11 and 60.12 (hyphens), 60.13 (apostrophes and full stops), 60.14 (abbreviations), and F.9.1 (epithets of fungal names) (see also Art. 14.8, 14.11, and F.3.2).
 
 
-60.7.  Diacritical signs are not used in scientific names. When names
+>60.7.  Diacritical signs are not used in scientific names. When names
 (either new or old) are drawn from words in which such signs appear, the
 signs are to be suppressed with the necessary transcription of the letters so
 modified; for example ä, ö, ü become, respectively, ae, oe, ue (not æ or œ,
 see below); é, è, ê become e; ñ becomes n; ø becomes oe (not œ); å becomes
 ao.
-    $scientificName = str_replace('ä', 'ae', $scientificName);
-    $scientificName = str_replace('ö', 'oe', $scientificName);
-    $scientificName = str_replace('ü', 'ue', $scientificName);
-    $scientificName = str_replace('é', 'e', $scientificName);
-    $scientificName = str_replace('è', 'e', $scientificName);
-    $scientificName = str_replace('ê', 'e', $scientificName);
-    $scientificName = str_replace('ñ', 'n', $scientificName);
-    $scientificName = str_replace('ø', 'oe', $scientificName);
-    $scientificName = str_replace('å', 'ao', $scientificName);
-    $scientificName = str_replace("", '', $scientificName); // can you believe an o'donolli 
 
-
-
-Lycium chilense var. o'donellii F.A.Barkley
-
-
-## Integrity Checks on Saving a Name
-
-
-## Integrity Checks on Saving a Taxon
-
-1. An accepted name must be set.
-1. A parent taxon must be set (apart from the root of all taxa which has itself as its parent).
-1. The accepted name for the taxon must pass the integrity checks necessary for it to be saved as a name (see above).
-1. The accepted name must have the nomenclatural status 'valid'.
-1. The accepted name must not be the accepted name of another taxon.
-1. The basionym of the accepted name (or any other homotypic name) must not be the accepted name of another taxon.
-1. If the accepted name is a synonym of another taxon then that synonym link will be broken - the name is moved.
-1. If the basionym of the accepted name (or any other homotypic name) is a synonym of another taxon then that synonym link will be broken and the name moved to be a synonym of this taxon.
-1. The rank of the accepted name must be an appropriate lower rank to that of the name of the parent (see ranks table below).
-1. The siblings of the taxon within this parent must be at the same rank. If a rank in the hierarchy is skipped then the structure of the tree will be adjusted to use autonyms below the genus level placeholder taxa as described below.
-1. For taxa at species rank and below the genus part of the name must agree with the name part of the genus above them in the hierarchy.
-1. For taxa below species rank the species part of their names must agree with the name part of the species above them in the hierarchy.
-1. For taxa at species rank and below the year in the name can't be great than the year in name of the genus taxon (if these are set).
+Correctable spellings and removal of diacritics as specified by the code occurs as names are added to the database. They can't be added back in on export. When searching for names the effect of diacritics and correctable spellings in the search string will depend on the specific algorthm used. 
 
 
 ## Autonyms
