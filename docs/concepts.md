@@ -297,6 +297,10 @@ Above the level of genus the code has no notion of autonyms. The creation of a n
 Recognised ranks are listed in the table below in hierarchical order along with the ranks that are permitted to belong to taxa at that rank. The lowercase English version of the rank name is used internally. Mappings to other versions and abbreviations are
 carried out during import.
 
+<script>
+  window.write("Ranks Table Here");
+</script>
+
 ### Unranked Names
 
 We force the adoption of a rank. You can't have unranked names beyond a comment.
