@@ -6,7 +6,8 @@ It is currently a work in progress (19-4-2023) and is being added to and ammende
 
 If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-plant-list-docs/blob/main/docs/concepts.md) this explains the reasons and process behind Rhakhis' functionality rather than how to use the editor.
 
-![](https://player.vimeo.com/video/126669300?h=5fc4acb777)
+<iframe src="https://player.vimeo.com/video/126669300?h=5fc4acb777" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/126669300">Dr. Alexander Gibson  - A legend of the Sahyadri Forests</a> from <a href="https://vimeo.com/user2546050">Kiran G</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 ## Getting Started
 
