@@ -11,42 +11,26 @@ If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-pla
 
 First sign-in with your [ORCID iD](https://orcid.org/).
 
+![](https://t2197470.p.clickup-attachments.com/t2197470/b2350023-eba3-49ff-9354-bf21adb7eeae/image.png)
   
-
 You will now have Viewer rights. This allows you to navigate the data, view stats and download data.
 
-  
-
-![](https://t2197470.p.clickup-attachments.com/t2197470/b2350023-eba3-49ff-9354-bf21adb7eeae/image.png)
+These are the   
 
 >The [A-Z tab](https://list.worldfloraonline.org/rhakhis/ui/#alpha) you can just start typing the name you are interested in and matching names will be suggested - like looking it up in an index.
-
 >If you want to find a name that you might not be sure of the ending you can use the [Matching tab](https://list.worldfloraonline.org/rhakhis/ui/#match).
-
 >The [Browse tab](https://list.worldfloraonline.org/rhakhis/ui/#browse) allows you to navigate the hierarchy of names and synonyms.
-
 >[Add Name](https://list.worldfloraonline.org/rhakhis/ui/index.html#add). Allows you add a new name to the backbone, but check if it is already in. It forces an acknowledgement if there is a homonym.
-
 >[Stats](https://list.worldfloraonline.org/rhakhis/ui/index.html#stats) tab generates a table of how name accepted taxa, synonyms, genera, species etc there are at the selected rank.
-
 >[Users](https://list.worldfloraonline.org/rhakhis/ui/index.html#users) tab lists who has signed up, a link to their ORCID profile and the groups they have been assigned to curate.
-
+>[Activity](https://list.worldfloraonline.org/rhakhis/ui/index.html#activity) tab shows you who last edited records in the backbone, at the moment its select by User, we may impliment by Family.
 >Under the [Data tab](https://list.worldfloraonline.org/rhakhis/ui/#data) you'll find snapshot of data in different formats to download.
 
-**Curators**
-------------
-
-  
+# Curators
 
 If you are part of a Taxonomic Expert Network you will be assigned as the curator of the taxon and this gives you rights to edit that taxon, any descendant taxa and any synonyms of those taxa.
 
-  
-
 Once you have been made the Curator for your Family you can edit everything it contains. You will also now have the ability to assign colleagues as curators to any point in the part of the back bone you are assigned.
-
-  
-
-  
 
 Unplaced names are not controlled by this authorization mechanism. An unplaced name can be edited by any user who is an editor of any taxon, but once that name is placed within the taxonomic hierarchy it is controlled by the editors of the associated taxa and becomes "locked" into the consensus taxonomy.
 
