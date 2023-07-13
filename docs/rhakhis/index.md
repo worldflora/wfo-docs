@@ -7,7 +7,7 @@ It is currently a work in progress (19-4-2023) and is being added to and ammende
 If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-plant-list-docs/blob/main/docs/concepts.md) this explains the reasons and process behind Rhakhis' functionality rather than how to use the editor.
 
 
-## Getting Started
+# Getting Started
 
 First sign-in with your [ORCID iD](https://orcid.org/).
 
