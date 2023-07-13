@@ -26,13 +26,6 @@ These are the
 >[Activity](https://list.worldfloraonline.org/rhakhis/ui/index.html#activity) tab shows you who last edited records in the backbone, at the moment its select by User, we may impliment by Family.
 >Under the [Data tab](https://list.worldfloraonline.org/rhakhis/ui/#data) you'll find snapshot of data in different formats to download.
 
-# Curators
-
-If you are part of a Taxonomic Expert Network you will be assigned as the curator of the taxon and this gives you rights to edit that taxon, any descendant taxa and any synonyms of those taxa.
-
-Once you have been made the Curator for your Family you can edit everything it contains. You will also now have the ability to assign colleagues as curators to any point in the part of the back bone you are assigned.
-
-Unplaced names are not controlled by this authorization mechanism. An unplaced name can be edited by any user who is an editor of any taxon, but once that name is placed within the taxonomic hierarchy it is controlled by the editors of the associated taxa and becomes "locked" into the consensus taxonomy.
 
 # Navigation Tabs
 
@@ -483,3 +476,11 @@ Rhakhis is suggest _Agapetes_ as it can only be accepted in this Genus.
 
 
 # Adding a Basionym
+
+# Curators
+
+If you are part of a Taxonomic Expert Network you will be assigned as the curator of the taxon and this gives you rights to edit that taxon, any descendant taxa and any synonyms of those taxa.
+
+Once you have been made the Curator for your Family you can edit everything it contains. You will also now have the ability to assign colleagues as curators to any point in the part of the back bone you are assigned.
+
+Unplaced names are not controlled by this authorization mechanism. An unplaced name can be edited by any user who is an editor of any taxon, but once that name is placed within the taxonomic hierarchy it is controlled by the editors of the associated taxa and becomes "locked" into the consensus taxonomy.
