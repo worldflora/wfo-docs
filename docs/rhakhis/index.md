@@ -162,52 +162,39 @@ Grey are currently **unplaced** records. These are effectively a nomenclatural r
 
 ### Adding a new name
 
+**Video to be placed here**
+
 Please see below for details about how to create specific ranks.
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/387adbb3-404d-4e8b-98ea-cc4be8336bb9/image.png)
 
-For a **Genus** only a one name part if required. For [example:](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) [_Poa_](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) [or](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) [_Rhododendron._](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are)
+For a **Genus** only a one name part if required. For example: *Poa* or *Rhododendron*.
 
-[For](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) [**Infrageneric**](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) [names: two parts are](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) required. The **Genus** and the **infrageneric name**. Rhododendron Rhododendron
+For Infrageneric names two parts are required. The **Genus** and the **Infrageneric epithet**. For example: *Rhododendron* and *Vireya*.
 
-For a **species** name two parts are required. The **Genus** and the **epithet.**
-_Poa annua, Rhododendron ponticum_
-For an **infraspecific name** the **Genus**, the **species** **epithet** and **infraspecific epithet** are required.
-_Poa annua annua, Rhododendron ponticum ponticum._
-For **supra-generic ranks** (subfamily, subfamily, supertribe, tribe) these only require a one part name.
-For example Ericoideae, Phyllodoceae, Rhodoreae.
+For a **species** name two parts are required. The **Genus** and the **epithet**. For example: _Poa annua, Rhododendron ponticum_.
 
-**You select the rank in the name record once it has been created.**
+For an **infraspecific name** the **Genus**, the **species** **epithet** and **infraspecific epithet** are required. For example: _Poa annua annua, Rhododendron ponticum ponticum_.
+
+For **supra-generic ranks** (subfamily, subfamily, supertribe, tribe) these only require a one part name. For example: *Ericoideae*, *Phyllodoceae*, *Rhodoreae*.
+
+
+>**You select the rank in the name record once it has been created.**
 
 Rhakhis will check if the name exists before allowing you to continue. It the name does not exist the Create button will become active and you can create the record.
-
-  
-
+ 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/a4aade91-4077-4a29-8c97-1a659e09022f/image.png)
-
-  
-
-  
 
 Rhakhis will also suggest name records that exist that might be the same thing.
 
-  
-
 If you add a name that is a 100% match on the name parts, then you must, click the checkboxes to acknowledge that you are about to add another homonym before the Create button becomes active.
-
-  
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/be3905c7-8421-4e4b-acc8-ee2c6e20ae72/image.png)
 
-  
-
-Once you have created your record please see Adding a new name ([https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-2088](https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-2088)) for the required and desirable data needed for the record.
-
-Once you have created a new name following the process in Add Name ([https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-3610](https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-3610)), you will have a "grey" nomenclatural record for the name.
-
-  
+It is now time to start editing.  
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/7c6fc355-d1f1-4222-8d69-3ad6184bf631/image.png)
+
 
 Essential data
 --------------
