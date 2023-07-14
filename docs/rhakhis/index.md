@@ -7,7 +7,7 @@ It is currently a work in progress (14-7-2023) and is being added to and ammende
 If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-plant-list-docs/blob/main/docs/concepts.md) this explains the reasons and process behind Rhakhis' functionality rather than how to use the editor.
 
 [1. Getting Started](#getting-started)<br>
-[2. Navigation](#navigation-tabs)<br>
+[2. Navigation tabs](#navigation-tabs)<br>
 &nbsp;[2.1. A-Z](#a-z)<br>
 &nbsp;[2.2. Matching](#matching)<br>
 &nbsp;[2.3. Browse](#browse)<br>
@@ -16,7 +16,15 @@ If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-pla
 &nbsp;[2.6. User](#user)<br>
 &nbsp;[2.7. Activity](#activity)<br>
 &nbsp;[2.8. Data](#getting-started)<br>
-
+[3. Name Record](#navigation-tabs)<br>
+&nbsp;[3.1. Overview](#getting-started)<br>
+&nbsp;[3.2. Adding a new name](#getting-started)<br>
+[4. Editing Records](#navigation-tabs)<br>
+&nbsp;[4.1. Nomencaltural Data](#getting-started)<br>
+&nbsp;[4.2. Placements](#getting-started)<br>
+[5. References](#navigation-tabs)<br>
+&nbsp;[5.1. Overview](#getting-started)<br>
+&nbsp;[5.2. Adding](#getting-started)<br>
 
 # Getting Started
 
@@ -58,25 +66,7 @@ If you are searching for an infraspecific name do not insert the rank as it will
 
   
 
-**Color Coding of Records**
 
-  
-
-Red records are **deprecated** \- these signify that they should not be used, but can be resurrected by Curators. These can be deprecated from a number of reasons including duplication, being linked to a suppressed IPNI record, fossil names, errors, or names outside the scope of the WFO.
-
-  
-
-Yellow are records **placed** within classification and can be accepted names or synonyms.
-
-  
-
-Grey are currently **unplaced** records. These are effectively a nomenclatural records with no taxonomic status.
-
-  
-
-  
-
-![](https://t2197470.p.clickup-attachments.com/t2197470/bc855ede-0f01-45a5-b39c-b4d259756aab/image.png)
 
 ### Matching
 
@@ -114,73 +104,10 @@ Once you have navigated down through the ranks to the record you wish to look at
 
 To add a new name enter the name parts, with no ranks.
 
-  
-
-Please see below for details about how to create specific ranks.
-
-  
-
-![](https://t2197470.p.clickup-attachments.com/t2197470/387adbb3-404d-4e8b-98ea-cc4be8336bb9/image.png)
-
-For a **Genus** only a one name part if required. For [example:](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) [_Poa_](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) [or](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) [_Rhododendron._](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are)
-
-  
-
-[For](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) [**Infrageneric**](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) [names: two parts are](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) required. The **Genus** and the **infrageneric name**. Rhododendron Rhododendron
-
-  
-
-For a **species** name two parts are required. The **Genus** and the **epithet.**
-
-_Poa annua, Rhododendron ponticum_
-
-  
-
-For an **infraspecific name** the **Genus**, the **species** **epithet** and **infraspecific epithet** are required.
-
-_Poa annua annua, Rhododendron ponticum ponticum._
-
-  
-
-For **supra-generic ranks** (subfamily, subfamily, supertribe, tribe) these only require a one part name.
-
-For example Ericoideae, Phyllodoceae, Rhodoreae.
-
-  
-
-You select the rank in the name record once it has been created.
-
-  
-
-Rhakhis will check if the name exists before allowing you to continue. It the name does not exist the Create button will become active and you can create the record.
-
-  
-
-![](https://t2197470.p.clickup-attachments.com/t2197470/a4aade91-4077-4a29-8c97-1a659e09022f/image.png)
-
-  
-
-  
-
-Rhakhis will also suggest name records that exist that might be the same thing.
-
-  
-
-If you add a name that is a 100% match on the name parts, then you must, click the checkboxes to acknowledge that you are about to add another homonym before the Create button becomes active.
-
-  
-
-![](https://t2197470.p.clickup-attachments.com/t2197470/be3905c7-8421-4e4b-acc8-ee2c6e20ae72/image.png)
-
-  
-
-Once you have created your record please see Adding a new name ([https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-2088](https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-2088)) for the required and desirable data needed for the record.
 
 ### Data
 
 The data download tab allows users to export data in a number of formats.
-
-  
 
 If you think of others please, contact Roger Hyam.
 
@@ -218,7 +145,63 @@ To raise to accepted. 1st change the Nomenclatural status to accepted. This will
 
 Make synonym - does not require a nomenclatural status. If you do not know its status leave it as Unknown.
 
-#### Adding a new name
+# Name Records
+
+### Name Record Overview 
+
+**Color Coding of Records**
+
+Red records are **deprecated** \- these signify that they should not be used, but can be resurrected by Curators. These can be deprecated from a number of reasons including duplication, being linked to a suppressed IPNI record, fossil names, errors, or names outside the scope of the WFO.
+
+Yellow are records **placed** within classification and can be accepted names or synonyms.
+
+Grey are currently **unplaced** records. These are effectively a nomenclatural records with no taxonomic status.
+
+![](https://t2197470.p.clickup-attachments.com/t2197470/bc855ede-0f01-45a5-b39c-b4d259756aab/image.png)
+
+
+### Adding a new name
+
+Please see below for details about how to create specific ranks.
+
+![](https://t2197470.p.clickup-attachments.com/t2197470/387adbb3-404d-4e8b-98ea-cc4be8336bb9/image.png)
+
+For a **Genus** only a one name part if required. For [example:](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) [_Poa_](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) [or](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) [_Rhododendron._](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are)
+
+[For](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) [**Infrageneric**](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) [names: two parts are](example: Poa or Rhododendron.</p><p><br/></p><p>For Infrageneric names: two parts are) required. The **Genus** and the **infrageneric name**. Rhododendron Rhododendron
+
+For a **species** name two parts are required. The **Genus** and the **epithet.**
+_Poa annua, Rhododendron ponticum_
+For an **infraspecific name** the **Genus**, the **species** **epithet** and **infraspecific epithet** are required.
+_Poa annua annua, Rhododendron ponticum ponticum._
+For **supra-generic ranks** (subfamily, subfamily, supertribe, tribe) these only require a one part name.
+For example Ericoideae, Phyllodoceae, Rhodoreae.
+
+**You select the rank in the name record once it has been created.**
+
+Rhakhis will check if the name exists before allowing you to continue. It the name does not exist the Create button will become active and you can create the record.
+
+  
+
+![](https://t2197470.p.clickup-attachments.com/t2197470/a4aade91-4077-4a29-8c97-1a659e09022f/image.png)
+
+  
+
+  
+
+Rhakhis will also suggest name records that exist that might be the same thing.
+
+  
+
+If you add a name that is a 100% match on the name parts, then you must, click the checkboxes to acknowledge that you are about to add another homonym before the Create button becomes active.
+
+  
+
+![](https://t2197470.p.clickup-attachments.com/t2197470/be3905c7-8421-4e4b-acc8-ee2c6e20ae72/image.png)
+
+  
+
+Once you have created your record please see Adding a new name ([https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-2088](https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-2088)) for the required and desirable data needed for the record.
 
 Once you have created a new name following the process in Add Name ([https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-3610](https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-3610)), you will have a "grey" nomenclatural record for the name.
 
@@ -352,11 +335,7 @@ Please also add the Year.
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/75f2f464-090c-4430-9f2c-d46c033762b4/image.png)
 
-###   
-
-  
-
-Other desirable data
+### Other desirable data
 --------------------
 
   
