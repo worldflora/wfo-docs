@@ -18,7 +18,7 @@ If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-pla
 &nbsp;[2.8. Data](#getting-started)<br>
 
 
-##### Getting Started
+# Getting Started
 
 **Introduction Video**
 
@@ -44,7 +44,7 @@ As a first time user you can view and download data but you cannot edit anything
 
 # Navigation Tabs
 
-## A-Z
+### A-Z
 
 Begin by typing the name you are looking for. Rhakhis will begin suggesting names with the 1st letter typed. Keep typing until you see the record you find the Name you require.
 
@@ -78,7 +78,7 @@ Grey are currently **unplaced** records. These are effectively a nomenclatural r
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/bc855ede-0f01-45a5-b39c-b4d259756aab/image.png)
 
-## Matching
+### Matching
 
 Matching requires at least 4 characters to work. It will suggest more then just the exact string searched this is useful where you are unsure of the epithet ending.
 
@@ -90,7 +90,7 @@ Matching also works with ranks being part of the name. It will still suggest mor
 
 _"Poa annua_ subsp. _supina"_ for example will return the subspecies record and the two variety records of this name.
 
-## Browse
+### Browse
 
 The Browse Tab opens at our root record which is called Code, referring to the _International Code of Nomenclature for algae, fungi, and plants._
 
@@ -110,7 +110,7 @@ Once you have navigated down through the ranks to the record you wish to look at
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/16004e15-faba-4876-9313-bcbd4a102927/image.png)
 
-## Add Name
+### Add Name
 
 To add a new name enter the name parts, with no ranks.
 
@@ -176,7 +176,7 @@ If you add a name that is a 100% match on the name parts, then you must, click t
 
 Once you have created your record please see Adding a new name ([https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-2088](https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-2088)) for the required and desirable data needed for the record.
 
-## Data
+### Data
 
 The data download tab allows users to export data in a number of formats.
 
@@ -218,7 +218,7 @@ To raise to accepted. 1st change the Nomenclatural status to accepted. This will
 
 Make synonym - does not require a nomenclatural status. If you do not know its status leave it as Unknown.
 
-# Adding a new name
+#### Adding a new name
 
 Once you have created a new name following the process in Add Name ([https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-3610](https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-3610)), you will have a "grey" nomenclatural record for the name.
 
