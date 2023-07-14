@@ -6,7 +6,7 @@ It is currently a work in progress (14-7-2023) and is being added to and ammende
 
 If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-plant-list-docs/blob/main/docs/concepts.md) this explains the reasons and process behind Rhakhis' functionality rather than how to use the editor.
 
-[1. Getting Started](#getting-started)<br>
+[1. Getting Started](#getting-started)<br><br>
 [2. Navigation tabs](#navigation-tabs)<br>
 &nbsp;[2.1. A-Z](#a-z)<br>
 &nbsp;[2.2. Matching](#matching)<br>
@@ -15,16 +15,16 @@ If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-pla
 &nbsp;[2.5. Stats](#stats)<br>
 &nbsp;[2.6. User](#user)<br>
 &nbsp;[2.7. Activity](#activity)<br>
-&nbsp;[2.8. Data](#getting-started)<br>
+&nbsp;[2.8. Data](#getting-started)<br><br>
 [3. Name Record](#navigation-tabs)<br>
 &nbsp;[3.1. Overview](#getting-started)<br>
-&nbsp;[3.2. Adding a new name](#getting-started)<br>
+&nbsp;[3.2. Adding a new name](#getting-started)<br><br>
 [4. Editing Records](#navigation-tabs)<br>
 &nbsp;[4.1. Nomencaltural Data](#getting-started)<br>
-&nbsp;[4.2. Placements](#getting-started)<br>
-[5. References](#navigation-tabs)<br>
-&nbsp;[5.1. Overview](#getting-started)<br>
-&nbsp;[5.2. Adding](#getting-started)<br>
+&nbsp;[4.2. Placements](#getting-started)<br><br>
+[5. References](#references)<br>
+&nbsp;[5.1. References Overview](#reverences-overview)<br>
+&nbsp;[5.2. Adding References](#adding-references)<br>
 
 # Getting Started
 
@@ -368,7 +368,12 @@ Unplaced names in the classification are free for any editor to update, correct,
 
 Any records that you think belong in your TEN but may currently be under a Family you cannot edit please contact the TEN manager (Alan Elliott).
 
-# Adding References
+# References
+### References Overview
+
+Soon
+
+#### Adding References
 
 The scope of Rhakhis is nomenclature and taxonomy. We are working to make it as complete and authoritative as possible. Progress would be slower if we also tried build a system for managing ancillary data and, for example, incorporated a full citation manager or specimen catalogue. Those functions are better performed by other systems elsewhere on the internet. Certain classes of data are therefore handled by _References_ to other systems. These can be presented as decorated links in user interfaces and documents or can be explored by software agents.
 
