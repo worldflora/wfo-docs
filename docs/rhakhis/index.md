@@ -15,7 +15,7 @@ If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-pla
 [2.5. Stats](#stats)<br>
 [2.6. User](#user)<br>
 [2.6. Activity](#activity)<br>
-[  -2.7. Data](#getting-started)<br>
+&nbsp;[ 2.7. Data](#getting-started)<br>
 
 
 # Getting Started
