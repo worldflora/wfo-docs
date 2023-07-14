@@ -104,6 +104,23 @@ Once you have navigated down through the ranks to the record you wish to look at
 
 To add a new name enter the name parts, with no ranks.
 
+### Stats
+
+The current family level statistics. These regenerate over time. Your edits will take a few days at most to show.
+
+### Users
+
+Who has logged in to the system and the groups they curate. 
+
+If you are part of a Taxonomic Expert Network you will be assigned as the curator of the taxon and this gives you rights to edit that taxon, any descendant taxa and any synonyms of those taxa.
+
+Once you have been made the Curator for your Family you can edit everything it contains. You will also now have the ability to assign colleagues as curators to any point in the part of the backbone you are assigned.
+
+Unplaced names are not controlled by this authorization mechanism. An unplaced name can be edited by any user who is an editor of any taxon, but once that name is placed within the taxonomic hierarchy it is controlled by the editors of the associated taxa and becomes "locked" into the consensus taxonomy.
+
+### Activity
+
+This tab shows the most recent least edit to a record by a user. We plan to implement a filter by Family.
 
 ### Data
 
@@ -111,39 +128,6 @@ The data download tab allows users to export data in a number of formats.
 
 If you think of others please, contact Roger Hyam.
 
-# Basics
-
-This is a name page. You will see navigation breadcrumbs that allow you move up and down the classification.
-
-  
-
-The is a record page for a Genus.
-
-  
-
-Grey elements in records are nomenclatural.
-
-  
-
-Yellow elements are classification..
-
-  
-
-  
-
-![](https://t2197470.p.clickup-attachments.com/t2197470/fafbe4b9-27e5-4c78-8662-842e2c9a1da0/image.png)
-
-  
-
-**Unplaced Names. - Grey records**
-
-  
-
-To raise to accepted. 1st change the Nomenclatural status to accepted. This will allow you to raise to accepted.
-
-  
-
-Make synonym - does not require a nomenclatural status. If you do not know its status leave it as Unknown.
 
 # Name Records
 
@@ -457,10 +441,16 @@ Rhakhis is suggest _Agapetes_ as it can only be accepted in this Genus.
 
 # Adding a Basionym
 
+**Unplaced Names. - Grey records**
+
+  
+
+To raise to accepted. 1st change the Nomenclatural status to accepted. This will allow you to raise to accepted.
+
+  
+
+Make synonym - does not require a nomenclatural status. If you do not know its status leave it as Unknown.
+
 # Curators
 
-If you are part of a Taxonomic Expert Network you will be assigned as the curator of the taxon and this gives you rights to edit that taxon, any descendant taxa and any synonyms of those taxa.
 
-Once you have been made the Curator for your Family you can edit everything it contains. You will also now have the ability to assign colleagues as curators to any point in the part of the back bone you are assigned.
-
-Unplaced names are not controlled by this authorization mechanism. An unplaced name can be edited by any user who is an editor of any taxon, but once that name is placed within the taxonomic hierarchy it is controlled by the editors of the associated taxa and becomes "locked" into the consensus taxonomy.
