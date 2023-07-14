@@ -2,7 +2,7 @@
 
 Guide to Using Rhakhis - the World Flora Online's taxonomic backbone curation tool.
 
-It is currently a work in progress (19-4-2023) and is being added to and ammended as we go. 
+It is currently a work in progress (14-7-2023) and is being added to and ammended as we go. We are currently adding how to videos through the document to guide users.
 
 If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-plant-list-docs/blob/main/docs/concepts.md) this explains the reasons and process behind Rhakhis' functionality rather than how to use the editor.
 
