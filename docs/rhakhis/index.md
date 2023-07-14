@@ -9,6 +9,8 @@ If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-pla
 
 # Getting Started
 
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/845234343?h=e5a851207f" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+
 First sign-in with your [ORCID iD](https://orcid.org/).
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/b2350023-eba3-49ff-9354-bf21adb7eeae/image.png)
