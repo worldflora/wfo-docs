@@ -9,15 +9,13 @@ If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-pla
 
 # Getting Started
 
+**Introduction Video**
+
 <iframe src="https://player.vimeo.com/video/845234343?h=e5a851207f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Rhakhis introduction."></iframe>
 
 First sign-in with your [ORCID iD](https://orcid.org/).
 
-![](https://t2197470.p.clickup-attachments.com/t2197470/b2350023-eba3-49ff-9354-bf21adb7eeae/image.png)
-  
-You will now have Viewer rights. This allows you to navigate the data, view stats and download data.
-
-These are the   
+The navigation tabs will become live and you can start using the system.
 
 >The [A-Z tab](https://list.worldfloraonline.org/rhakhis/ui/#alpha) you can just start typing the name you are interested in and matching names will be suggested - like looking it up in an index.
 >If you want to find a name that you might not be sure of the ending you can use the [Matching tab](https://list.worldfloraonline.org/rhakhis/ui/#match).
@@ -29,11 +27,11 @@ These are the
 >Under the [Data tab](https://list.worldfloraonline.org/rhakhis/ui/#data) you'll find snapshot of data in different formats to download.
 
 
+As a first time user you can view and download data but you cannot edit anything. If you are part of a Taxonomic Expert Network please contact your TEN Focal who can assign you to your group. If you are a new TEN email Alan Elliott to be assigned to your group.
+
 # Navigation Tabs
 
-
-
-# A-Z
+**A-Z**
 
 Begin by typing the name you are looking for. Rhakhis will begin suggesting names with the 1st letter typed. Keep typing until you see the record you find the Name you require.
 
