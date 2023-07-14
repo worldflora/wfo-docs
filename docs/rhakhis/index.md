@@ -6,9 +6,18 @@ It is currently a work in progress (14-7-2023) and is being added to and ammende
 
 If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-plant-list-docs/blob/main/docs/concepts.md) this explains the reasons and process behind Rhakhis' functionality rather than how to use the editor.
 
-[1. Matching](#add-name)
-
-
+[1. Getting Started](#getting-started)
+[2. Navigation](#navigation-tabs)
+[2.2. A-Z](#a-z)
+[2.3. Getting Started](#getting-started)
+[2.4. Getting Started](#getting-started)
+[2.5. Getting Started](#getting-started)
+[2.6. Getting Started](#getting-started)
+[2.1. Getting Started](#getting-started)
+[1. Getting Started](#getting-started)
+[1. Getting Started](#getting-started)
+[1. Getting Started](#getting-started)
+[1. Getting Started](#getting-started)
 
 # Getting Started
 
@@ -34,7 +43,7 @@ As a first time user you can view and download data but you cannot edit anything
 
 # Navigation Tabs
 
-**A-Z**
+## A-Z
 
 Begin by typing the name you are looking for. Rhakhis will begin suggesting names with the 1st letter typed. Keep typing until you see the record you find the Name you require.
 
@@ -68,7 +77,7 @@ Grey are currently **unplaced** records. These are effectively a nomenclatural r
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/bc855ede-0f01-45a5-b39c-b4d259756aab/image.png)
 
-# Matching
+## Matching
 
 Matching requires at least 4 characters to work. It will suggest more then just the exact string searched this is useful where you are unsure of the epithet ending.
 
@@ -80,7 +89,7 @@ Matching also works with ranks being part of the name. It will still suggest mor
 
 _"Poa annua_ subsp. _supina"_ for example will return the subspecies record and the two variety records of this name.
 
-# Browse
+## Browse
 
 The Browse Tab opens at our root record which is called Code, referring to the _International Code of Nomenclature for algae, fungi, and plants._
 
@@ -100,7 +109,7 @@ Once you have navigated down through the ranks to the record you wish to look at
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/16004e15-faba-4876-9313-bcbd4a102927/image.png)
 
-# Add Name
+## Add Name
 
 To add a new name enter the name parts, with no ranks.
 
@@ -166,7 +175,7 @@ If you add a name that is a 100% match on the name parts, then you must, click t
 
 Once you have created your record please see Adding a new name ([https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-2088](https://doc.clickup.com/d/h/231yy-2308/1e4000a9e581250/231yy-2088)) for the required and desirable data needed for the record.
 
-# Data
+## Data
 
 The data download tab allows users to export data in a number of formats.
 
