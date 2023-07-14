@@ -43,6 +43,8 @@ The navigation tabs will become live and you can start using the system.
 
 As a first time user you can view and download data but you cannot edit anything. If you are part of a Taxonomic Expert Network please contact your TEN Focal who can assign you to your group. If you are a new TEN email Alan Elliott to be assigned to your group.
 
+[back to top](#rhakhis-users-handbook)
+
 # Navigation Tabs
 
 ## A-Z
