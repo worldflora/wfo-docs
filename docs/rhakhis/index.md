@@ -18,12 +18,12 @@ If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-pla
 &nbsp;[2.8. Data](#getting-started)<br><br>
 [3. Name Record](#navigation-tabs)<br>
 &nbsp;[3.1. Overview](#getting-started)<br>
-&nbsp;[3.2. Adding a new name](#getting-started)<br><br>
+&nbsp;[3.2. Adding a new name](#adding-a-new-name)<br><br>
 [4. Editing Records](#navigation-tabs)<br>
 &nbsp;[4.1. Nomencaltural Data](#getting-started)<br>
-&nbsp;[4.2. Placements](#getting-started)<br><br>
+&nbsp;[4.2. Placement of Names](#getting-started)<br><br>
 [5. References](#references)<br>
-&nbsp;[5.1. References Overview](#reverences-overview)<br>
+&nbsp;[5.1. References Overview](#references-overview)<br>
 &nbsp;[5.2. Adding References](#adding-references)<br>
 
 # Getting Started
@@ -377,8 +377,6 @@ Soon
 
 The scope of Rhakhis is nomenclature and taxonomy. We are working to make it as complete and authoritative as possible. Progress would be slower if we also tried build a system for managing ancillary data and, for example, incorporated a full citation manager or specimen catalogue. Those functions are better performed by other systems elsewhere on the internet. Certain classes of data are therefore handled by _References_ to other systems. These can be presented as decorated links in user interfaces and documents or can be explored by software agents.
 
-  
-
 A Reference in Rhakhis consists of the following fields:
 
 1.  **URI** - A unique HTTP(s) web reference to another system on the internet. This includes DOIs in there HTTP form.
@@ -396,8 +394,6 @@ Names are associated with References through name\_references. These allow the r
 
 1.  **Comment** - An explanation of how the reference applies specifically to this name. It could be something like "Holotype specimen" or "Only known mention of name" or "Author based on abbreviation in the authors string."
 2.  **Placement Related** - A flag so indicate this reference is concerned with the taxonomic placement of the name rather than the nomenclatural status of the name. In the current interface reference links with this flag are presented in a yellow box called "Taxonomic Sources". Reference links without this flag appear in the gray box entitled "Nomenclatural References".
-
-  
 
 ### What if I don't have a URI for my reference?
 
