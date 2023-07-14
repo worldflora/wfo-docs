@@ -9,7 +9,7 @@ If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-pla
 
 # Getting Started
 
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/845234343?h=e5a851207f" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/845234343?h=e5a851207f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Rhakhis introduction."></iframe>
 
 First sign-in with your [ORCID iD](https://orcid.org/).
 
