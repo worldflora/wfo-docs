@@ -6,16 +6,16 @@ It is currently a work in progress (14-7-2023) and is being added to and ammende
 
 If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-plant-list-docs/blob/main/docs/concepts.md) this explains the reasons and process behind Rhakhis' functionality rather than how to use the editor.
 
-[1. Getting Started](#getting-started)<br>
-[2. Navigation](#navigation-tabs)<br>
-  [2.1. A-Z](#a-z)<br>
-  [2.2. Matching](#matching)<br>
-  [2.3. Browse](#browse)<br>
-  [2.4. Add a Name](#add-name)<br>
-  [2.5. Stats](#stats)<br>
-  [2.6. User](#user)<br>
-  [2.6. Activity](#activity)<br>
-  [2.7. Data](#getting-started)<br>
+-[1. Getting Started](#getting-started)<br>
+-[2. Navigation](#navigation-tabs)<br>
+  -[2.1. A-Z](#a-z)<br>
+  -[2.2. Matching](#matching)<br>
+  -[2.3. Browse](#browse)<br>
+  -[2.4. Add a Name](#add-name)<br>
+  -[2.5. Stats](#stats)<br>
+  -[2.6. User](#user)<br>
+  -[2.6. Activity](#activity)<br>
+  -[2.7. Data](#getting-started)<br>
 
 
 # Getting Started
