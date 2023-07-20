@@ -19,7 +19,7 @@ If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-pla
 [3. Name Record](#navigation-tabs)<br>
 &nbsp;[3.1. Overview](#getting-started)<br>
 &nbsp;[3.2. Adding a new name](#adding-a-new-name)<br><br>
-[4. Editing Records](#navigation-tabs)<br>
+[4. Editing Records](#editing-records)<br>
 &nbsp;[4.1. Nomencaltural Data](#getting-started)<br>
 &nbsp;[4.2. Placement of Names](#getting-started)<br><br>
 [5. References](#references)<br>
@@ -64,10 +64,18 @@ This method of searching for a name returns exact what you type. For example if 
 
 If you are searching for an infraspecific name do not insert the rank as it will return no results. Search only the name parts, for example "_Poa annua supina"._ This will return results for both the variety and subspecies records of this name.
 
+**Color Coding of Records**
+
+The results will show different coloured records. 
+
+Red records are **deprecated** \- these signify that they should not be used, but can be resurrected by Curators. These can be deprecated from a number of reasons including duplication, being linked to a suppressed IPNI record, fossil names, errors, or names outside the scope of the WFO.
+
+Yellow are records **placed** within classification and can be accepted names or synonyms.
+
+Grey are currently **unplaced** records. These are effectively a nomenclatural records with no taxonomic status.
+
+![](https://t2197470.p.clickup-attachments.com/t2197470/bc855ede-0f01-45a5-b39c-b4d259756aab/image.png)
   
-
-
-
 ### Matching
 
 Matching requires at least 4 characters to work. It will suggest more then just the exact string searched this is useful where you are unsure of the epithet ending.
@@ -183,27 +191,20 @@ It is now time to start editing.
 Essential data
 --------------
 
-  
-
 ### Rank
 
 Please select the appropriate rank from the drop down. Rhakhis will default to Genus for a one part name, species for a two part name and a subspecies for a three part name.
-
-  
+ 
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/f13b0b55-2a96-4371-bb4f-c666ad74bee1/image.png)
-
   
 
 ### Nomenclatural Status
 
 The default nomenclatural Status is **Unknown**. Please select what is correct. If you are unsure leave it as unknown.
-
   
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/97d2b9ad-d3ae-4bec-9bcb-4a3e5bae63e4/image.png)
-
-
 
 
 **conserved -** These names have been conserved for continued use to improved nomenclatural stability. See [https://naturalhistory2.si.edu/botany/codes-proposals/](https://naturalhistory2.si.edu/botany/codes-proposals/)
@@ -233,7 +234,6 @@ We plan to bring in the Conserved and Rejected statuses through as a batch updat
 ### Author string
 
   
-
 Should follow the Standard Form abbreviation.
 
 Please refer to IPNI. [www.ipni.org](http://www.ipni.org/)
@@ -281,7 +281,6 @@ Should follow the Standard Form abbreviation.
 Please refer to IPNI. [www.ipni.org](http://www.ipni.org/)
 
 Using advanced search and the Publications Tab.
-
   
 
 Examples:
@@ -309,7 +308,61 @@ Please also add the Year.
 ### Other desirable data
 --------------------
 
+# Editing Records
+
+As a curator you can edit any unplaced record and any records that are within the group you are assigned to curate. Sometimes you may find a name that has been placed as a synonym in a Family outside what you are able to curate. Please contact Alan Elliot in this instance.
+
+# Nomenclaural Data
+
+
+
+# Placement in the classification
+
+**INSERT VIDEO HERE**
+
+# Placement of an accepted record
+ 
+To place as an accepted taxon
+
+1) Change the Nomenclatural status to Valid. The nomencaltural status of a name must be Valid to be an accepted name. 
+
+![](https://t2197470.p.clickup-attachments.com/t2197470/8704f3ac-3942-4510-afa0-0141d84d6c35/image.png)
+
+2). In the Placement box. Select Raise to accepted taxon within.
+
+Rhakhis will suggesst the appropriate parent in this example, _Agapetes_ as it can only be an accepted in this Genus.
+
+![](https://t2197470.p.clickup-attachments.com/t2197470/818abc38-5ec0-4b67-a833-03bb8e02b9e8/image.png)
+
+Rhakhis will not allow you to place names that do not align with an accepted parent record. For example _Lathyrus_ sylvestris can only be an accepted name in _Lathyrus_, or an accepted infrageneric group within _Lathyrus_. The same is true for infraspecfic names. For example _Lathyrus_ _latifolius_ subsp. _latifolius_ can only be placed as an accepted name within _Lathyrus latifolius_.
+
+If Rhakhis does not suggest an appropraite parent record it is because the name is not present in the database or is not accepted in the classificaiton.  
+
+# Placing as a synonym
+
+
+
+# Moving a synonym
+
+
+
+# Untitled
+
+
+
+
+
+# Adding a Basionym
+
+**Unplaced Names. - Grey records**
+
   
+
+To raise to accepted. 1st change the Nomenclatural status to accepted. This will allow you to raise to accepted.
+
+  
+
+Make synonym - does not require a nomenclatural status. If you do not know its status leave it as Unknown.  
 
 ### Nomenclatural Reference
 
@@ -401,55 +454,7 @@ Each branch of the taxonomy within Rhakhis is supported by some external source.
 
 All names should have nomenclatural references. Eventually they will all have links to the original place of publication but it is appropriate to include any reference here that would be useful for someone researching the nomenclatural aspects of this name. These might include links to the authors and type specimens or nomenclatural databases (e.g. [IPNI](https://www.ipni.org/)) that contain such information. It would be inappropriate to have links here to simple occurrences of the name such as in a flora or occurrence database like [GBIF](https://www.gbif.org/) unless these were the only known source of the name and would be useful to figure out the place of publication etc.
 
-# Placement in the classification
 
-
-
-# Placement of an accepted record
-
-To place a record in the classification.
-
-  
-
-To place as an accepted taxon,
-
-  
-
-1) Change the Nomenclatural status to Valid.
-
-![](https://t2197470.p.clickup-attachments.com/t2197470/8704f3ac-3942-4510-afa0-0141d84d6c35/image.png)
-
-  
-
-2). In the Placement box. Select Raise to accepted taxon within.
-
-Rhakhis is suggest _Agapetes_ as it can only be accepted in this Genus.
-
-![](https://t2197470.p.clickup-attachments.com/t2197470/818abc38-5ec0-4b67-a833-03bb8e02b9e8/image.png)
-
-# Placing as a synonym
-
-
-
-# Moving a synonym
-
-
-
-# Untitled
-
-
-
-# Adding a Basionym
-
-**Unplaced Names. - Grey records**
-
-  
-
-To raise to accepted. 1st change the Nomenclatural status to accepted. This will allow you to raise to accepted.
-
-  
-
-Make synonym - does not require a nomenclatural status. If you do not know its status leave it as Unknown.
 
 # Curators
 
