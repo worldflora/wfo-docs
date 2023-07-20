@@ -242,7 +242,9 @@ Using advanced search and the Author Tab.
 WFO is aiming for the **fullest authorship** for a name record so please include ex authors.  
 
 >(Wall.) Hook.f. & Benth. ex Cleghorn
+>
 >Steud. ex [A.Rich](A.Rich).
+>
 >A.Cunn. ex Benth.
 
 We are looking for no spaces between author's initials and last name.
