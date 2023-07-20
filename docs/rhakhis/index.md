@@ -236,7 +236,7 @@ Using advanced search and the Author Tab.
 **Examples**
 
 >Wall. for Nathaniel Wallich
-
+>
 >B.Z.Duan for Bao Zhong Duan.
 
 WFO is aiming for the **fullest authorship** for a name record so please include ex authors.  
@@ -266,7 +266,9 @@ Using advanced search and the Publications Tab.
 **Examples:**
 
 >Edinburgh J. Bot. 51(2): 173 (1994).
+>
 >Kew Bull. 46(1): 171 (1991).
+>
 >Prodr. \[A. P. de Candolle\] 2: 467 (1825).
   
 The publication's "micro" citation should generally follows what is found in IPNI.
@@ -282,6 +284,7 @@ Please also add the Year.
 
 **INSERT VIDEO HERE**
 
+>**Please note if you need to synonymise a name already placed in the classification but outside of the group are are assigned, please contact your TEN Focal, or Alan Elliott, for assistance.**
 
 # Placement of an accepted record
  
@@ -309,6 +312,7 @@ This is how to place a the name record has yet to be placed in the classificatio
                 
 
 1) In the Placment box, select _Sink into synonymy within..._
+
 2) Begin typing the accepted name in to box. Rhakhis will begin to suggest accepted names to select from. When you find the accetped name select it using your cursor.
 
 The name will now be place as a synonym of the accepted name. 
@@ -316,6 +320,7 @@ The name will now be place as a synonym of the accepted name.
 # Moving a synonym
 
 1) In the Placment box, select _Change to synonym of..._
+
 2) Begin typing the accepted name in to box. Rhakhis will begin to suggest accepted names to select from. When you find the accetped name select it using your cursor.
 
 If you are moving a currently accepted name you will need to transfer all the exisiting synonyms to the new accepted name before finally trasferring the accepted name to the synonym. We have enforced this to make curators to make a conscious decision when moving synonyms. 
@@ -326,48 +331,25 @@ If you are moving a currently accepted name you will need to transfer all the ex
 To add a basionym to a record
 
 1) In the Homotypic Names box click add _Add Basionym_
+
 2) Rhakhis will suggest likely Basionym candidates based on the the epithet and the year of publication.
+
 3) If the basionym name is not there then you can type in the box and search for the required name.
 
 Rhakhis prevents the creation basionym chains. You cannot place a name as the basionym when the proposed basionym record already has a basionym of its own. This is usuallly the reason you cannot find a name when searching. This will require further editing of records if the data is not correct in Rhakhis. This can often be difficult to resolve. Please contact Alan Elliott assistance is required.
 
-**Unplaced Names. - Grey records**
-
-  
-
-To raise to accepted. 1st change the Nomenclatural status to accepted. This will allow you to raise to accepted.
-
-  
-
-Make synonym - does not require a nomenclatural status. If you do not know its status leave it as Unknown.  
 
 ### Nomenclatural Reference
 
 Rhakhis is not a reference manager and only stores links to references.
 
-  
-
 A link to IPNI is desirable as the WFO aim to have this link to the nomenclators, Tropicos for Bryophytes, IPNI for the other groups covered by the WFO.
-
-  
 
 The WFO take monthly updated from IPNI. If the added name is a newly published name, or an old name from the literature please inform IPNI and we will receive the IPNI ID from them in the future.
 
-  
-
 The work plan to improve usability of Rhakhis will bring in other pieces of nomenclatural data, such as Type Specimen links to external Herbarium catalogues, full references to the publication if it has a DOI etc.
 
-# Unplaced Names
-
-As an Editor you can only work with records linked to part of the classification you have been given permission to curate by the WFO council.
-
-  
-
-Unplaced names in the classification are free for any editor to update, correct, edit and claim as a part of their classification.
-
-  
-
-Any records that you think belong in your TEN but may currently be under a Family you cannot edit please contact the TEN manager (Alan Elliott).
+>As of July 2023: 600k BHL links to historic publications and 45K DOI link to more recent protologues supplied by IPNI have been added. 
 
 # References
 ### References Overview
