@@ -21,7 +21,7 @@ If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-pla
 &nbsp;[3.2. Adding a new name](#adding-a-new-name)<br><br>
 [4. Editing Records](#editing-records)<br>
 &nbsp;[4.1. Nomencaltural Data](#getting-started)<br>
-&nbsp;[4.2. Placement of Names](#getting-started)<br><br>
+&nbsp;[4.2. Placement of Names](#placement_of_names)<br><br>
 [5. References](#references)<br>
 &nbsp;[5.1. References Overview](#references-overview)<br>
 &nbsp;[5.2. Adding References](#adding-references)<br>
@@ -188,13 +188,13 @@ It is now time to start editing.
 ![](https://t2197470.p.clickup-attachments.com/t2197470/7c6fc355-d1f1-4222-8d69-3ad6184bf631/image.png)
 
 
-Essential data
---------------
+# Editing Records
+
+As a curator you can edit any unplaced record and any records that are within the group you are assigned to curate. Sometimes you may find a name that has been placed as a synonym in a Family outside what you are able to curate. Please contact Alan Elliot in this instance.
 
 ### Rank
 
-Please select the appropriate rank from the drop down. Rhakhis will default to Genus for a one part name, species for a two part name and a subspecies for a three part name.
- 
+Please select the appropriate rank from the drop down. Rhakhis will default to Genus for a one part name, species for a two part name and a subspecies for a three part name. 
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/f13b0b55-2a96-4371-bb4f-c666ad74bee1/image.png)
   
@@ -203,9 +203,7 @@ Please select the appropriate rank from the drop down. Rhakhis will default to G
 
 The default nomenclatural Status is **Unknown**. Please select what is correct. If you are unsure leave it as unknown.
   
-
 ![](https://t2197470.p.clickup-attachments.com/t2197470/97d2b9ad-d3ae-4bec-9bcb-4a3e5bae63e4/image.png)
-
 
 **conserved -** These names have been conserved for continued use to improved nomenclatural stability. See [https://naturalhistory2.si.edu/botany/codes-proposals/](https://naturalhistory2.si.edu/botany/codes-proposals/)
 
@@ -227,12 +225,7 @@ The default nomenclatural Status is **Unknown**. Please select what is correct. 
 
 **valid** \- use this when you know a name meets the requirements set out in the Code. Only valid names can be placed in the classification as an accepted taxon.
 
-  
-
-We plan to bring in the Conserved and Rejected statuses through as a batch update this is still in the work plan of as April 2023.
-
 ### Author string
-
   
 Should follow the Standard Form abbreviation.
 
@@ -240,41 +233,26 @@ Please refer to IPNI. [www.ipni.org](http://www.ipni.org/)
 
 Using advanced search and the Author Tab.
 
-  
-
 **Examples**
-
-  
 
 >Wall. for Nathaniel Wallich
 
 >B.Z.Duan for Bao Zhong Duan.
 
-WFO is aiming for the **fullest authorship** for a name record so please include ex authors.
-
-  
+WFO is aiming for the **fullest authorship** for a name record so please include ex authors.  
 
 >(Wall.) Hook.f. & Benth. ex Cleghorn
-
 >Steud. ex [A.Rich](A.Rich).
-
 >A.Cunn. ex Benth.
-
-  
 
 We are looking for no spaces between author's initials and last name.
 
 >B.Z.Duan not B. Z. Duan
 
-  
-
-If you find errors in IPNI please feed back authorship corrections directly to IPNI editors.
-
+If you find errors in IPNI please feedback authorship corrections directly to IPNI editors.
 
 
 ### Protologue information
-
-  
 
 Should follow the Standard Form abbreviation.
 
@@ -283,42 +261,25 @@ Please refer to IPNI. [www.ipni.org](http://www.ipni.org/)
 Using advanced search and the Publications Tab.
   
 
-Examples:
+**Examples:**
 
-Edinburgh J. Bot. 51(2): 173 (1994).
-
-Kew Bull. 46(1): 171 (1991).
-
-Prodr. \[A. P. de Candolle\] 2: 467 (1825).
-
+>Edinburgh J. Bot. 51(2): 173 (1994).
+>Kew Bull. 46(1): 171 (1991).
+>Prodr. \[A. P. de Candolle\] 2: 467 (1825).
   
+The publication's "micro" citation should generally follows what is found in IPNI.
 
-The publication's "micro" citation generally follows what is found in IPNI.
-
-If you find errors in IPNI please feed back publication corrections directly to IPNI editors.
-
-  
+If you find errors in IPNI please feed back publication corrections directly to IPNI editors.  
 
 Please also add the Year.
 
-  
-
 ![](https://t2197470.p.clickup-attachments.com/t2197470/75f2f464-090c-4430-9f2c-d46c033762b4/image.png)
 
-### Other desirable data
---------------------
 
-# Editing Records
-
-As a curator you can edit any unplaced record and any records that are within the group you are assigned to curate. Sometimes you may find a name that has been placed as a synonym in a Family outside what you are able to curate. Please contact Alan Elliot in this instance.
-
-# Nomenclaural Data
-
-
-
-# Placement in the classification
+## Placement of Names
 
 **INSERT VIDEO HERE**
+
 
 # Placement of an accepted record
  
@@ -328,7 +289,7 @@ To place as an accepted taxon
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/8704f3ac-3942-4510-afa0-0141d84d6c35/image.png)
 
-2). In the Placement box. Select Raise to accepted taxon within.
+2). In the Placement box select _Raise to accepted taxon within._
 
 Rhakhis will suggesst the appropriate parent in this example, _Agapetes_ as it can only be an accepted in this Genus.
 
@@ -340,19 +301,33 @@ If Rhakhis does not suggest an appropraite parent record it is because the name 
 
 # Placing as a synonym
 
+This is how to place a the name record has yet to be placed in the classification, the elements of the record is moslty grey, in to synonymy.
 
+>Unlike an accepted name any Nomenclatural status is acceptable to Rhakhis, with the exception of Deprecated, when making a name a synonym.
+                
+
+1) In the Placment box, select _Sink into synonymy within..._
+2) Begin typing the accepted name in to box. Rhakhis will begin to suggest accepted names to select from. When you find the accetped name select it using your cursor.
+
+The name will now be place as a synonym of the accepted name. 
 
 # Moving a synonym
 
+1) In the Placment box, select _Change to synonym of..._
+2) Begin typing the accepted name in to box. Rhakhis will begin to suggest accepted names to select from. When you find the accetped name select it using your cursor.
 
-
-# Untitled
-
-
-
+If you are moving a currently accepted name you will need to transfer all the exisiting synonyms to the new accepted name before finally trasferring the accepted name to the synonym. We have enforced this to make curators to make a conscious decision when moving synonyms. 
 
 
 # Adding a Basionym
+
+To add a basionym to a record
+
+1) In the Homotypic Names box click add _Add Basionym_
+2) Rhakhis will suggest likely Basionym candidates based on the the epithet and the year of publication.
+3) If the basionym name is not there then you can type in the box and search for the required name.
+
+Rhakhis prevents the creation basionym chains. You cannot place a name as the basionym when the proposed basionym record already has a basionym of its own. This is usuallly the reason you cannot find a name when searching. This will require further editing of records if the data is not correct in Rhakhis. This can often be difficult to resolve. Please contact Alan Elliott assistance is required.
 
 **Unplaced Names. - Grey records**
 
