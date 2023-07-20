@@ -15,16 +15,18 @@ If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-pla
 &nbsp;[2.5. Stats](#stats)<br>
 &nbsp;[2.6. User](#user)<br>
 &nbsp;[2.7. Activity](#activity)<br>
-&nbsp;[2.8. Data](#getting-started)<br><br>
-[3. Name Record](#navigation-tabs)<br>
-&nbsp;[3.1. Overview](#getting-started)<br>
+&nbsp;[2.8. Data](#data)<br><br>
+[3. Name Record](#name-records)<br>
+&nbsp;[3.1. Overview](#name-record-overview)<br>
 &nbsp;[3.2. Adding a new name](#adding-a-new-name)<br><br>
 [4. Editing Records](#editing-records)<br>
-&nbsp;[4.1. Nomencaltural Data](#getting-started)<br>
-&nbsp;[4.2. Placement of Names](#placement_of_names)<br><br>
+&nbsp;[4.1. Nomencaltural Data](#nomencaltural-data)<br>
+&nbsp;[4.2. Placement of Names](#placement-of-names)<br><br>
 [5. References](#references)<br>
 &nbsp;[5.1. References Overview](#references-overview)<br>
-&nbsp;[5.2. Adding References](#adding-references)<br>
+&nbsp;[5.2. Taxonomic References](#taxonomic-references)<br>
+&nbsp;[5.3. Nomenclatural References](#nomenclatural-references)<br>
+&nbsp;[5.4. Adding References](#adding-references)<br>
 
 # Getting Started
 
@@ -243,7 +245,7 @@ WFO is aiming for the **fullest authorship** for a name record so please include
 
 >(Wall.) Hook.f. & Benth. ex Cleghorn
 >
->Steud. ex [A.Rich](A.Rich).
+>Steud. ex (A.Rich).
 >
 >A.Cunn. ex Benth.
 
@@ -308,7 +310,7 @@ If Rhakhis does not suggest an appropraite parent record it is because the name 
 
 This is how to place a the name record has yet to be placed in the classification, the elements of the record is moslty grey, in to synonymy.
 
->Unlike an accepted name any Nomenclatural status is acceptable to Rhakhis, with the exception of Deprecated, when making a name a synonym.
+>When making a name a synonym any Nomenclatural status is acceptable to Rhakhis, with the exception of Deprecated.
                 
 
 1) In the Placment box, select _Sink into synonymy within..._
@@ -354,29 +356,26 @@ The work plan to improve usability of Rhakhis will bring in other pieces of nome
 # References
 ### References Overview
 
-Soon
+INSERT VIDEO HERE.
 
 #### Adding References
 
 The scope of Rhakhis is nomenclature and taxonomy. We are working to make it as complete and authoritative as possible. Progress would be slower if we also tried build a system for managing ancillary data and, for example, incorporated a full citation manager or specimen catalogue. Those functions are better performed by other systems elsewhere on the internet. Certain classes of data are therefore handled by _References_ to other systems. These can be presented as decorated links in user interfaces and documents or can be explored by software agents.
 
-A Reference in Rhakhis consists of the following fields:
+### Taxonomic References
 
-1.  **URI** - A unique HTTP(s) web reference to another system on the internet. This includes DOIs in there HTTP form.
-2.  **Label** - The display text to present to the user. For a book this might be a human readable version of the citation.
-3.  **Kind** - The type of reference the URI points to. This can be one of: Person, Literature, Specimen or Database.
-4.  **Image URI (optional)** - A link to a thumbnail image that may be useful to decorate the link. e.g. A low resolution image of the specimen, portrait of the person or the title page of a PDF.
+Each branch of the taxonomy within Rhakhis is supported by some external source. We therefore aim to have a Reference in the Taxonomic Source section for each accepted name that links to the authority we use to assert that taxon exists and has those synonyms. Ideally this will be a single database reference and/or a single literature reference although this isn't currently enforced by the system. An analogy is the linking to external sources for statements of fact in Wikipedia. Sometimes this Reference may be at a higher level within the taxonomy than the current taxon e.g. a single Taxonomic Source for a whole genus or family.
 
-  
+### Nomenclatural References
 
-References are normalized, there can be only one instance of a reference with its unique URI within Rhakhis. Multiple names can link to each reference.
+All names should have nomenclatural references. Eventually they will all have links to the original place of publication but it is appropriate to include any reference here that would be useful for someone researching the nomenclatural aspects of this name. These might include links to the authors and type specimens or nomenclatural databases (e.g. [IPNI](https://www.ipni.org/)) that contain such information. It would be inappropriate to have links here to simple occurrences of the name such as in a flora or occurrence database like [GBIF](https://www.gbif.org/) unless these were the only known source of the name and would be useful to figure out the place of publication etc.
 
-  
+The process of adding a reference is the same for both. 
 
-Names are associated with References through name\_references. These allow the relationship to have two properties:
+**ADD VIDEO HERE**
 
-1.  **Comment** - An explanation of how the reference applies specifically to this name. It could be something like "Holotype specimen" or "Only known mention of name" or "Author based on abbreviation in the authors string."
-2.  **Placement Related** - A flag so indicate this reference is concerned with the taxonomic placement of the name rather than the nomenclatural status of the name. In the current interface reference links with this flag are presented in a yellow box called "Taxonomic Sources". Reference links without this flag appear in the gray box entitled "Nomenclatural References".
+### Types of Reference
+
 
 ### What if I don't have a URI for my reference?
 
@@ -404,14 +403,6 @@ If the person is historical (a.k.a. dead) then you can link to them in [WikiDat
 #### Specimens
 
 We only provide the ability to cite specimens if they are available online as an entry in a catalogue or image. If you have an image of the specimen and it is unlikely to be put online by the holding institution then you might consider uploading it to [Zenodo](https://zenodo.org/) where it will be given a DOI that you can cite. If you only have text you can add it to the comments on the name.
-
-### Taxonomic Sources
-
-Each branch of the taxonomy within Rhakhis is supported by some external source. We therefore aim to have a Reference in the Taxonomic Source section for each accepted name that links to the authority we use to assert that taxon exists and has those synonyms. Ideally this will be a single database reference and/or a single literature reference although this isn't currently enforced by the system. An analogy is the linking to external sources for statements of fact in Wikipedia. Sometimes this Reference may be at a higher level within the taxonomy than the current taxon e.g. a single Taxonomic Source for a whole genus or family.
-
-### Nomenclatural References
-
-All names should have nomenclatural references. Eventually they will all have links to the original place of publication but it is appropriate to include any reference here that would be useful for someone researching the nomenclatural aspects of this name. These might include links to the authors and type specimens or nomenclatural databases (e.g. [IPNI](https://www.ipni.org/)) that contain such information. It would be inappropriate to have links here to simple occurrences of the name such as in a flora or occurrence database like [GBIF](https://www.gbif.org/) unless these were the only known source of the name and would be useful to figure out the place of publication etc.
 
 
 
