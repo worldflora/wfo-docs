@@ -134,10 +134,11 @@ Names can have a nomenclatural status. This is separate from their "taxonomic st
 1. __conserved__ - a later homonym that has been explicitly flagged as available for use under the code.
 1. __rejected__ - can't be used as accepted name in taxonomy as accepted name.
 1. __sanctioned__ - fungi specific version of conserved
-1. __valid__ - a correctly published name.
-1. __invalid__ - can't be used as accepted name in taxonomy as accepted name.
-2. __deprecated__ - won't be placed in taxonomy at all.
-3. __unknown__ - not recommended for placement in taxonomy
+2. __orthovar__ - short for orthographical variant. Can't be an accepted name.
+3. __valid__ - a correctly published name.
+4. __invalid__ - can't be used as accepted name in taxonomy as accepted name.
+5. __deprecated__ - won't be placed in taxonomy at all.
+6. __unknown__ - not recommended for placement in taxonomy
 
 ## Taxonomic status = role
 
