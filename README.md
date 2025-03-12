@@ -1,4 +1,4 @@
-# wfo-plant-list-docs
+# WFO System Docs
 
 This repository is used as a documentation hub for the different 
 projects/repositories that are used by the World Flora Online 
