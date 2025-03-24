@@ -7,5 +7,6 @@ author:
   name: Roger Hyam
   email: rhyam@rbge.org.uk
 header_pages:
+  - developers.md
   - concepts.md
   - contact.md
