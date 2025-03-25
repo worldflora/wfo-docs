@@ -14,11 +14,11 @@ The Library is open for anyone to view. If you want membership to interact with 
 
 During Febuary 2025 the library was seeded references names published in 20204, with doi's in the IPNI metadata.
 
-As of March 2025 we are building the library monthly as part of our IPNI to WFO workflow. Every record added to IPNI in the previous month, with a doi, is added to the library.
+As of March 2025 we are building the library monthly as part of our IPNI to WFO workflow. Every record added to IPNI that has an active doi is added to the library.
 
-For each record added library, we place it in the corresponding Taxonomic Expert Network's inbox or if we do not have a TEN it is added to the Taxonomic Literature folder for the appropriate each year. 
+For each record added library, we place it in the corresponding Taxonomic Expert Network's inbox or if we do not have a TEN it is added to the Taxonomic Literature folder for the year.
 
-The idea is that a TEN will check periodically, review the literature. Once a TEN has actioned a reference we think it best to use the "remove from collection" functionality. This clears it from the TEN's inbox but keeps the record in the WFO library.
+The idea is that a TEN will check and review the literature to see if it is. Once a TEN has actioned a reference we think it best to use the "remove from collection" functionality. This clears it from the TEN's inbox but keeps the record in the WFO library.
 
 We hope to expand to Flora's and claissificaiton treatments in the future. These will be added to TEN inboxes like new name literature.
 
