@@ -1,6 +1,9 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-minima
 minima:
   skin: dark
+  nav_pages:
+    - concepts.md
+    - contact.md
 title: "WFO Documentation"
 description: "Documentation project for the WFO infrastructure"
 author:
