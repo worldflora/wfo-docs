@@ -7,8 +7,9 @@ plugins:
 remote_theme: "jekyll/minima"
 
 minima:
-  skin: dark
+  skin: classic
   nav_pages:
+    - developers.md
     - concepts.md
     - contact.md
 title: "WFO Documentation"
@@ -16,7 +17,9 @@ description: "Documentation project for the WFO infrastructure"
 author:
   name: Roger Hyam
   email: rhyam@rbge.org.uk
-header_pages:
-  - developers.md
-  - concepts.md
-  - contact.md
+
+  #
+# header_pages:
+#  - developers.md
+#  - concepts.md
+#  - contact.md
