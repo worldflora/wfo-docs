@@ -1,4 +1,11 @@
-theme: minima
+plugins:
+  # add remote-theme plugin
+  - jekyll-remote-theme
+
+# Use remote-theme plugin to load `minima` repository. But first, ensure the `theme` key is disabled.
+# theme: minima
+remote_theme: "jekyll/minima"
+
 minima:
   skin: dark
   nav_pages:
