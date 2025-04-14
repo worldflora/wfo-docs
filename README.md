@@ -5,5 +5,5 @@ projects/repositories that are used by the World Flora Online
 PlantList infrastructure. All the content is published as 
 a GitHub pages website.
 
-[Visit the website to read the content!](https://rogerhyam.github.io/wfo-plant-list-docs)
+[Visit the website to read the content!](https://plant-list-docs.rbge.info/)
 

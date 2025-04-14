@@ -1,5 +1,5 @@
 
-Welcome to the WFO PlantList documentation site.
+Welcome to the WFO documentation site.
 
 The  [World Flora Online (WFO)](http://www.worldfloraonline.org/) is the international initiative contributing to the Global Strategy for Plant Conservation and provides a global overview of the diversity of plant species. It is the essential tool for conservation planners, policymakers and practitioners at all levels.
 
