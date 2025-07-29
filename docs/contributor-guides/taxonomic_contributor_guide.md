@@ -40,7 +40,7 @@ or other non-Backbone data (Content data), please refer to the “WFO Guidelines
 
 At the core of WFO is an updatable Taxonomic Backbone of scientific names and their classification that contains all Effectively Published plant names (as defined in the International Code of Nomenclature for Algae, Fungi and Plants), and differentiates between accepted names and synonyms. Data in the Taxonomic Backbone is in the Public Domain, under a CC0 waiver, which will automatically be added upon ingestion of the data to the WFO Taxonomic Backbone.
 
-As stated in the General Guideline document, the first version of the WFO Taxonomic Backbone based on The Plant List v1.1 is not perfect both with respect to data quality and coverage. It is expected that contributions coming from taxonomists organised in Taxonomic Expert Networks will rapidly improve the situation and that actively curated data within the WFO Taxonomic Backbone will become authoritative over time. The guidelines for the establishment and governance of Taxonomic Expert Networks (TENs) are provided in the General Guidelines.
+As stated in the General Guideline document, the first version of the WFO Taxonomic Backbone based on The Plant List v1.1 is not perfect both with respect to data quality and coverage. Since 2022 we have been producing a 6-monthly release of the WFO Taxonomic Backbone for the [WFO Plant list](https://wfoplantlist.org/). These editorial windows, the updates recieved from IPNI and input from our growing network of TENS has radically improved the classificion the WFO since the Plant List v1.1. 
 
 ### 2. Contributing to the Taxonomic Backbone
 
@@ -56,26 +56,33 @@ Full details for data requirements for WFO are provided below in Tables and Data
 
 ### Getting Started with WFO Data
 
-TENS can curate the WFO backbone in Rhakhis - the WFO curatation tool.
+TENS can curate names and classification in [Rhakhis](https://list.worldfloraonline.org/rhakhis/ui/index.html#), the WFO's curatation tool. Authorised TENs can be given access to Rhakhis, limited to their group, usually the Family etc. 
 
-Rhakhis handbook can be found here - [Rhakhis handbook](https://plant-list-docs.rbge.info/rhakhis/)
-Sandbox can be found here - [Rhakhis sandbox](https://rhakhis.rbge.info/rhakhis/ui/)
+- Rhakhis handbook can be found here - [Rhakhis handbook](https://plant-list-docs.rbge.info/rhakhis/)
+- Sandbox can be found here - [Rhakhis sandbox](https://rhakhis.rbge.info/rhakhis/ui/)
 
-All data submitted for the WFO Taxonomic Backbone must be in the form of a Darwin Core Archive (DwCA) and comply with WFO data formatting and controlled vocabularies provided below. This document provides instructions and information to assist in the preparation of the required DwCA file for the taxonomic backbone.
-After authorization and registration with the WFO Gatekeeper, as described in the General Guidelines, a TEN (as Taxonomic Data Provider) can either work with the data they already hold or ask the WFO Gatekeeper to provide an extract of the current WFO Taxonomic Backbone data, to be used as a starting point to import into their database system. In the latter case, the name data will come from the WFO Taxonomic Backbone with a unique WFO Identifier (WFO-ID). Alternatively, the Data Provider may submit a file containing just a list of names which will be matched to the WFO Taxonomic Backbone and WFO-IDs assigned to the names. A Name Matching Response File will be returned containing all the submitted names along with WFO-ID for names that matched, and a Comments field describing the match or non-match results and any data issues. New names submitted by a TEN will be assigned new WFO-IDs.
+The WFO has a monthly IPNI workflows to bring in newly published and historic names that are found in the literature. This workflow also brings in nomenclatural corrections and edits provided by the IPNI team. New names are added to Rhakhis and a monthly email is send to notify the TEN community and csv with those new names is provided to TENs via the TEN respitory on Github.
 
-Alternatively (in the future), a TEN may choose to use the BOTALISTA online system to manage and curate their data. In which case a new project can be set up within BOTALISTA with a copy of the WFO backbone data related to their expert group. Those who wish to use the BOTALISTA system should contact the WFO Gatekeeper.
-A TEN must commit to working with the WFO Gatekeeper to correct errors and missing data in their submitted dataset so that the dataset can replace the earlier version in the WFO Taxonomic Backbone. The WFO Gatekeeper will also consult the TEN in the case of new or unrecognised names that are provided by Content data providers (i.e. names used as accepted names e.g. in Floras or monographs).
+~~All data submitted for the WFO Taxonomic Backbone must be in the form of a Darwin Core Archive (DwCA) and comply with WFO data formatting and controlled vocabularies provided below. This document provides instructions and information to assist in the preparation of the required DwCA file for the taxonomic backbone.
+After authorization and registration with the WFO Gatekeeper, as described in the General Guidelines, a TEN (as Taxonomic Data Provider) can either work with the data they already hold or ask the WFO Gatekeeper to provide an extract of the current WFO Taxonomic Backbone data, to be used as a starting point to import into their database system. In the latter case, the name data will come from the WFO Taxonomic Backbone with a unique WFO Identifier (WFO-ID). Alternatively, the Data Provider may submit a file containing just a list of names which will be matched to the WFO Taxonomic Backbone and WFO-IDs assigned to the names. A Name Matching Response File will be returned containing all the submitted names along with WFO-ID for names that matched, and a Comments field describing the match or non-match results and any data issues. New names submitted by a TEN will be assigned new WFO-IDs.~~
+
+~~Alternatively (in the future), a TEN may choose to use the BOTALISTA online system to manage and curate their data. In which case a new project can be set up within BOTALISTA with a copy of the WFO backbone data related to their expert group. Those who wish to use the BOTALISTA system should contact the WFO Gatekeeper.
+A TEN must commit to working with the WFO Gatekeeper to correct errors and missing data in their submitted dataset so that the dataset can replace the earlier version in the WFO Taxonomic Backbone. The WFO Gatekeeper will also consult the TEN in the case of new or unrecognised names that are provided by Content data providers (i.e. names used as accepted names e.g. in Floras or monographs).~~
 
 ### 3. WFO Taxonomic Backbone data ingestion process
 
-STEP 1: Authorization and Registration of Contributors
-Before submitting data to the WFO, a Data Provider must be authorized and registered. The process for authorization and registration is provided in the General Guidelines.
+**STEP 1:** Approval
 
-STEP 2: Name identification
+TENS must be approved by the WFO Council prior to being given access and authority to curate the taxonomic backbone. If you wish to form a TEN or join an exisiting TEN please contact the [Taxonomic Working Group](mailto:taxwg@worldfloraonline.org).
 
-When not working in the BOTALISTA environment, taxonomic backbone Data Providers (TENs) should upload a preliminary list of their names using the Name Matching Input File format shown below to the pre-check service offered under http://www.worldfloraonline.org/contribute.
-The Name Matching Input File can be either an Excel file (XSLX) or a text file with comma, tab or pipe delimited separation. The first row of the Excel or text file must contain the Field names listed in the table below.
+~~Before submitting data to the WFO, a Data Provider must be authorized and registered. The process for authorization and registration is provided in the General Guidelines.~~
+
+**STEP 2:** Name identification
+
+When not working in Rhakhis, TENs should upload a list to our name matching services. Details of these can be found at the [WFO Plant list API ]([WFO Plant List API](https://list.worldfloraonline.org/)).
+
+~~When not working in the BOTALISTA environment, taxonomic backbone Data Providers (TENs) should upload a preliminary list of their names using the Name Matching Input File format shown below to the pre-check service offered under http://www.worldfloraonline.org/contribute.
+The Name Matching Input File can be either an Excel file (XSLX) or a text file with comma, tab or pipe delimited separation. The first row of the Excel or text file must contain the Field names listed in the table below.~~
 
 Upon receipt at the WFO name matching service, the input file will be checked for the correct file extension (txt, csv, or xlsx) and the presence of the correct fields in the header row.
 A Name Matching Response File will be returned using the file format of the submitted Name Matching File, either Excel or text. The returned file will provide the WFO-IDs needed to fill the obligatory “taxonID” field in the Darwin Core Archive Classification table. The Comments field is used to return the results of field matching and point out possible inconsistencies in your data. In Excel based response files, additional tabs are sometimes used to list particular name issues.
@@ -83,6 +90,6 @@ A Name Matching Response File will be returned using the file format of the subm
 For names that did not match (this is common), the Data Provider should review the response file and make adjustments as necessary. Commonly, the response file may be modified and resubmitted to the WFO Gatekeeper in an iterative fashion. Unmatched names that are new names to the WFO Taxonomic Backbone discovered during this process will be assigned new WFO-IDs and added to the WFO Taxonomic Backbone with a preliminary taxonomicStatus of “Unchecked”, if their position in the classification (e.g. to which family they belong) can be clarified. This is to avoid delays in the addition of content data to the backbone.
 After the completion of Step 2, all names provided should have a WFO-ID assigned, but often many names present in the initial taxonomic backbone are not matched and need further resolution.
 
-STEP 3 - Data upload into the Backbone
+**STEP 3** - Data upload into the Backbone
 
 Taxonomic Backbone Data Providers (TENs) that send in their DwCA files should use the following tables and data elements (see "Creating a Darwin Core Archive File" in the General Guidelines for how to do this). Other file formats maybe acceptable after discussions with the WFO Gatekeeper. Replacing the backbone segment with the newly uploaded and verified dataset will be effected by the WFO Gatekeeper, who may have additional questions arising from the ingestion process.
