@@ -22,11 +22,11 @@ NB: The following documents relate to Data Contributions: 1. WFO General Guideli
 
 **Table of Contents**
 
-[1. Introduction](#introduction)
+[1. Introduction](#1-introduction)
 
-[2. Contributing](#contributing-to-the-taxonomic-backbone)
+[2. Contributing](#2-contributing-to-the-taxonomic-backbone)
 
-[3. Ingestion](#wfo-taxonomic-backbone-data-ingestion-process)
+[3. Ingestion](#3-wfo-taxonomic-backbone-data-ingestion-process)
 
 
 ### 1. Introduction
