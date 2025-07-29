@@ -42,7 +42,7 @@ At the core of WFO is an updatable Taxonomic Backbone of scientific names and th
 
 As stated in the General Guideline document, the first version of the WFO Taxonomic Backbone based on The Plant List v1.1 is not perfect both with respect to data quality and coverage. It is expected that contributions coming from taxonomists organised in Taxonomic Expert Networks will rapidly improve the situation and that actively curated data within the WFO Taxonomic Backbone will become authoritative over time. The guidelines for the establishment and governance of Taxonomic Expert Networks (TENs) are provided in the General Guidelines.
 
-### **2. Contributing to the Taxonomic Backbone**
+### 2. Contributing to the Taxonomic Backbone
 
 TENs covering an entire taxonomic group (typically a family) should strive to include all names in their group. Only names Effectively Published according to the rules of the International Code of Nomenclature for algae, fungi and plants (ICNAFP) are included in the WFO Taxonomic Backbone. Therefore, misapplications (stated as auct. or auct. non), pro parte synonyms, and hybrid formulae (e.g. _Nepenthes northiana_ × _N. maxima_) are not included (but names of nothotaxa, i.e. named hybrids are), nor are any names designating cultivated forms (grex, cv., etc.), except where these play a role in a nomenclatural context (e.g. as basionyms). Orthographic variants are included. The TENs are asked to resolve all names stemming from the first version of the WFO Taxonomic Backbone, with the possibility to exclude names from the backbone used for the WFO Portal.
 
@@ -54,7 +54,7 @@ Every scientific name submitted to the WFO should include
 
 Full details for data requirements for WFO are provided below in Tables and Data Elements used in the WFO Taxonomic Backbone.
 
-### **Getting Started with WFO Data**
+### Getting Started with WFO Data
 
 TENS can curate the WFO backbone in Rhakhis - the WFO curatation tool.
 
@@ -67,7 +67,7 @@ After authorization and registration with the WFO Gatekeeper, as described in th
 Alternatively (in the future), a TEN may choose to use the BOTALISTA online system to manage and curate their data. In which case a new project can be set up within BOTALISTA with a copy of the WFO backbone data related to their expert group. Those who wish to use the BOTALISTA system should contact the WFO Gatekeeper.
 A TEN must commit to working with the WFO Gatekeeper to correct errors and missing data in their submitted dataset so that the dataset can replace the earlier version in the WFO Taxonomic Backbone. The WFO Gatekeeper will also consult the TEN in the case of new or unrecognised names that are provided by Content data providers (i.e. names used as accepted names e.g. in Floras or monographs).
 
-### **3. WFO Taxonomic Backbone data ingestion process**
+### 3. WFO Taxonomic Backbone data ingestion process
 
 STEP 1: Authorization and Registration of Contributors
 Before submitting data to the WFO, a Data Provider must be authorized and registered. The process for authorization and registration is provided in the General Guidelines.
