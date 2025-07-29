@@ -17,7 +17,13 @@
 NB: The following documents relate to Data Contributions: 1. WFO General Guidelines for Data Contributors 2. WFO Guidelines for Taxonomic Backbone Contributors (this document) 3. WFO Guidelines for Content Contributors
 
 **Table of Contents**
-[1. Introduction](#1.-Introduction)
+
+[1. ](#1.-Introduction)
+
+[2. ](#2.-Contributing-to-the-Taxonomic-Backbone)
+
+[3. ](#3.-WFO-Taxonomic-Backbone-data-ingestion-process)
+
 
 ### 1. Introduction
 
