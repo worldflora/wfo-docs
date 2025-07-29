@@ -19,9 +19,9 @@ permalink: /taxonomic-contributor-guide/
 **Version history:** Based on the first part of the “Guidelines for Backbone Data Contributors” v. 1.0. distributed by W. Berendsohn March 31, 2017. Changes were discussed by the WFO’s Taxonomic Working Group in their meeting in Paris and documented by Marc Sosef. The general part of the original document was separated as the “General Guidelines for Data Contributors” v. 2.x.
 
 NB: The following documents relate to Data Contributions: 
-- 1. [WFO General Guidelines for Data Contributors(https://about.worldfloraonline.org/images/uploads/documents/WFOGeneralGuidelinesForDataContributorsV2.07.pdf)
-- 2. WFO Guidelines for Taxonomic Backbone Contributors (this document)
-- 3. [WFO Guidelines for Content Contributors] (https://about.worldfloraonline.org/images/uploads/documents/WFOGuidelinesforContentDataContributorsV._2.04.pdf)
+1. [WFO General Guidelines for Data Contributors](https://about.worldfloraonline.org/images/uploads/documents/WFOGeneralGuidelinesForDataContributorsV2.07.pdf)
+2. WFO Guidelines for Taxonomic Backbone Contributors (this document) 
+3. [WFO Guidelines for Content Contributors](https://about.worldfloraonline.org/images/uploads/documents/WFOGuidelinesforContentDataContributorsV._2.04.pdf)
 
 **Table of Contents**
 
