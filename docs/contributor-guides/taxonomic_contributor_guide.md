@@ -39,21 +39,23 @@ This document provides the technical specification for data contributions to the
 The process for becoming authorized and registered as a WFO Data Provider is detailed in the General Guidelines. For the technical process for contributing a Flora 
 or other non-Backbone data (Content data), please refer to the “WFO Guidelines for Content Contributors".
 
-### Taxonomic Backbone
+**Taxonomic Backbone**
 
 At the core of WFO is an updatable Taxonomic Backbone of scientific names and their classification that contains all Effectively Published plant names (as defined in the International Code of Nomenclature for Algae, Fungi and Plants), and differentiates between accepted names and synonyms. Data in the Taxonomic Backbone is in the Public Domain, under a CC0 waiver, which will automatically be added upon ingestion of the data to the WFO Taxonomic Backbone.
 
-As stated in the General Guideline document, the first version of the WFO Taxonomic Backbone based on The Plant List v1.1 is not perfect both with respect to data quality and coverage. Since 2022 we have been producing a 6-monthly release of the WFO Taxonomic Backbone for the [WFO Plant list](https://wfoplantlist.org/). These editorial windows, the updates recieved from IPNI and input from our growing network of TENS has radically improved the classificion the WFO since the Plant List v1.1. 
+As stated in the General Guideline document, the first version of the WFO Taxonomic Backbone based on The Plant List v1.1 is not perfect both with respect to data quality and coverage. Since 2022 we have been producing a 6-monthly release of the WFO Taxonomic Backbone for the [WFO Plant list](https://wfoplantlist.org/). These editorial windows, the updates recieved from IPNI and input from our growing network of TENS has radically improved the nomenclatural and classificion data in the WFO, since the Plant List v1.1. 
 
 ### 2. Contributing to the Taxonomic Backbone
 
-TENs covering an entire taxonomic group (typically a family) should strive to include all names in their group. Only names Effectively Published according to the rules of the International Code of Nomenclature for algae, fungi and plants (ICNAFP) are included in the WFO Taxonomic Backbone. Therefore, misapplications (stated as auct. or auct. non), pro parte synonyms, and hybrid formulae (e.g. _Nepenthes northiana_ × _N. maxima_) are not included (but names of nothotaxa, i.e. named hybrids are), nor are any names designating cultivated forms (grex, cv., etc.), except where these play a role in a nomenclatural context (e.g. as basionyms). Orthographic variants are included. The TENs are asked to resolve all names stemming from the first version of the WFO Taxonomic Backbone, with the possibility to exclude names from the backbone used for the WFO Portal.
+Contributions are made via TENs that cover an entire taxonomic group (typically a family, or order) should strive to include all names in their group. Only names Effectively Published according to the rules of the International Code of Nomenclature for algae, fungi and plants (ICNAFP) are included in the WFO Taxonomic Backbone. Therefore, misapplications (stated as auct. or auct. non), pro parte synonyms, and hybrid formulae (e.g. _Nepenthes northiana_ × _N. maxima_) are not included (but names of nothotaxa, i.e. named hybrids are), nor are any names designating cultivated forms (grex, cv., etc.), except where these play a role in a nomenclatural context (e.g. as basionyms). Orthographic variants are included. The TENs are asked to resolve all names stemming from the first version of the WFO Taxonomic Backbone, with the possibility to exclude names from the backbone used for the WFO Portal.
 
 Every scientific name submitted to the WFO should include
-• the name of the author,
-• the abbreviated citation of the original publication, volume number (if numbered), the page number on which the description begins, and the year in which the name was published.
-• If additional data are available (e.g. a full literature citation for the original publication of that name), then this can be stored within the WFO system if provided in the form set out below.
-• Nomenclatural citations should follow standard abbreviations for journals from Botanico Periodicum Huntianum (BPH; http://fmhibd.library.cmu.edu/fmi/iwp/cgi?-db=BPH_2015&-loadframes) or other published works from Taxonomic Literature II (TL2; http://www.sil.si.edu/DigitalCollections/tl-2/index.cfm). For references for which the year of publication is not evident or is questionable, please consult TL2.
+- the name of the author
+- the abbreviated citation of the original publication, volume number (if numbered), the page number on which the description begins, and the year in which the name was published.
+- If additional data are available (e.g. a full literature citation for the original publication of that name), then this can be stored within the WFO system if provided in the form set out below.
+- Nomenclatural citations should follow standard abbreviations for journals from Botanico Periodicum Huntianum [BPH](http://fmhibd.library.cmu.edu/fmi/iwp/cgi?-db=BPH_2015&-loadframes) or other published works from Taxonomic Literature II [TL2](http://www.sil.si.edu/DigitalCollections/tl-2/index.cfm). For references for which the year of publication is not evident or is questionable, please consult TL2.
+
+For vascular plants WFO nomenclatural data is linked to IPNI records. We encourage TENs to inform IPNI of errors and pass on corrections. We share corrections to nomencalutral data via the monthly IPNI work flow, and TENs can send corrections to IPNI via and populated email via the Rhakhis interface.
 
 Full details for data requirements for WFO are provided below in Tables and Data Elements used in the WFO Taxonomic Backbone.
 
