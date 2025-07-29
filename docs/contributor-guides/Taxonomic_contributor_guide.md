@@ -1,5 +1,5 @@
 ---
-permalink:/taxonomic-contributor-guide/
+permalink: /taxonomic-contributor-guide/
 ---
 
 # World Flora Online
