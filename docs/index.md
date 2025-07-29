@@ -9,6 +9,8 @@ This website acts as a documentation hub for the different applications and repo
 
 The WFO PlantList is compiled from multiple sources and published to multiple places. Technically this involves a series of components that are described below. These components may change through time but the [conceptual model](concepts.md) that describes the nomenclature and classification is common across these components and should persist. If this is your first visit we recommend you familiarize yourself with the problem domain and how we approach it by reviewing the [concepts page](concepts.md) now.
 
+Taxonomic Contributor's Guide is being updated and its curent draft version is available here. [Draft Taxonomic Contributor Guide](/contributor-guide/taxonomic_contributor_guide)
+
 ## Main components and data flow
 
 ### 1. Rhakhis - editing platform
