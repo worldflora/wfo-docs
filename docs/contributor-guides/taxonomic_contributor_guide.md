@@ -1,8 +1,7 @@
 ---
+title: World Flora Online
 permalink: /taxonomic-contributor-guide/
 ---
-
-# World Flora Online
 
 ## Guidelines for Taxonomic Backbone Contributors
 

@@ -1,6 +1,7 @@
 plugins:
   # add remote-theme plugin
   - jekyll-remote-theme
+  - jekyll-feed
 
 # Use remote-theme plugin to load `minima` repository. But first, ensure the `theme` key is disabled.
 # theme: minima
