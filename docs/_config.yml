@@ -9,7 +9,7 @@ remote_theme: "jekyll/minima"
 minima:
   skin: classic
   nav_pages:
-    - developers.md
+    - contributor-guides/index.md
     - concepts.md
     - contact.md
 title: "WFO Documentation"
