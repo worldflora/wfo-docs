@@ -65,16 +65,16 @@ Every six months, on the June and December solstices, a snapshot of the data in 
 
 ### Resilience
 
-Software systems are ephemeral but data can persist indefinitely if it is passed from one system to another. The software behind Rhakhis is opensource and modular but of its time. We plan for all of the code behind the system to be replaced at some point in the future either in a piecemeal fashion or in one big step. This is inevitable as technologies and the people involved change. The data is openly licensed and can be passed from one system to another. Distributing multiple copies on a scheduled basis ensures that even in the event of catastrophic failure, whether technical or social, someone else can pick up our work and take it forward. Contributors are encouraged to keep their own copies of data releases if that would provide peace of mind.
+Software systems are ephemeral but data can persist indefinitely if it is passed from one system to another. The software behind Rhakhis is opensource and modular but of its time. We plan for all of the code behind the system to be replaced at some point in the future either in a piecemeal fashion or in one big step. This is inevitable as technologies and the people involved change. The data is openly licensed and can be passed from one system to another. Distributing multiple copies on a scheduled basis ensures that even in the event of catastrophic failure, whether technical or social, someone else can pick up our work and take it forward. Contributors are encouraged to keep their own copies of data releases if that provides peace of mind.
 
-The open licensing and publishing model we use means anyone could [fork](https://en.wikipedia.org/wiki/Fork_(software_development)) the data and/or the software at any time. The data is therefore not bound to any one institution of set of individuals but is managed by community consensus.
+The open licensing and publishing model we use means anyone could [fork](https://en.wikipedia.org/wiki/Fork_(software_development)) the data and/or the software at any time. The data is therefore not bound to any one institution or set of individuals but is managed by community consensus.
 
 ### Accreditation and privacy
 
 Contributions to the data are acknowledged at two levels.
 
-1. The TENs are listed on all publications. Individual memembers of TENs who have not logged into Rhakhis are not acknowledged.
-2. Individual researchers are acknowledged through their [ORCID](https://orcid.org/). In order to comply with GDPR (and other privacy standards) Rhakhis only stores the publicly available data from ORCID. Experts must authenticate with ORCID to add this data to the backbone dataset, even if they submit data in bulk via the network manager. Individuals who have been given editing rights to taxa within the backbone are acknowledged when the data is published. Connection of a ORCID to a publication DOI is normally sufficient for academic reporting and may even trigger automatic processes via [DataCite](https://datacite.org/). 
+1. The TENs are listed on all publications. Individual memembers of TENs who have not logged into Rhakhis are not acknowledged separately.
+2. Individual researchers are acknowledged through their [ORCID](https://orcid.org/). In order to comply with GDPR (and other privacy standards) Rhakhis only stores the publicly available data from ORCID. Experts must authenticate with ORCID to add this data to the backbone dataset, even if they submit data in bulk via the network manager. Individuals who have been given editing rights to taxa within the backbone are acknowledged when the data is published. Connection of an ORCID to a publication DOI is normally sufficient for academic reporting and may even trigger automatic processes via [DataCite](https://datacite.org/). 
 
 ### Data structure
 
