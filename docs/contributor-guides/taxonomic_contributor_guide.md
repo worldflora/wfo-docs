@@ -47,17 +47,19 @@ The taxonomic backbone is colaborative project involving contributions from hund
 
 TENs are asked to account for all the names effectively published according to the rules of the International Code of Nomenclature for algae, fungi and plants (ICNAFP) for their taxon. Therefore, misapplications (stated as auct. or auct. non), pro parte synonyms, and hybrid formulae (e.g. _Nepenthes northiana_ × _N. maxima_) are not included (but names of nothotaxa, i.e. named hybrids are), nor are any names designating cultivated forms (grex, cv., etc.), except where these play a role in a nomenclatural context (e.g. as basionyms). Orthographic variants are included where they are in use.
 
-### Data management
+### Data flow
 
-The top copy of the taxonomic backbone is maintained in an SQL database (MySQL 8.*). The database and associated applications are called Rhakhis (from the Ancient Greek: ῥάχις [rhákhis] for backbone). TENs can interact with this database in two ways:
+The top copy of the taxonomic backbone is maintained in an SQL database (MySQL 8.*). The database and associated applications are called __Rhakhis__ (from the Ancient Greek: ῥάχις [rhákhis] for backbone). TENs can interact with this database in two ways:
 
 1. They can log into the Rhakhis web interface and edit the data for their own group directly. Authorization controls prevent editing data in groups curated by other TENs. These controls also allow TENs to deligate responsibility for subtaxa within their group. Editing data within the Rhakhis user interface is further documented in the [Rhakhis handbook](https://plant-list-docs.rbge.info/rhakhis/).
-2. If the TEN curates their data in some other system or are migrating data to Rhakhis they can submit data files directly to the TENs network manager who will carry out a bulk import. Merging hierarchical dataset is a complex task and needs to be managed on a case by case basis. The rest of this guide is a starting point for preparing data for this process.
+2. If a TEN curates its data in some other system or is migrating data to Rhakhis it can submit data files directly to the network manager who will carry out a bulk import. Merging hierarchical dataset is a complex task and needs to be managed on a case by case basis. The much of this guide is focussed on preparing data for this process.
 
-Every six months, on the June and December solstices, a snapshot of the data in Rhakhis is taken and published to four locations:
+In addition to TENs entering data there is a monthly [IPNI](https://ipni.org/) workflow (run by the network manager) that imports newly published and historic names found in the literature by the IPNI team. This workflow also brings in some nomenclatural corrections for existing names. A monthly email is sent to the TENs community and a csv listing the new names is provided to TENs via the TEN respitory on Github.
+
+Every six months, on the June and December solstices, a snapshot of the data in Rhakhis is published to four locations:
 
 1. A file is generated for import into an Apache SOLR index. This is used to power the public facing version of the [WFO Plant List](https://wfoplantlist.org/)
-2. Multiple DarwinCore files are generated and they are imported into the main [WFO Portal](https://www.worldfloraonline.org/).
+2. Multiple DarwinCore files are generated. They are imported into the main [WFO Portal](https://www.worldfloraonline.org/).
 3. A [Catalogue of Life Data Package](https://github.com/CatalogueOfLife/coldp) file is prepared and imported into [GBIF ChecklistBank](https://www.checklistbank.org/dataset/2004/about).
 4. All the files above along with a MySQL data dump and some additional mapping files are submitted to the [Zenodo](https://zenodo.org/) (the long term scientific data repository for [CERN](https://home.cern/)) with the concept DOI:[10.5281/zenodo.7460141](https://doi.org/10.5281/zenodo.7460141). Each individual release is given its own DOI and stored by CERN in perpetuity.
 
@@ -65,13 +67,14 @@ Every six months, on the June and December solstices, a snapshot of the data in 
 
 Software systems are ephemeral but data can persist indefinitely if it is passed from one system to another. The software behind Rhakhis is opensource and modular but of its time. We plan for all of the code behind the system to be replaced at some point in the future either in a piecemeal fashion or in one big step. This is inevitable as technologies and the people involved change. The data is openly licensed and can be passed from one system to another. Distributing multiple copies on a scheduled basis ensures that even in the event of catastrophic failure, whether technical or social, someone else can pick up our work and take it forward. Contributors are encouraged to keep their own copies of data releases if that would provide peace of mind.
 
-The open licensing and publishing model we use means anyone could [fork](https://en.wikipedia.org/wiki/Fork_(software_development)) the data and/or the software at any time. The data is therefore not technically bound to any one institution of set of individuals.
+The open licensing and publishing model we use means anyone could [fork](https://en.wikipedia.org/wiki/Fork_(software_development)) the data and/or the software at any time. The data is therefore not bound to any one institution of set of individuals but is managed by community consensus.
 
-### Accreditation
+### Accreditation and privacy
 
+Contributions to the data are acknowledged at two levels.
 
-
-
+1. The TENs are listed on all publications. Individual memembers of TENs who have not logged into Rhakhis are not acknowledged.
+2. Individual researchers are acknowledged through their [ORCID](https://orcid.org/). In order to comply with GDPR (and other privacy standards) Rhakhis only stores the publicly available data from ORCID. Experts must authenticate with ORCID to add this data to the backbone dataset, even if they submit data in bulk via the network manager. Individuals who have been given editing rights to taxa within the backbone are acknowledged when the data is published. Connection of a ORCID to a publication DOI is normally sufficient for academic reporting and may even trigger automatic processes via [DataCite](https://datacite.org/). 
 
 ### Data structure
 
@@ -93,7 +96,7 @@ TENS can curate names and classification in [Rhakhis](https://list.worldfloraonl
 - Rhakhis handbook can be found here - [Rhakhis handbook](https://plant-list-docs.rbge.info/rhakhis/)
 - Sandbox can be found here - [Rhakhis sandbox](https://rhakhis.rbge.info/rhakhis/ui/)
 
-The WFO has a monthly IPNI workflows to bring in newly published and historic names that are found in the literature. This workflow also brings in nomenclatural corrections and edits provided by the IPNI team. New names are added to Rhakhis and a monthly email is send to notify the TEN community and csv with those new names is provided to TENs via the TEN respitory on Github.
+
 
 ~~All data submitted for the WFO Taxonomic Backbone must be in the form of a Darwin Core Archive (DwCA) and comply with WFO data formatting and controlled vocabularies provided below. This document provides instructions and information to assist in the preparation of the required DwCA file for the taxonomic backbone.
 After authorization and registration with the WFO Gatekeeper, as described in the General Guidelines, a TEN (as Taxonomic Data Provider) can either work with the data they already hold or ask the WFO Gatekeeper to provide an extract of the current WFO Taxonomic Backbone data, to be used as a starting point to import into their database system. In the latter case, the name data will come from the WFO Taxonomic Backbone with a unique WFO Identifier (WFO-ID). Alternatively, the Data Provider may submit a file containing just a list of names which will be matched to the WFO Taxonomic Backbone and WFO-IDs assigned to the names. A Name Matching Response File will be returned containing all the submitted names along with WFO-ID for names that matched, and a Comments field describing the match or non-match results and any data issues. New names submitted by a TEN will be assigned new WFO-IDs.~~
