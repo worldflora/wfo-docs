@@ -74,10 +74,11 @@ The open licensing and publishing model we use means anyone could [fork](https:/
 Contributions to the data are acknowledged at two levels.
 
 1. The TENs are listed on all publications. Individual memembers of TENs who have not logged into Rhakhis are not acknowledged separately.
-2. Individual researchers are acknowledged through their [ORCID](https://orcid.org/). In order to comply with GDPR (and other privacy standards) Rhakhis only stores the publicly available data from ORCID. Experts must authenticate with ORCID to add this data to the backbone dataset, even if they submit data in bulk via the network manager. Individuals who have been given editing rights to taxa within the backbone are acknowledged when the data is published. Connection of an ORCID to a publication DOI is normally sufficient for academic reporting and may even trigger automatic processes via [DataCite](https://datacite.org/). 
+2. Individual researchers are acknowledged through their [ORCID](https://orcid.org/). In order to comply with GDPR (and other privacy standards) Rhakhis only stores the publicly available data from ORCID. Experts must authenticate with ORCID to add this data to the backbone dataset, even if they submit data in bulk via the network manager. Individuals who have been given editing rights to taxa within Rhakhis are acknowledged when the data is published. Connection of an ORCID to a publication DOI is normally sufficient for academic reporting and may even trigger automatic processes via [DataCite](https://datacite.org/). 
 
 ### Data structure
 
+FIXME - GOT TO HERE
 
 Every scientific name submitted to the WFO should include
 - the name of the author(s)
