@@ -3,7 +3,22 @@ title: WFO Guidelines for Taxonomic Backbone Contributors
 permalink: /taxonomic-contributor-guide/
 ---
 
-[toc]
+- [Versions](#versions)
+- [Introduction](#introduction)
+- [Contributing to the Taxonomic Backbone](#contributing-to-the-taxonomic-backbone)
+- [Data flow](#data-flow)
+- [Resilience](#resilience)
+- [Accreditation and privacy](#accreditation-and-privacy)
+- [Process](#process)
+  - [Approval](#approval)
+  - [Decision on way of working](#decision-on-way-of-working)
+  - [Data ingest](#data-ingest)
+  - [Impact assessments](#impact-assessments)
+- [File Format](#file-format)
+- [?More on name matching](#more-on-name-matching)
+  - [Data structure](#data-structure)
+  - [Getting Started with WFO Data](#getting-started-with-wfo-data)
+
 
 ## Versions
 
