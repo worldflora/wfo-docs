@@ -3,7 +3,9 @@ title: WFO Guidelines for Taxonomic Backbone Contributors
 permalink: /taxonomic-contributor-guide/
 ---
 
-### Versions
+[toc]
+
+## Versions
 
 - Version 2.01 November 26, 2017.
 - Updated by Mark Watson Feb 2018.
@@ -21,14 +23,6 @@ NB: The following documents relate to Data Contributions:
 1. [WFO General Guidelines for Data Contributors](https://about.worldfloraonline.org/images/uploads/documents/WFOGeneralGuidelinesForDataContributorsV2.07.pdf)
 2. WFO Guidelines for Taxonomic Backbone Contributors (this document) 
 3. [WFO Guidelines for Content Contributors](https://about.worldfloraonline.org/images/uploads/documents/WFOGuidelinesforContentDataContributorsV._2.04.pdf)
-
-**Table of Contents**
-
-[1. Introduction](#1-introduction)
-
-[2. Contributing](#2-contributing-to-the-taxonomic-backbone)
-
-[3. Ingestion](#3-wfo-taxonomic-backbone-data-ingestion-process)
 
 
 ## Introduction
@@ -111,12 +105,39 @@ There are three broad stages to data ingest.
 
 It is very important that the data integrity within Rhakhis is maintained at all times. This is how we are able to release data on a timed schedule rather than waiting until the data is in a particular state. We try to avoid importing errors to be cleaned up later. We have enough errors of our own! The data manager therefore runs an impact assessment before importing a data file. This impact assessment is a CSV file that may be shared with the TEN before the import is actually run. It is a way of catching unintended consequences that might not be obvious, especially when dealing with large datasets.
 
--- Got to there --
+## File Format
+
+If the TEN is supplying seed data or a regular batch update then they must provide it in a file format that can be ingested into Rhakhis by the network manager.
+
+Previous we specified the use of [DwC Achive](https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide)(DwCA) format files exclusively. As our import processes have evolved we have increasingly considered DwCA only as a starting point for importing data. This is for two main reasons. DwCA is largely a syntax definition. Yes there are sematic definitions for the content of the fields but these are often weakly defined because they have to be use in a very wide range of applications from occurrence data for killer whales to descriptions of butterflies. Secondly, and for much the same reason, there is no internal integrity checking in the format. There are few controlled vocabularies and they are voluntary. There is nothing to enforce or specify pointer checking so that parent child relationships can be broken, contradictory or even circular. There are multiple ways of expressing the same thing in the file that can freely contradict each other such as by specifying a hierarchy in the parentnameusageid field that contradicts the values in the family, subfamily, tribe, subtribe and genus fields.
+
+__We still accepted and produce data in DwCA format__ but when we are importing data into Rhakhis we concentrate on a subset of DwCA fields and run our own integrity checking. If we are given a UTF-8 encoded CSV file with only these fields in it would be just as acceptable as a well formed DwCA zip file. The fields only need to be identified in the header and understandable to the network manager who will manually map them to fields in Rhakhis. Any additional fields in a CSV file or DwCA file will be ignored but can be useful in problem solving and so should not be removed unnecessarily. 
+
+The fields that are of importance to us are:
+
+FIXME: Just the fields we are interested in. Maybe we should talk about taxonid/scientificnameid/localid
+I'm struggling to remember how the import works.
+
+* __taxonid:__ ?
+* __scientificnameid:__ ?
+* __localid:__ ?
+* __scientificname:__ All the name parts without the authors. Include the rank using the abbreviations in the  [ranks table](../ranks_table.md). This is used during name matching more than during import. 
+* __scientificnameauthorship:__ This should follow the author name abbreviations supplied by IPNI.
+* __taxonrank:__ Must be a value from the controlled vocabulary in the  [ranks table](../ranks_table.md). This must also be appropriate for the row pointed to by the parentnameusageid. It is not OK to have a family as a child of a species for example. 
+* __parentnameusageid:__ This should be the taxonid of another row in the file for all but one row (the root) that has no parentnameusageid i.e. the file should only contain one taxonomic tree. Parent-child relationships should not break integrity of name ranks. Acceptable rank relationships are defined in the [ranks table](../ranks_table.md). They should also not break the three part nature of taxonomic names as explained in the [concepts documentation](../concepts.md) i.e. species binomial should not be a member of a genus that has a different name from the genus part of its name and likewise for subspecific trinomials. parentnameusageid should be blank if acceptednameusageid is provided.
+* __acceptednameusageid:__ This should be the id of a name in the the file or the WFO ID of a name in Rhakhis. The name pointed to must be the accepted name of a taxon not another synonym. i.e. it must have a blank acceptednameusageid. The acceptednameusageid should be blank if parentnameusageid is provided as these two fields are mutually exclusive.
+* __originalnameusageid:__ This should point to the another row in the file or to the WFO ID of a name in Rhakhis. The name pointed to should not be a basionym itself.
 
 
-**STEP 2:** 
+## ?More on name matching
 
-When not working in Rhakhis, TENs should upload a list to our name matching services. Details of these can be found at the [WFO Plant list API ]([WFO Plant List API](https://list.worldfloraonline.org/)).
+FIXME: Do we need more stuff here about the process they struggle with?
+
+
+
+
+---
+Old material - delete or incorporate above?
 
 
 Upon receipt at the WFO name matching service, the input file will be checked for the correct file extension (txt, csv, or xlsx) and the presence of the correct fields in the header row.
@@ -125,14 +146,13 @@ A Name Matching Response File will be returned using the file format of the subm
 For names that did not match (this is common), the Data Provider should review the response file and make adjustments as necessary. Commonly, the response file may be modified and resubmitted to the WFO Gatekeeper in an iterative fashion. Unmatched names that are new names to the WFO Taxonomic Backbone discovered during this process will be assigned new WFO-IDs and added to the WFO Taxonomic Backbone with a preliminary taxonomicStatus of “Unchecked”, if their position in the classification (e.g. to which family they belong) can be clarified. This is to avoid delays in the addition of content data to the backbone.
 After the completion of Step 2, all names provided should have a WFO-ID assigned, but often many names present in the initial taxonomic backbone are not matched and need further resolution.
 
-**STEP 3** - Data upload into the Backbone
-
-Taxonomic Backbone Data Providers (TENs) that send in their DwCA files should use the following tables and data elements (see "Creating a Darwin Core Archive File" in the General Guidelines for how to do this). Other file formats maybe acceptable after discussions with the WFO Gatekeeper. Replacing the backbone segment with the newly uploaded and verified dataset will be effected by the WFO Gatekeeper, who may have additional questions arising from the ingestion process.
 
 
 ### Data structure
 
 FIXME - GOT TO HERE
+
+taxonid,scientificnameid,localid,scientificname,taxonrank,parentnameusageid,scientificnameauthorship,family,subfamily,tribe,subtribe,genus,subgenus,specificepithet,infraspecificepithet,verbatimtaxonrank
 
 Every scientific name submitted to the WFO should include
 - the name of the author(s)
