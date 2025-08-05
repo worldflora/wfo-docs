@@ -300,26 +300,26 @@ To place as an accepted taxon
 
 2). In the Placement box select _Raise to accepted taxon within._
 
-Rhakhis will suggest the appropriate parent in this example, _Agapetes_ as it can only be an accepted in this Genus.
+Rhakhis will suggest the appropriate parent in this example, _Agapetes_ as it can only be an accepted species in this Genus.
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/818abc38-5ec0-4b67-a833-03bb8e02b9e8/image.png)
 
-Rhakhis will not allow you to place names that do not align with an accepted parent record. For example _Lathyrus_ sylvestris can only be an accepted name in _Lathyrus_, or an accepted infrageneric group within _Lathyrus_. The same is true for infraspecific names. For example _Lathyrus_ _latifolius_ subsp. _latifolius_ can only be placed as an accepted name within _Lathyrus latifolius_.
+Rhakhis will not allow you to place names that do not align with an accepted parent record. For example _Lathyrus_ _sylvestris_ can only be an accepted name in _Lathyrus_, or an accepted infrageneric group within _Lathyrus_. The same is true for infraspecific names. For example _Lathyrus_ _latifolius_ subsp. _latifolius_ can only be placed as an accepted name within _Lathyrus latifolius_.
 
 If Rhakhis does not suggest an appropriate parent record it is because the name is not present in the database or is not accepted in the classification.  
 
 # Placing as a synonym
 
-This is how to place a the name record has yet to be placed in the classification, the elements of the record is moslty grey, in to synonymy.
+This is how to place a name record that has yet to be placed in the classification, the elements of the record is mostly grey, into synonymy.
 
 >When making a name a synonym any Nomenclatural status is acceptable to Rhakhis, with the exception of Deprecated.
                 
 
 1) In the Placment box, select _Sink into synonymy within..._
 
-2) Begin typing the accepted name in to box. Rhakhis will begin to suggest accepted names to select from. When you find the accepted name select it using your cursor.
+2) Begin typing the accepted name into box. Rhakhis will begin to suggest accepted names to select from. When you find the accepted name select it using your cursor.
 
-The name will now be place as a synonym of the accepted name. 
+The name will now be placed as a synonym of the accepted name. 
 
 # Moving a synonym
 
