@@ -2,7 +2,7 @@
 
 Guide to Using Rhakhis - the World Flora Online's taxonomic backbone curation tool.
 
-It is currently a work in progress (14-7-2023) and is being added to and ammended as we go. We are currently adding how to videos through the document to guide users.
+It is currently a work in progress (14-7-2023) and is being added to and amended as we go. We are currently adding how to videos through the document to guide users.
 
 If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-plant-list-docs/blob/main/docs/concepts.md) this explains the reasons and process behind Rhakhis' functionality rather than how to use the editor.
 
@@ -42,9 +42,9 @@ The navigation tabs will become live and you can start using the system.
 >If you want to find a name that you might not be sure of the ending you can use the [Matching tab](https://list.worldfloraonline.org/rhakhis/ui/#match).
 >The [Browse tab](https://list.worldfloraonline.org/rhakhis/ui/#browse) allows you to navigate the hierarchy of names and synonyms.
 >[Add Name](https://list.worldfloraonline.org/rhakhis/ui/index.html#add). Allows you add a new name to the backbone, but check if it is already in. It forces an acknowledgement if there is a homonym.
->[Stats](https://list.worldfloraonline.org/rhakhis/ui/index.html#stats) tab generates a table of how name accepted taxa, synonyms, genera, species etc there are at the selected rank.
+>[Stats](https://list.worldfloraonline.org/rhakhis/ui/index.html#stats) tab generates a table of how many accepted taxa, synonyms, genera, species etc there are at the selected rank.
 >[Users](https://list.worldfloraonline.org/rhakhis/ui/index.html#users) tab lists who has signed up, a link to their ORCID profile and the groups they have been assigned to curate.
->[Activity](https://list.worldfloraonline.org/rhakhis/ui/index.html#activity) tab shows you who last edited records in the backbone, at the moment its select by User, we may impliment by Family.
+>[Activity](https://list.worldfloraonline.org/rhakhis/ui/index.html#activity) tab shows you who last edited records in the backbone, at the moment it's select by User, we may implement by Family.
 >Under the [Data tab](https://list.worldfloraonline.org/rhakhis/ui/#data) you'll find snapshot of data in different formats to download.
 
 
@@ -149,7 +149,7 @@ Red records are **deprecated** \- these signify that they should not be used, bu
 
 Yellow are records **placed** within classification and can be accepted names or synonyms.
 
-Grey are currently **unplaced** records. These are effectively a nomenclatural records with no taxonomic status.
+Grey are currently **unplaced** records. These are effectively nomenclatural records with no taxonomic status.
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/bc855ede-0f01-45a5-b39c-b4d259756aab/image.png)
 
@@ -294,40 +294,40 @@ Please also add the Year.
  
 To place as an accepted taxon
 
-1) Change the Nomenclatural status to Valid. The nomencaltural status of a name must be Valid to be an accepted name. 
+1) Change the Nomenclatural status to Valid. The nomenclatural status of a name must be Valid to be an accepted name. 
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/8704f3ac-3942-4510-afa0-0141d84d6c35/image.png)
 
 2). In the Placement box select _Raise to accepted taxon within._
 
-Rhakhis will suggesst the appropriate parent in this example, _Agapetes_ as it can only be an accepted in this Genus.
+Rhakhis will suggest the appropriate parent in this example, _Agapetes_ as it can only be an accepted species in this Genus.
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/818abc38-5ec0-4b67-a833-03bb8e02b9e8/image.png)
 
-Rhakhis will not allow you to place names that do not align with an accepted parent record. For example _Lathyrus_ sylvestris can only be an accepted name in _Lathyrus_, or an accepted infrageneric group within _Lathyrus_. The same is true for infraspecfic names. For example _Lathyrus_ _latifolius_ subsp. _latifolius_ can only be placed as an accepted name within _Lathyrus latifolius_.
+Rhakhis will not allow you to place names that do not align with an accepted parent record. For example _Lathyrus_ _sylvestris_ can only be an accepted name in _Lathyrus_, or an accepted infrageneric group within _Lathyrus_. The same is true for infraspecific names. For example _Lathyrus_ _latifolius_ subsp. _latifolius_ can only be placed as an accepted name within _Lathyrus latifolius_.
 
-If Rhakhis does not suggest an appropraite parent record it is because the name is not present in the database or is not accepted in the classificaiton.  
+If Rhakhis does not suggest an appropriate parent record it is because the name is not present in the database or is not accepted in the classification.  
 
 # Placing as a synonym
 
-This is how to place a the name record has yet to be placed in the classification, the elements of the record is moslty grey, in to synonymy.
+This is how to place a name record that has yet to be placed in the classification, the elements of the record is mostly grey, into synonymy.
 
 >When making a name a synonym any Nomenclatural status is acceptable to Rhakhis, with the exception of Deprecated.
                 
 
 1) In the Placment box, select _Sink into synonymy within..._
 
-2) Begin typing the accepted name in to box. Rhakhis will begin to suggest accepted names to select from. When you find the accetped name select it using your cursor.
+2) Begin typing the accepted name into box. Rhakhis will begin to suggest accepted names to select from. When you find the accepted name select it using your cursor.
 
-The name will now be place as a synonym of the accepted name. 
+The name will now be placed as a synonym of the accepted name. 
 
 # Moving a synonym
 
 1) In the Placment box, select _Change to synonym of..._
 
-2) Begin typing the accepted name in to box. Rhakhis will begin to suggest accepted names to select from. When you find the accetped name select it using your cursor.
+2) Begin typing the accepted name in to box. Rhakhis will begin to suggest accepted names to select from. When you find the accepted name select it using your cursor.
 
-If you are moving a currently accepted name you will need to transfer all the exisiting synonyms to the new accepted name before finally trasferring the accepted name to the synonym. We have enforced this to make curators to make a conscious decision when moving synonyms. 
+If you are moving a currently accepted name you will need to transfer all the existing synonyms to the new accepted name before finally transferring the accepted name to the synonym. We have enforced this to make curators to make a conscious decision when moving synonyms. 
 
 
 # Adding a Basionym
@@ -340,7 +340,7 @@ To add a basionym to a record
 
 3) If the basionym name is not there then you can type in the box and search for the required name.
 
-Rhakhis prevents the creation basionym chains. You cannot place a name as the basionym when the proposed basionym record already has a basionym of its own. This is usuallly the reason you cannot find a name when searching. This will require further editing of records if the data is not correct in Rhakhis. This can often be difficult to resolve. Please contact Alan Elliott assistance is required.
+Rhakhis prevents the creation of basionym chains. You cannot place a name as the basionym when the proposed basionym record already has a basionym of its own. This is usuallly the reason you cannot find a name when searching. This will require further editing of records if the data is not correct in Rhakhis. This can often be difficult to resolve. Please contact Alan Elliott if assistance is required.
 
 
 ### Nomenclatural Reference
@@ -349,7 +349,7 @@ Rhakhis is not a reference manager and only stores links to references.
 
 A link to IPNI is desirable as the WFO aim to have this link to the nomenclators, Tropicos for Bryophytes, IPNI for the other groups covered by the WFO.
 
-The WFO take monthly updated from IPNI. If the added name is a newly published name, or an old name from the literature please inform IPNI and we will receive the IPNI ID from them in the future.
+The WFO take monthly updates from IPNI. If the added name is a newly published name, or an old name from the literature please inform IPNI and we will receive the IPNI ID from them in the future.
 
 The work plan to improve usability of Rhakhis will bring in other pieces of nomenclatural data, such as Type Specimen links to external Herbarium catalogues, full references to the publication if it has a DOI etc.
 
