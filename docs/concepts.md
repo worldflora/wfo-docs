@@ -233,12 +233,33 @@ There is also the chance that the list doesn't yet include the ex Authors
 
  ### Homonyms
  
- Homonyms are far more common than isonyms (although putting a figure on that is hard without finding them all). We therefore use the term homonym in this looser sense to apply to names that have the same spelling, are probably homonyms _sensu stricto_ (having different types) but might be isonyms or indeed "ex" names with corrupted Authors Strings (one of the parts missing)
+Homonyms are far more common than isonyms (although putting a figure on that is hard without finding them all). We therefore use the term homonym in this looser sense to apply to names that have the same spelling, are probably homonyms _sensu stricto_ (having different types) but might be isonyms or indeed "ex" names with corrupted Authors Strings (one of the parts missing)
 
  1. Homonyms always have their own records and WFO ID.
  1. Homonyms must have unique author strings. In very rare occasions where a name has the same spelling and author string but is of a different type and place of publication the author string will be "tweaked" so as to differentiate the two names (see below). [Example?]
  1. If homonyms are subsequently discovered to be isonyms or "ex" names they will be treated as outlined above.
 
+### Orthographical variants
+
+The term Orthographical variant causes some confusion. Under the code they are "the various spelling, compounding, and inflectional forms of a name or its final epithet (including typographical errors) when only one nomenclatural type is involved" (Art. 61). 
+
+Names do not have fixed spellings. There are allowances for typographical or orthographical errors/variations and standardizations as well correction of terminations for the gender of the genus (see Art.60 and linked articles). Future codes might add more conditions under which the spelling of a name might be changed and these will act retrospectively. Theoretically two names might have different letters in them but when one or both of them are corrected for gender and other spelling rules as applied today they might turn out to be homonyms – even though they did not have the exact same spelling when they were published or indeed for many years of use in the literature. 
+
+As outlined above we define a name as an object represented by a record in the names table. It has a unique internal ID, a prescribed external ID (the WFO ID) and between one and three name part words. Whether a name record is created for a name/designation found in literature is a __judgement call__ made by the data editors. The spelling of the name record is not considered by the system other than to nudge editors not to create homonyms unwittingly. How then are orthographical variants handled?
+
+#### Automatic corrections
+
+There are places where variations in spelling can be handled automatically. Diacritical signs are not used in scientific names. When such signs appear in the spelling of a name at valid publication, the signs are  suppressed with the necessary transcription of the letters so modified; for example ä, ö, ü become, respectively, ae, oe, ue (not æ or œ, see Art. 60.4); é, è, ê become e; ñ becomes n; ø becomes oe (not œ); å becomes ao.(Art 60.7). No user intervention is involved. Names in the system simply can't have these characters in them and mapping to the corrected spelling is carried out during import and subsequent name matching.
+
+#### Manual changes in spelling
+
+If the spelling of a name is corrected manually, for whatever reason, then the existing record is changed and retains its existing IDs and associated data.
+
+#### Tracking alternate spellings of names
+
+If a variant spelling of the currently accepted name is in use and may cause confusion, i.e. someone might find it in the literature and look it up in the WFO Plant List then a separate name record should be created for this spelling, the nomenclatural type should be set to "ortho var" and the name should be made a synonym of the correctly spelled name. The creation of these variant spelling records is a __judgement call__ made by the data editors. This enables us to capture changes in spelling that are significant and not rare typing or OCR errors. We do not create name records for every possible spelling variant that has ever occured or the database would become enormous. Spelling errors, rather than published versions of the name, are handled by fuzzy matching techniques.
+
+**Analogy** If I paint my house a different colour the address and postal code does not change. If I think that my friends won't be able to find my house because they are looking for a red one when it is now blue then I can erect a red Potemkin facade with a sign on it pointing to my house. I only need to do this if I think there will be genuine confusion, the colour change is significant and people genuinely look for my house based on the old colour.
 
  ## Duplicates and deduplication
 
