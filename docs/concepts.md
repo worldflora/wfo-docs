@@ -27,6 +27,10 @@ This is a narrative description of how we have modelled the ICNAFP. Our main con
   - [Isonyms](#isonyms)
   - [ex Authorship](#ex-authorship)
   - [Homonyms](#homonyms)
+- [Orthographical variants](#orthographical-variants)
+  - [Automatic corrections](#automatic-corrections)
+  - [Manual changes in spelling](#manual-changes-in-spelling)
+  - [Tracking alternate spellings of names](#tracking-alternate-spellings-of-names)
 - [Duplicates and deduplication](#duplicates-and-deduplication)
 - [Placement of Names](#placement-of-names)
   - [Placement Actions](#placement-actions)
@@ -231,7 +235,7 @@ Within the list names with "ex" in the Authors String are analogous to isonyms. 
 Name matching can be an issue with ex Authors. The default is to include the ex Authors in Authors String in the list if the valid publication authors mention them as the code suggests but as the code does not require them to be included everywhere someone might want to match a list of names lacking ex Authors with the list data.
 There is also the chance that the list doesn't yet include the ex Authors 
 
- ### Homonyms
+### Homonyms
  
 Homonyms are far more common than isonyms (although putting a figure on that is hard without finding them all). We therefore use the term homonym in this looser sense to apply to names that have the same spelling, are probably homonyms _sensu stricto_ (having different types) but might be isonyms or indeed "ex" names with corrupted Authors Strings (one of the parts missing)
 
@@ -261,14 +265,14 @@ If a variant spelling of the currently accepted name is in use and may cause con
 
 **Analogy** If I paint my house a different colour the address and postal code does not change. If I think that my friends won't be able to find my house because they are looking for a red one when it is now blue then I can erect a red Potemkin facade with a sign on it pointing to my house. I only need to do this if I think there will be genuine confusion, the colour change is significant and people genuinely look for my house based on the old colour.
 
- ## Duplicates and deduplication
+## Duplicates and deduplication
 
  The following is not true of the data currently but is an aspiration: 
 
 > Rhakhis should not have name records that have identical name-parts, rank and author string. If such records exist it is an error. If two records exist in this state we should merge one into the other or differentiate them by correcting one of them. We should prevent such records from being created.
 
 The aspiration for each WFO to equate to a unique full name string of does not make WFO-ID redundant as a WFO-ID only applies to one record and therefore one normative name string. A name string could be matched to multiple WFO-IDs based on approximation.
- 
+
 ## Placement of Names
 
 There are rules governing how and when names can be placed in the taxonomy. There are five possible actions. In addition there are some rules that prevent names being moved.
