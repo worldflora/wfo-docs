@@ -1,4 +1,6 @@
-# Rhakhis Users Handbook
+---
+title: Rhakhis Handbook
+---
 
 Guide to Using Rhakhis - the World Flora Online's taxonomic backbone curation tool.
 
