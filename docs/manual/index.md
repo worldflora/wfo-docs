@@ -6,7 +6,7 @@ This is the documentation for systems admins and developers of the World Flora O
 
 ## Very high level overview
 
-At a very high level there are four systems: two editing platforms (one for the classification and one for the text based content) that feed into a portal for publication as a portal/website. This process is orchestrated by DAGs in an instance Apache Airflow.
+There are four systems: two editing platforms (one for the classification and one for the text based content) that feed into a portal for publication as a portal/website. This process is orchestrated by DAGs in an instance Apache Airflow.
 
 ![High level data flow diagram](portal_dataflow.png)
 
@@ -14,6 +14,9 @@ The editing platforms (Rhakhis for the classification and Fyllo for the text) ar
 
 ### Rhakhis - classification editor
 
+![High level data flow diagram](rhakhis_dataflow.png)
+
 ### Fyllo - content management
 
+![High level data flow diagram](fyllo_dataflow.png)
 
