@@ -10,9 +10,10 @@ remote_theme: "jekyll/minima"
 minima:
   skin: classic
   nav_pages:
-    - contributor-guides/index.md
     - concepts.md
-    - contact.md
+    - contributor-guides/index.md
+    - rhakhis/index.md
+    - manual/index.md
 title: "WFO Documentation"
 description: "Documentation project for the WFO infrastructure"
 author:
