@@ -2,7 +2,7 @@
 title: Rhakhis Technical Manual
 ---
 
-This is a technical description of the Rhakhis application for system administrators and developers. There are two separate parts of the Rhakhis system:
+This is the jumping off point for technical documentation for the Rhakhis application aimed at system administrators and developers. There are two separate parts of the Rhakhis system:
 
 ## Backend
 
