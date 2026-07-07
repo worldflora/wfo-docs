@@ -24,6 +24,10 @@ The frontend could be hosted anywhere so long as it is configured with the locat
 
 [More details in the Rhakhis frontend Github repository](https://github.com/worldflora/wfo-backbone-ui).
 
+## GraphQL API
+
+A good way to understand the relationship between the frontend and backend is to browse the GraphQL API documentation on the current backend deployment using a GraphQL client such as [Altair](https://altairgraphql.dev/). The current API URL is https://rhakhis-live.rbge.info/api/gql.php.
+
 ## Authentication
 
 Authentication is handled by the [ORCID](https://orcid.org/) API. All human users must be authenticated using their ORCID accounts. (There are a couple of default users that scripts authenticate with that don't use ORCID.) The backend server needs to be able to see the ORCID API server for the authentication handshakes to work.
