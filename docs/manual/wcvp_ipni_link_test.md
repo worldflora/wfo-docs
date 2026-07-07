@@ -40,7 +40,7 @@ We now have all the files we need to do some comparisons using SQL queries.
 
 ## 4. All names have WCVP?
 
-`
+```
 select 
 	printf("%,d", count(*)) as 'total', 
 	printf("%,d", count(ipni_id)) as "with IPNI",
@@ -48,26 +48,28 @@ select
 	round(cast(count(*) - count(ipni_id) as float) / cast(count(*) as float) * 100) as "missing IPNI %",
 	printf("%,d",  count(CASE WHEN ipni_id LIKE "%-4" THEN 1 END)) as "dash-4 names"
 from wcvp;
-`
+```
 Get a list of the missing ones
 
-`SELECT * FROM wcvp WHERE ipni_id is NULL;`
+```
+SELECT * FROM wcvp WHERE ipni_id is NULL;
+```
 
 ## 5. All IPNI IDs in WCVP are in IPNI
 
 Seems like an obvious test but worth doing
 
-`
+```
 SELECT
 	wcvp.*
 FROM wcvp
 LEFT JOIN IPNI  on  concat('urn:lsid:ipni.org:names:', wcvp.ipni_id) = ipni.id 
 WHERE wcvp.ipni_id is not NULL
 AND ipni.id is NULL
-`
+```
 
 ## 6. Count top copies and suppressed
-`
+```
 SELECT
 	printf("%,d",  count(*)) as "total",
 	printf("%,d", count(CASE WHEN  ipni.suppressed_b = "t" THEN 1 END)) as "suppressed",
@@ -76,7 +78,7 @@ FROM wcvp
 LEFT JOIN IPNI  on  concat('urn:lsid:ipni.org:names:', wcvp.ipni_id) = ipni.id 
 WHERE wcvp.ipni_id is not NULL
 AND ipni.id is not NULL;
-`
+```
 
 
 
