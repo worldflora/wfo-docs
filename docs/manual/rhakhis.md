@@ -14,7 +14,7 @@ The back-end of the Rhakhis application is a LAMP (Linux, Apache, MySQL,PHP) app
   4. Simple PHP web pages used by the Taxonomic Expert Network manager to do bulk imports and administrative tasks.
   5. A GraphQL API endpoint that is used to read and write data by the Rhakhis frontend.
 
-[More details on the Rhakhis backend](rhakhis_backend.md).
+[More details in the Rhakhis backend Github repository](https://github.com/worldflora/wfo-backbone-management).
 
 ## Frontend 
 
@@ -22,7 +22,7 @@ The frontend is used to edit data in the MySQL database by taxonomic experts. It
 
 The frontend could be hosted anywhere so long as it is configured with the location of the backend's GraphQL end point. In practice it is always deployed on the same server as he backend.
 
-[More details on the Rhakhis frontend](rhakhis_frontend.md).
+[More details in the Rhakhis frontend Github repository](https://github.com/worldflora/wfo-backbone-ui).
 
 ## Authentication
 
