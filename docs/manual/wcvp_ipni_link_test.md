@@ -8,7 +8,50 @@ This describes the manual procedure to check the following:
   3. The IPNI records referenced will not be flagged as suppressed.
   4. All names in WCVP will reference the “correct” record in IPNI.
 
-## 1.Download the data
+## 1. Download the data
 
 Download the latest IPNI dump from this location:  [https://storage.googleapis.com/ipni-data/ipniWebName.csv.xz](https://storage.googleapis.com/ipni-data/ipniWebName.csv.xz)
-Download the latest WFO dump from this location: [http://sftp.kew.org/pub/data-repositories/WCVP/wcvp.zip](http://sftp.kew.org/pub/data-repositories/WCVP/wcvp.zip)
+
+Download the latest WCVP dump from this location: [http://sftp.kew.org/pub/data-repositories/WCVP/wcvp.zip](http://sftp.kew.org/pub/data-repositories/WCVP/wcvp.zip)
+
+You could look at the directories before downloading the files to check the creation time of the version you are looking at:
+
+IPNI dump dir:  [https://storage.googleapis.com/ipni-data](https://storage.googleapis.com/ipni-data)
+
+WCVP dump dir: [http://sftp.kew.org/pub/data-repositories/WCVP](http://sftp.kew.org/pub/data-repositories/WCVP)
+
+## 2. Unzip and rename the files
+
+For some reason IPNI usse xz compression but it should just unzip on the desktop.
+
+Rename them to ipni.csv and wcvp.csv so that the table have sensible names in the next step. It is the wcvp_names.csv file you want from the ones that come in the wcvp download.
+
+## 3. Import files to SQLite
+
+Fire up DB Browser of SQLite or whatever your SQLite client is.
+
+Create a new database.
+
+Import the IPNI file as a new table File > Import > Table from CSV file ... Note that this is pipe character separated file (not comma delimited!).
+
+Import the WCVP file as a new table in the same way. Note you need to set the delimiter character to empty/null or you'll get and end of file exception.
+
+We now have all the files we need to do some comparisons using SQL queries.
+
+## 4. All names have WCVP?
+
+select 
+	printf("%,d", count(*)) as 'total', 
+	printf("%,d", count(ipni_id)) as "with IPNI",
+	printf("%,d",  count(*) - count(ipni_id)) as "missing IPNI",
+	round(cast(count(*) - count(ipni_id) as float) / cast(count(*) as float) * 100) as "missing IPNI %",
+	printf("%,d",  count(CASE WHEN ipni_id LIKE "%-4" THEN 1 END)) as "dash-4 names"
+from wcvp;
+
+Get a list of the missing ones
+
+select * from wcvp where  ipni_id is NULL
+
+
+
+
