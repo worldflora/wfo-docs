@@ -26,7 +26,7 @@ The frontend could be hosted anywhere so long as it is configured with the locat
 
 ## Authentication
 
-Authentication is handled by the [ORCID API](https://orcid.org/) API. All human users must be authenticated using their ORCID accounts. (There are a couple of default users that scripts authenticate with that don't use ORCID.) The backend server needs to be able to see the ORCID API server for the authentication handshakes to work.
+Authentication is handled by the [ORCID](https://orcid.org/) API. All human users must be authenticated using their ORCID accounts. (There are a couple of default users that scripts authenticate with that don't use ORCID.) The backend server needs to be able to see the ORCID API server for the authentication handshakes to work.
 
 ## Authorisation
 
