@@ -2,7 +2,7 @@
 title: Tech Manual
 ---
 
-This is the documentation for systems admins and developers of the World Flora Online.
+This is the starting point for documentation aimed at systems admins and developers of the World Flora Online.
 
 ## Contents
 
