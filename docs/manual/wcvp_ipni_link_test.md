@@ -46,7 +46,7 @@ select
 	printf("%,d", count(ipni_id)) as "with IPNI",
 	printf("%,d",  count(*) - count(ipni_id)) as "missing IPNI",
 	round(cast(count(*) - count(ipni_id) as float) / cast(count(*) as float) * 100) as "missing IPNI %",
-	printf("%,d",  count(CASE WHEN ipni_id LIKE "%-4" THEN 1 END)) as "dash-4 names"
+	printf("%,d",  count(CASE WHEN powo_id LIKE "%-4" AND ipni_id is null THEN 1 END)) as "but has dash-4 name"
 from wcvp;
 ```
 Get a list of the missing ones
