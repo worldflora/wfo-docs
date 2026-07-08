@@ -4,13 +4,14 @@ title: Tech Manual
 
 This is the starting point for documentation aimed at systems admins and developers of the World Flora Online.
 
-## Contents
+## Components
 
 - [Very high level overview](#very-high-level-overview)
 - [Rhakhis](rhakhis.md) - the classification management application
-- [Fyllo](fyllo.md) - the content management application
-- [Airflow](airflow.md) - the workflow mamanagement application
-- [Public Website](public_website.md) - the public facing portal that combines the most recent classification from Rhakhis with the content from Fyllo.
+- [Fyllo](https://github.com/worldflora/wfo-fyllo) - the content management application
+- [Airflow](https://github.com/worldflora/wfo-airflow) - the workflow mamanagement application
+- [WFO Plant List API](https://github.com/worldflora/wfo-plant-list) - the publishing mechanism that makes the current version of the WFO classification available via an APIs.
+- [New Public Website](https://github.com/worldflora/wfo-p2) - the public facing portal that combines the most recent classification from Rhakhis with the content from Fyllo. __This is currently under development__
 - [Current deployments](current_deployments.md) - where the applications above are currently deployed.
 
 ## Very high level overview
