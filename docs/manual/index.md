@@ -3,6 +3,8 @@ title: Tech Manual
 ---
 
 This is the starting point for documentation aimed at systems admins and developers of the World Flora Online.
+Here we give an overview of how the different commponents interact. 
+Details of the components themselves are given in the README.md files of their individual repositories.
 
 ## Components
 
