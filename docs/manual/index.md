@@ -12,22 +12,22 @@ Details of the components themselves are given in the README.md files of their i
 - [Rhakhis](rhakhis.md) - the classification management application
 - [Fyllo](https://github.com/worldflora/wfo-fyllo) - the content management application
 - [Airflow](https://github.com/worldflora/wfo-airflow) - the workflow mamanagement application
-- [WFO Plant List API](https://github.com/worldflora/wfo-plant-list) - the publishing mechanism that makes the current version of the WFO classification available via an APIs.
-- [New Public Website](https://github.com/worldflora/wfo-p2) - the new public facing portal that combines the most recent classification from Rhakhis with the content from Fyllo. __This is currently under development__
+- [WFO Plant List API](https://github.com/worldflora/wfo-plant-list) - the publishing mechanism that makes the latest released version of the WFO classification available via APIs.
+- [New Public Website](https://github.com/worldflora/wfo-p2) - the new public facing website that combines the most recent classification from Rhakhis with the content from Fyllo. __This is currently under development__
 - [Current deployments](current_deployments.md) - where the applications above are currently deployed.
 
 ## Very high level overview
 
 There are four systems:
   - Two editing platforms (one for the classification and one for the text based content)
-  - A public portal for publication
+  - A public website for publication
     - The Plant List API currently feeds into part of a larger website run on the eMonocot system and CraftCMS (these are not documented here)
     - We are currently working on a new, lighter weight website that will replace eMonocot and the CraftCMS systems.
   - An instance Apache Airflow that orchestrates the publication and backup processes.
 
-![High level data flow diagram for the portal](portal_dataflow.png)
+![High level data flow diagram for the website](portal_dataflow.png)
 
-The editing platforms (Rhakhis for the classification and Fyllo for the text) are LAMP (Linux, Apache, MySQL, PHP) stack applications. The portal is a PHP application running against an instance of the Apache SOLR Index.
+The editing platforms (Rhakhis for the classification and Fyllo for the text) are LAMP (Linux, Apache, MySQL, PHP) stack applications. The __public website__ and the __WFO Plant List API__ are PHP applications running against an instance of the Apache SOLR Index.
 
 ### Rhakhis - classification editor
 
@@ -41,12 +41,13 @@ The content management platform handles faceting data and text descriptions boun
 
 ![High level data flow diagram](fyllo_dataflow.png)
 
-The data is curated in CSV files stored in GitHub. Fyllo stores the metadata about those files, imports them and performs the process of taxonomic expansion as the data is pushed to the public portal.
+The data is curated in CSV files stored in GitHub. Fyllo stores the metadata about those files, imports them and performs the process of taxonomic expansion as the data is pushed to the public website.
 
 ### Taxonomic expansion
 
-The classification consists of a nested hierarchy of taxa. Each taxon has an accepted name and zero to many synonymous names. Data managed by Fyllo is tagged with name IDs __not__ taxon IDs because the taxa in the classification may vary between different versions of the published classification. The content in the portal is displayed on the basis taxa in the current classification. Taxonomic expansion is the process whereby name tagged data is bound to appropriate taxa according to the current classification. 
+The classification consists of a nested hierarchy of taxa. Each taxon has an accepted name and zero to many synonymous names. Data managed by Fyllo is tagged with name IDs __not__ taxon IDs because the taxa in the classification may vary between different versions of the published classification. The content in the website is displayed on the basis of taxa in the current classification. Taxonomic expansion is the process whereby name tagged data is bound to appropriate taxa according to the current classification. 
 
 ![The process of taxonomic expansion illustrated.](taxonomic_expansion.png)
+ 
 
 
