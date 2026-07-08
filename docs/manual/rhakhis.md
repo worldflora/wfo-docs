@@ -2,7 +2,9 @@
 title: Rhakhis Technical Manual
 ---
 
-This is the jumping off point for technical documentation for the Rhakhis application aimed at system administrators and developers. There are two separate parts of the Rhakhis system:
+This is the jumping off point for technical documentation for the Rhakhis application aimed at system administrators and developers.
+
+There are two separate parts of the Rhakhis system: backend and frontend. Here we only give information about how the two interact as they are actually separate applications. Documentation for each application is given in the GitHub repository for each application.
 
 ## Backend
 
