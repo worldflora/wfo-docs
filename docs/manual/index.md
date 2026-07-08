@@ -13,7 +13,7 @@ Details of the components themselves are given in the README.md files of their i
 - [Fyllo](https://github.com/worldflora/wfo-fyllo) - the content management application
 - [Airflow](https://github.com/worldflora/wfo-airflow) - the workflow mamanagement application
 - [WFO Plant List API](https://github.com/worldflora/wfo-plant-list) - the publishing mechanism that makes the current version of the WFO classification available via an APIs.
-- [New Public Website](https://github.com/worldflora/wfo-p2) - the public facing portal that combines the most recent classification from Rhakhis with the content from Fyllo. __This is currently under development__
+- [New Public Website](https://github.com/worldflora/wfo-p2) - the new public facing portal that combines the most recent classification from Rhakhis with the content from Fyllo. __This is currently under development__
 - [Current deployments](current_deployments.md) - where the applications above are currently deployed.
 
 ## Very high level overview
@@ -21,6 +21,8 @@ Details of the components themselves are given in the README.md files of their i
 There are four systems:
   - Two editing platforms (one for the classification and one for the text based content)
   - A public portal for publication
+    - The Plant List API currently feeds into part of a larger website run on the eMonocot system and CraftCMS (these are not documented here)
+    - We are currently working on a new, lighter weight website that will replace eMonocot and the CraftCMS systems.
   - An instance Apache Airflow that orchestrates the publication and backup processes.
 
 ![High level data flow diagram for the portal](portal_dataflow.png)
