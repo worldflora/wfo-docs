@@ -17,14 +17,23 @@ In production the SOLR index is protected behind firewalls, passwords and API ke
   1. __Name Documents__ represent the classification as published every six months from Rhakhis. They all have a classification_id_s field that specifies which data release they are part of e.g. "2026-06". They also have a role_s field that specifies what role they play in the classification. The basic data comes from the solstice data releases and forms a complete, free standing taxonomic checklist as used in the the WFO Plant List. For the portal these documents are __augmented__ with extra fields managed by Fyllo. (See more below).
   2. __Content Documents__ contain information for use in the portal that is shared between multiple name documents e.g. a facet data source. These are what facilitate full provenance information to be piped from a CSV file in GitHub, through Fyllo, to a taxon page in the public portal.
 
-## How to delete the metadata elements so they re-index
+## How to:
+
+### Import the latest Rhakhis data release
+
+On the machine running the SOLR index, download the latest Plant List json file and unzip it. Run the following command to post it to the index. Make sure the name of the core is correct, in this case "wfo-portal" and insert the correct password. This process will take about half an hour to an hour depending on the load on the machine.
+
+```curl -H 'Content-type:application/json' 'http://localhost:8983/solr/wfo-portal/update?commit=true' -X POST -T plant_list_2026-06.json --user wfo:****```
+
+### Delete documents from the index
 
 This is done through the SOLR web admin interface
 
   1. Select the correct index usually "wfo-portal"
   2. Select the Documents tool so we are using the /update handler as opposed to the query handler
   3. Pick the "SOLR Command raw or XML format.
-  4. Put the delete command in to the Documents box e.g. ```{"delete":{"query":"kind_s:wfo-facet-value-score"} }```
+  4. Put the delete command in to the Documents box e.g. ```{"delete":{"query":"*:*"} }```
   5. Change the commit to 1
   6. Submit the form
 
+The example above will delete everything because the query *:* matches all documents. It is appropriate for a clean start. 
