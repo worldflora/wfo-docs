@@ -23,7 +23,9 @@ In production the SOLR index is protected behind firewalls, passwords and API ke
 
 On the machine running the SOLR index, download the latest Plant List json file and unzip it. Run the following command to post it to the index. Make sure the name of the core is correct, in this case "wfo-portal" and insert the correct password. This process will take about half an hour to an hour depending on the load on the machine.
 
-```curl -H 'Content-type:application/json' 'http://localhost:8983/solr/wfo-portal/update?commit=true' -X POST -T plant_list_2026-06.json --user wfo:****```
+```
+curl -H 'Content-type:application/json' 'http://localhost:8983/solr/wfo-portal/update?commit=true' -X POST -T plant_list_2026-06.json --user wfo:****
+```
 
 ### Delete documents from the index
 
@@ -37,3 +39,18 @@ This is done through the SOLR web admin interface
   6. Submit the form
 
 The example above will delete everything because the query *:* matches all documents. It is appropriate for a clean start. 
+
+### Create or delete a complete index core
+
+On the commandline on the machine running SOLR, set the authentication variable (adding in the password):
+```
+SOLR_AUTH_TYPE="basic"
+SOLR_AUTHENTICATION_OPTS="-Dbasicauth=wfo:****"
+```
+
+Then run the command to create or delete
+
+```
+sudo su - solr -c "/opt/solr/bin/solr create -c wfo-portal"
+```
+
