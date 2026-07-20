@@ -39,11 +39,25 @@ The little superscript `1` next to Extinct on the page (lower arrow) indicates t
 
 ![Screenshot showing facet sources for IUCN Extinct](screenshot_facet_prov.png)
 
-This dialogue only lists one data source but for other facet values there may be many. For example, there may be multiple sources saying that they consider a species to be a tree. The two links indicated by the arrows will lauch different modal dialogues but before we click them it is worth considdering the text in bold "__directly to__". Through the process of taxonomic expansion it is possible for a taxon to be scored to an attribute value via one of its synonyms, in which case this would say "__via the synonym__", or via an ancestor. In these cases the linked name would be different. This means we know which name the original observation/assertion was tagged with and that we are assuming it applies to but we are assuming that it applies to the accepted taxon here. The user is free disagree!
+This dialogue only lists one data source but for other facet values there may be many. For example, there may be multiple sources saying that they consider a species to be a tree. The two links indicated by the arrows will lauch different modal dialogues but before we click them it is worth considering the text in bold "__directly to__". Through the process of taxonomic expansion it is possible for a taxon to be scored to an attribute value via one of its synonyms, in which case this would say "__via the synonym__", or via an ancestor. In these cases the linked name would be different. This means we know which name the original observation/assertion was tagged with and that we are assuming assuming that it applies to the accepted taxon here. The user is informed and free disagree!
 
 If we click on the right hand arrowed link `[row level metadata]` we get the dialogue box below.
 
 ![Screenshot showing row level metadata](screenshot_row_metadata.png)
+
+This is a rendering of the row in the CSV file this assertion (that *Oldenlandia adscensionis* is extinct) came from. It could contain anything that the data supplier feels should be associated with assertion they are making. It might include more details on authors or reproduction rights etc. In this case it contains a DOI link to the publication of the threat assessment and a full citation of the paper. 
+
+Clicking the back button returns us to the Facet Provenance dialogue box where we can click on the link to the actual data source and get the dialogue below.
+
+![Screenshot showing data source dialogue box](screenshot_data_source.png)
+
+Here we have a description of the data source. It is quite short as this is test data but could be extensive. There is a source link out which takes us to the IUCN website as the origin for the data. There is also a source file link. This link takes us to the actual CSV file in the GitHub directory that this data came from. 
+
+![Screenshot showing GitHub data source page](screenshot_github.png)
+
+From here the user can explore exactly how the data was imported and processed along with any associated documentation in README.md files. The can also browse backward in time to see how it has changed or download it for further analysis.
+
+
 
 ## How to:
 
