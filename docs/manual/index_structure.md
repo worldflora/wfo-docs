@@ -29,6 +29,15 @@ Document fields can be specified in broadly two ways, either as part of a ridged
     
 ## Provenance walk through (user's viewpoint)
 
+A summary of the whole, somewhat complex, data flow is that we: "Take CSV files in GitHub and display them nicely in the public website". Here we will show how this is the case with an example. This is test data and may change but the principles will remain the same.
+
+![Screenshot showing Oldenlandia adscensionis as an extinct plant](screenshot_oldenlandia.png)
+
+The image above is a screenshot of the taxon page for *Oldenlandia adscensionis*. According to the IUCN this is an extinct plant. `Extinct` is a value of the facet `IUCN Status` The red arrows point to the two places in the interface where this is displayed. (Facets and their values can be displayed in multiple places. Even the maps are currently just a rendering of the country and TDWG area occurence facets.)
+
+The little superscript `1` next to Extinct on the page (lower arrow) indicates that there is a single data source for this assertion. If you click on the 1 a modal dialogue box is displayed showing the datasources for the facet value in this taxon.
+
+
 
 
 ## How to:
