@@ -33,12 +33,17 @@ A summary of the whole, somewhat complex, data flow is that we: "Take CSV files 
 
 ![Screenshot showing Oldenlandia adscensionis as an extinct plant](screenshot_oldenlandia.png)
 
-The image above is a screenshot of the taxon page for *Oldenlandia adscensionis*. According to the IUCN this is an extinct plant. `Extinct` is a value of the facet `IUCN Status` The red arrows point to the two places in the interface where this is displayed. (Facets and their values can be displayed in multiple places. Even the maps are currently just a rendering of the country and TDWG area occurence facets.)
+The image above is a screenshot of the taxon page for *Oldenlandia adscensionis*. According to the IUCN this is an extinct plant. `Extinct` is a value of the facet `IUCN Threat Status` The red arrows point to the two places in the interface where this is displayed. (Facets and their values can be displayed in multiple places. Even the maps are currently just a rendering of the country and TDWG area occurence facets.)
 
-The little superscript `1` next to Extinct on the page (lower arrow) indicates that there is a single data source for this assertion. If you click on the 1 a modal dialogue box is displayed showing the datasources for the facet value in this taxon.
+The little superscript `1` next to Extinct on the page (lower arrow) indicates that there is a single data source for this assertion. If you click on the `1` a modal dialogue box is displayed showing the datasources for the facet value in this taxon.
 
+![Screenshot showing facet sources for IUCN Extinct](screenshot_facet_prov.png)
 
+This dialogue only lists one data source but for other facet values there may be many. For example, there may be multiple sources saying that they consider a species to be a tree. The two links indicated by the arrows will lauch different modal dialogues but before we click them it is worth considdering the text in bold "__directly to__". Through the process of taxonomic expansion it is possible for a taxon to be scored to an attribute value via one of its synonyms, in which case this would say "__via the synonym__", or via an ancestor. In these cases the linked name would be different. This means we know which name the original observation/assertion was tagged with and that we are assuming it applies to but we are assuming that it applies to the accepted taxon here. The user is free disagree!
 
+If we click on the right hand arrowed link `[row level metadata]` we get the dialogue box below.
+
+![Screenshot showing row level metadata](screenshot_row_metadata.png)
 
 ## How to:
 
