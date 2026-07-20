@@ -4,6 +4,16 @@ title: Index structure
 
 The data that is displayed in the public website and via the API is all stored in a [Apache SOLR](https://solr.apache.org/) index. Understanding how it all gets there and how it is structured is key to understanding how the website and API function as well as the systems that feed data into the index. Because multiple systems are involved it can be confusing jumping around the documentation. This page is here to give an over view and hopefully act as a single source of truth.
 
+![Data flow to SOLR index and portal](portal_dataflow.png)
+
+  1. Taxonomy and nomenclature is curated in Rhakhis to produce a coherent classification of plant names. This is pushed to SOLR index every six months as the solstice data releases. This is done manually as a single import file. It takes less than an hour to run. It produces an index with only taxonomic data in it, no content describing the taxa.
+  1. Text based content is deposited as CSV files (spreadsheets) in [a GitHub repository](https://github.com/worldflora/wfo-text-content) and then curated in Fyllo. Every row in every CSV file starts with a WFO name ID. The data is therefore bound to names not to accepted taxa. Fyllo has the following functions:
+     1. It specifies a collection of facets (e.g.Habit) and facet values (e.g.Tree) as well as text snippet categories (e.g. Description) and languages.
+     2. It specifies which data files in the GitHub repository will be published to the portal and which facets values or snippet categories they are associated with.
+     3. It associates metadata about the data sources with the CSV files so that full credit for contributions can be given.
+     4. When provided with the graph of names for a taxon it carries out the process of __taxonomic expansion__ and returns the facet values and snippets for the taxon. Other than during this process it doesn't know which names are accepted and which are synonyms.
+  1. A process in AirFlow updates the index with content from Fyllo so that it contains descriptive content for use in the portal. This process currently takes around 15hrs to index all the taxa. It can be run continuously (refreshing the complete index every 24hrs) or only when major updates have been made to the data. 
+
 ## The SOLR schema
 
 A SOLR index is a collection of documents. Each document is a flat list of fields containing the data. Fields have a specific data type and can be single or multi-valued. Unlike an SQL database tables the documents don't all have to have the same fields. 
