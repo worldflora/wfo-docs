@@ -6,8 +6,6 @@ This is the starting point for documentation aimed at systems admins and develop
 Here we give an overview of how the different commponents interact. 
 Details of the components themselves are given in the README.md files of their individual repositories.
 
-## Components
-
 - [Very high level overview](#very-high-level-overview)
 - [Rhakhis](rhakhis.md) - the classification management application
 - [Fyllo](https://github.com/worldflora/wfo-fyllo) - the content management application
@@ -15,6 +13,7 @@ Details of the components themselves are given in the README.md files of their i
 - [WFO Plant List API](https://github.com/worldflora/wfo-plant-list) - the publishing mechanism that makes the latest released version of the WFO classification available via APIs.
 - [New Public Website](https://github.com/worldflora/wfo-p2) - the new public facing website that combines the most recent classification from Rhakhis with the content from Fyllo. __This is currently under development__
 - [Current deployments](current_deployments.md) - where the applications above are currently deployed.
+- [Index Structure](index_structure.md) - understanding how data populates the SOLR index is key to understanding how the components of the architecture are related.
 
 ## Very high level overview
 
@@ -41,7 +40,7 @@ The content management platform handles faceting data and text descriptions boun
 
 ![High level data flow diagram](fyllo_dataflow.png)
 
-The data is curated in CSV files stored in GitHub. Fyllo stores the metadata about those files, imports them and performs the process of taxonomic expansion as the data is pushed to the public website.
+The data is curated in CSV files stored in GitHub. Fyllo stores the metadata about those files, imports them and performs the process of taxonomic expansion as the data is pushed to the public website. See [Index Structure](index_structure.md) for more details.
 
 ### Taxonomic expansion
 
