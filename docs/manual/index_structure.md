@@ -26,6 +26,10 @@ Document fields can be specified in broadly two ways, either as part of a ridged
   2. __Metadata Documents__ contain information for use in the portal that is shared between multiple name documents. These are what facilitate full provenance information to be piped from a CSV file in GitHub, through Fyllo, to a taxon page in the public portal. There are currently two kinds of metadata documents
       1. __Data Source__ documents contain details about the data source. This is basically the contents of the data source page in Fyllo piped into the index. The documents have a field called `kind_s` with a value of `wfo-snippet-source` or `wfo-facet-source`. The SOLR IDs of these documents are or the form `ds-<fyllo data source pk>`.
       2. __Facet__  documents containing information about the facets and their possible values as stored in Fyllo. The documents have a field called *kind_s* with a value of *wfo-facet*. The SOLR IDs of these documents are or the form `wfo-f-<fyllo facet pk>`.
+    
+## Provenance walk through (user's viewpoint)
+
+
 
 ## How to:
 
