@@ -59,11 +59,33 @@ From here the user can explore exactly how the data was imported and processed a
 
 ## Provenance walk through (curator's viewpoint)
 
-Obviously the curator can see everything a regular user can see but they are more focussed on how the data gets from the GitHub repository to the public website. They have access to the Fyllo content manager where there is a page for the facet [IUCN Threat Status](https://fyllo.rbge.info/facet_values.php?facet_id=7). (Fyllo page is publicly visible but only editable by curators.).
+Obviously the curator can see everything a regular user can see but they are more focussed on how the data gets from the GitHub repository to the public website. They have access to the Fyllo content manager where there is a page for the facet for [IUCN Threat Status](https://fyllo.rbge.info/facet_values.php?facet_id=7). (Fyllo page is publicly visible so that it can be shared with data contributors but only editable by curators.).
 
 ![Screenshot showing Fyllo facet page](screenshot_fyllo_facet.png)
 
+The page lists all the potential values for the facet. For each value there are one or more data sources. Because this facet is about IUCN data we only have a single data source per facet value, the IUCN!
+
+![Screenshot showing Fyllo facet value](screenshot_fyllo_facet_value.png)
+
+Clicking on the link for the extinct data source takes us to the data source page.
+
+![Screenshot showing Fyllo data source](screenshot_fyllo_data_source.png)
+
+This is where we define the name and description for the datasource that will appear on the website. It is also where we link it to a file in GitHub. There is a utility that talks directly to GitHub for this. We can't like to any random file.
+
+![Screenshot showing Fyllo data source_import](screenshot_fyllo_data_source_import.png)
+
+The import tab shows the status of the data in Fyllo. The two long OID numbers represent versions of the files. If they are different they will be highlighted so that we know the file in GitHub has changed and need re-importing.
+
+![Screenshot showing Fyllo data source_list](screenshot_fyllo_data_source_list.png)
+
+The list tab enables us to browse the WFO IDs in the file but full expanded into names with links. This is useful for trouble shooting.
+
+Once a data source is imported into Fyllo it will be picked up and appear as part of the public portal within 24 hours.
+
 ## How to:
+
+These are a few very technical how tos that will be moved elsewhere in the docs at some point.
 
 ### Import the latest Rhakhis data release
 
