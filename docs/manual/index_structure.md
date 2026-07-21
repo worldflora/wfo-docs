@@ -55,7 +55,13 @@ Here we have a description of the data source. It is quite short as this is test
 
 ![Screenshot showing GitHub data source page](screenshot_github.png)
 
-From here the user can explore exactly how the data was imported and processed along with any associated documentation in README.md files. The can see previous version of the data or download it for further analysis.
+From here the user can explore exactly how the data was imported and processed along with any associated documentation in README.md files. They can see previous version of the data or download it for further analysis.
+
+## Provenance walk through (curator's viewpoint)
+
+Obviously the curator can see everything a regular user can see but they are more focussed on how the data gets from the GitHub repository to the public website. They have access to the Fyllo content manager where there is a page for the facet [IUCN Threat Status](https://fyllo.rbge.info/facet_values.php?facet_id=7). (Fyllo page is publicly visible but only editable by curators.).
+
+
 
 
 
