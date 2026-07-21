@@ -61,9 +61,7 @@ From here the user can explore exactly how the data was imported and processed a
 
 Obviously the curator can see everything a regular user can see but they are more focussed on how the data gets from the GitHub repository to the public website. They have access to the Fyllo content manager where there is a page for the facet [IUCN Threat Status](https://fyllo.rbge.info/facet_values.php?facet_id=7). (Fyllo page is publicly visible but only editable by curators.).
 
-
-
-
+![Screenshot showing Fyllo facet page](screenshot_fyllo_facet.png)
 
 ## How to:
 
