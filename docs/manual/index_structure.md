@@ -33,7 +33,7 @@ A summary of the whole, somewhat complex, data flow is that we: "Take CSV files 
 
 ![Screenshot showing Oldenlandia adscensionis as an extinct plant](screenshot_oldenlandia.png)
 
-The image above is a screenshot of the taxon page for *Oldenlandia adscensionis*. According to the IUCN this is an extinct plant. `Extinct` is a value of the facet `IUCN Threat Status` The red arrows point to the two places in the interface where this is displayed. (Facets and their values can be displayed in multiple places. Even the maps are currently just a rendering of the country and TDWG area occurence facets.)
+The image above is a screenshot of [the taxon page for *Oldenlandia adscensionis*](https://wfo-test.rbge.info/wfo-0000254688). According to the IUCN this is an extinct plant. `Extinct` is a value of the facet `IUCN Threat Status` The red arrows point to the two places in the interface where this is displayed. (Facets and their values can be displayed in multiple places. Even the maps are currently just a rendering of the country and TDWG area occurence facets.)
 
 The little superscript `1` next to Extinct on the page (lower arrow) indicates that there is a single data source for this assertion. If you click on the `1` a modal dialogue box is displayed showing the datasources for the facet value in this taxon.
 
