@@ -268,18 +268,18 @@ If a variant spelling of the currently accepted name is in use and may cause con
 
 ## Misapplied names
 
-The phrase "misapplied name" is used in different ways. It could be an alternative to the misidentification of a single specimen, the wrong use of a name in a single treatment or the consistent use of an existing name for something that is later discovered to be a separate taxon, as occured with European names being applied to taxa in other parts of the world. 
+Taxonomists use 'misapplied name' is used in different ways. It could be used when referring to a misidentification of a single specimen, the wrong use of an existing name in a publication or the consistent use over a period of time, often in a geographic region, of an existing name for something that is later discovered to be a different taxon, as occured when European names were applied to taxa in other parts of the world. Whether a name is considered misapplied or not is a taxonomic judgement – a matter of opinion over the taxonomic concepts being used.
 
-The code states (50D.1.):
-> Misidentifications should not be included in synonymies but added after them. A misapplied name should be indicated by the words “auct. non” followed by the name(s) of the original author(s) and the bibliographic reference of the misidentification.
+The Code does not define 'misapplied name' but recommends that:
+> Misidentifications should not be included in synonymies but added after them. A misapplied name should be indicated by the words “auct. non” followed by the name(s) of the original author(s) and the bibliographic reference of the misidentification (50D.1.).
 
-As applications of names, rather than nomenclatural acts, misapplied names are out of scope of the WFO Plant List. They should be handled in the following way:
+As applications of names, are not nomenclatural acts, misapplied names do not form part of synonymies and are out of scope of the WFO Plant List. If they appear in taxonomic treatments then it should be as a note under the relevant accepted species. In WFO they should be handled in the following way:
 
-  1. Misapplied names are not names under the code and so should not represented by name records. Tags such as _auct. non_ or _sensu_ should never occur in author strings.
-  2. Names that are in use as if they had been validly published but with the "wrong" author string (lacking an indication that it is in some way merely the valid name but _sensu_ that author) __may__ be treated as invalid, later homonyms and placed in synonymy. This is likely to occur accidentally anyway.
-  3. If a name has been consistently misapplied, for example in particular geographic region, then a note should be added to the comments section for the name.
-  4. If a name is misapplied in specific treatments then they should be added to the Other Treatments section of Rhakhis with a note saying the name is misapplied in that specific treatment.
-  5. Numbers 3 & 4 above are not mutually exclusive.
+  1. Misapplied names are not names under the Code and so should not be represented by name records. Tags such as '_auct. non_' or '_sensu_' should never occur in author strings.
+  2. Names that are in use as if they had been validly published but with the wrong author string (lacking an indication that it is in some way merely the valid name but '_sensu_' that author) __may__ be treated as illegitimate, later homonyms and placed in synonymy. This is likely to occur accidentally anyway.
+  3. If a name has been consistently misapplied, for example in particular geographic region, then a note can be added to the Comments section for the name.
+  4. If a name is misapplied in specific treatments, then the reference should be added to the Other Treatments section of Rhakhis with a note saying the name is misapplied in that publication.
+  5. Scenarios 3 and 4 are not mutually exclusive.
 
 ## Duplicates and deduplication
 
