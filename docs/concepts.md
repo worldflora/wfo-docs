@@ -27,6 +27,7 @@ This is a narrative description of how we have modelled the ICNAFP. Our main con
   - [Isonyms](#isonyms)
   - [ex Authorship](#ex-authorship)
   - [Homonyms](#homonyms)
+- [Misapplied names](#misapplied-names)
 - [Orthographical variants](#orthographical-variants)
   - [Automatic corrections](#automatic-corrections)
   - [Manual changes in spelling](#manual-changes-in-spelling)
@@ -264,6 +265,21 @@ If the spelling of a name is corrected manually, for whatever reason, then the e
 If a variant spelling of the currently accepted name is in use and may cause confusion, i.e. someone might find it in the literature and look it up in the WFO Plant List then a separate name record should be created for this spelling, the nomenclatural type should be set to "orthovar" and the name should be made a synonym of the correctly spelled name. The creation of these variant spelling records is a __judgement call__ made by the data editors. This enables us to capture changes in spelling that are significant and not rare typing or OCR errors. We do not create name records for every possible spelling variant that has ever occured or the database would become enormous. Spelling errors, rather than published versions of the name, are handled by fuzzy matching techniques.
 
 **Analogy** If I paint my house a different colour the address and postal code does not change. If I think that my friends won't be able to find my house because they are looking for a red one when it is now blue then I can erect a red Potemkin facade with a sign on it pointing to my house. I only need to do this if I think the colour change is significant and people will genuinely look for my house based on the old colour.
+
+## Misapplied names
+
+The phrase "misapplied name" is used in different ways. It could be an alternative to the misidentification of a single specimen, the wrong use of a name in a single treatment or the consistent use of an existing name for something that is later discovered to be a separate taxon, as occured with European names being applied to taxa in other parts of the world. 
+
+The code states (50D.1.):
+> Misidentifications should not be included in synonymies but added after them. A misapplied name should be indicated by the words “auct. non” followed by the name(s) of the original author(s) and the bibliographic reference of the misidentification.
+
+As applications of names, rather than nomenclatural acts, misapplied names are out of scope of the WFO Plant List. They should be handled in the following way:
+
+  1. Misapplied names are not names under the code and so should not represented by name records. Tags such as _auct. non_ or _sensu_ should never occur in author strings.
+  2. Names that are in use as if they had been validly published but with the "wrong" author string (lacking an indication that it is in some way merely the valid name but _sensu_ that author) __may__ be treated as invalid, later homonyms and placed in synonymy. This is likely to occur accidentally anyway.
+  3. If a name has been consistently misapplied, for example in particular geographic region, then a note should be added to the comments section for the name.
+  4. If a name is misapplied in specific treatments then they should be added to the Other Treatments section of Rhakhis with a note saying the name is misapplied in that specific treatment.
+  5. Numbers 3 & 4 above are not mutually exclusive.
 
 ## Duplicates and deduplication
 
