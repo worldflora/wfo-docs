@@ -268,7 +268,7 @@ If a variant spelling of the currently accepted name is in use and may cause con
 
 ## Misapplied names
 
-Taxonomists use 'misapplied name' is used in different ways. It could be used when referring to a misidentification of a single specimen, the wrong use of an existing name in a publication or the consistent use over a period of time, often in a geographic region, of an existing name for something that is later discovered to be a different taxon, as occured when European names were applied to taxa in other parts of the world. Whether a name is considered misapplied or not is a taxonomic judgement – a matter of opinion over the taxonomic concepts being used.
+Taxonomists use the phrase 'misapplied name' in different ways. It could be used when referring to a misidentification of a single specimen, the wrong use of an existing name in a publication or the consistent use over a period of time, often in a geographic region, of an existing name for something that is later discovered to be a different taxon, as occured when European names were applied to taxa in other parts of the world. Whether a name is considered misapplied or not is a taxonomic judgement – a matter of opinion over the taxonomic concepts being used.
 
 The Code does not define 'misapplied name' but recommends that:
 > Misidentifications should not be included in synonymies but added after them. A misapplied name should be indicated by the words “auct. non” followed by the name(s) of the original author(s) and the bibliographic reference of the misidentification (50D.1.).
