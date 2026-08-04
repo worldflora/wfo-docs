@@ -88,13 +88,13 @@ The ICNAFP rather unhelpfully uses the word "name" in the definition of the word
 
 > designation. [Not defined] – the term used for what appears to be a name but that (1) has not been validly published and hence is not a name in the sense of the Code (Art. 6.3) or (2) is not to be regarded as a name (Art. 20.4 and 23.6) (see also type designation).
 
-This can lead to apparently paradoxical uses of "name" in our community. A word or words that are used to refer to a plant are a name-in-common-parlance but may not be a name-in-the-sense-of-the-code. They may be a designation under the code. More confusing still the code does not say what to call things that we don't know the nomenclatural status of. Like Schrödinger's cat, until we know whether a thing is validly published it is neither a name-in-the-sense-of-the-code nor a designation.
+This can lead to apparently paradoxical uses of "name" in our community. A word or words that are used to refer to a plant are a name-in-common-parlance but may not be a name-in-the-sense-of-the-code. They may be a designation under the Code. More confusing still the Code does not say what to call things that we don't know the nomenclatural status of. Like Schrödinger's cat, until we know whether a thing is validly published it is neither a name-in-the-sense-of-the-code nor a designation.
 
-In modelling a global checklist we need to keep track of the name/designation things whether or not they turn out to be names-in-the-sense-of-the-code or cease to be names-in-the-sense-of-the-code. We can't research a thing to find out what it is until it is in the database. Rhakhis therefore takes a practical working definition of what it means by a name within the system:
+In modelling a global checklist we need to keep track of the name/designation things whether or not they turn out to be names-in-the-sense-of-the-Code or cease to be names-in-the-sense-of-the-code. We can't research a thing to find out what it is until it is in the database. Rhakhis therefore takes a practical working definition of what it means by a name within the system:
 
 > A name is a object represented by a record in the names table. It has a unique internal ID, a prescribed external ID (the WFO ID) and between one and three name part words (see below).
 
-Whether a name record is created for a name/designation found in literature is a judgement call made by the data editors. If two name records are judged to represent the same name/designation then they may be merged but the WFO IDs are never deleted.
+WFO takes a pragmatic approach by including all names which, according to the Code, are Effectively Published, i.e. Effectively Published designations are considered as names. If two name records are judged to represent the same name/designation then they may be merged but the WFO IDs are never deleted.
 
 
 ## WFO IDs and Names
@@ -136,7 +136,7 @@ Names can have a nomenclatural status. This is separate from their "taxonomic st
 1. __illegitimate__ - can't be used as accepted name in taxonomy as accepted name.
 1. __later_homonym__ - can't be used as accepted name in taxonomy as accepted name.
 1. __superfluous__ - can't be used as accepted name in taxonomy as accepted name.
-1. __conserved__ - a later homonym that has been explicitly flagged as available for use under the code.
+1. __conserved__ - a later homonym that has been explicitly flagged as available for use under the Code.
 1. __rejected__ - can't be used as accepted name in taxonomy as accepted name.
 1. __sanctioned__ - fungi specific version of conserved
 2. __orthovar__ - short for orthographical variant. Can't be an accepted name.
@@ -158,7 +158,7 @@ When names first enter Rhakhis they are unplaced. They are then assessed and eit
 
 ## More on deprecation
 
-The nomenclatural status of __deprecated__ is introduced primarily as an internal device. This is not a nomenclatural status according to the botanical code. It is meant in the modern sense of the word particularly with regard to software:
+The nomenclatural status of __deprecated__ is introduced primarily as an internal device. This is not a nomenclatural status according to the botanical Code. It is meant in the modern sense of the word particularly with regard to software:
 
 > to withdraw official support for or discourage the use of
 
@@ -193,7 +193,7 @@ It is common for taxonomic experts to want to express the relationship between a
 
 ## Homonyms, isonyms and ex authorship
 
-The code has the following note under point 6.3
+The Code has the following note under point 6.3
 
 > Note 2. When the same name, based on the same type, has been published independently at different times, perhaps by different authors, then only the earliest of these “isonyms” has nomenclatural status. The name is always to be cited from its original place of valid publication, and later isonyms may be disregarded (but see Art. 14.14).
 
@@ -209,11 +209,11 @@ To distinguish between homonyms and isonyms we need to know the types of both na
 
 > A name spelled exactly like another name published for a taxon at the same rank, unless the name is a subdivision of genus or a species in which case the rank isn't taken into account.
 
- Unfortunately, like with names/designations, we don't have a word in the code for this class of names. 
+ Unfortunately, like with names/designations, we don't have a word in the Code for this class of names. 
  
 ### Isonyms
  
-Isonyms are the "same name" according to the code so they should only have one Name Record in the list. The majority of isonyms are created by the author publishing the name again (perhaps in a paper and in a flora or catalogue) and so have the same Authors String. There is no scope for taxonomic confusion and the only scope for nomenclatural confusion caused by isonyms is citing the wrong reference as a place of original publication.
+Isonyms are the "same name" according to the Code so they should only have one Name Record in the list. The majority of isonyms are created by the author publishing the name again (perhaps in a paper and in a flora or catalogue) and so have the same Authors String. There is no scope for taxonomic confusion and the only scope for nomenclatural confusion caused by isonyms is citing the wrong reference as a place of original publication.
 
 1. Isonyms pairs are represented by a single record and WFO ID in the list unless they have different authors and so different author strings.
 1. The micro citation used is of the original publication.
@@ -223,17 +223,17 @@ Isonyms are the "same name" according to the code so they should only have one N
 
 ### ex Authorship
 
-The code allows the author(s) who validly publishes a name to acknowledge a previous author(s) who published the name but not validly:
+The Code allows the author(s) who validly publishes a name to acknowledge a previous author(s) who published the name but not validly:
 
 >A name of a new taxon is attributed to the author(s) of the publication in which it appears when the name was ascribed to a different author or different authors but the validating description or diagnosis was neither ascribed to nor unequivocally associated with that author or those authors. A new combination, name at new rank, or replacement name is attributed to the author(s) of the publication in which it appears, although it was ascribed to a different author or different authors, when no separate statement was made that one or more of those authors contributed in some way to that publication. However, in both cases authorship as ascribed, followed by “ex”, **may** be inserted before the name(s) of the publishing author(s). (Article 46.5)
 
 >When a name has been ascribed by its author to a pre-starting-point author, the latter **may** be included in the author citation, followed by “ex”. For groups with a starting-point later than 1753, when a taxon of a pre-starting-point author was changed in rank or taxonomic position upon valid publication of its name, that pre-starting-point author may be cited in parentheses, followed by “ex”. (Article 46.7)
 
-Inclusion of the earlier author(s) - before the ex - when citing the name is optional (emphasis added here) and this is illustrated by examples in the code.
+Inclusion of the earlier author(s) - before the ex - when citing the name is optional (emphasis added here) and this is illustrated by examples in the Code.
 
 Within the list names with "ex" in the Authors String are analogous to isonyms. In the case of ex names the original publication by the author before the ex was not valid but a subsequent publication by the author coming after the ex was valid and is the true place of publication. With isonyms it is the other way around. The first publication is the valid one and the subsequent publication is superfluous. Neither case warrants multiple name records in the list and can be handled in the same way with annotated links to the literature for all occurrences.
 
-Name matching can be an issue with ex Authors. The default is to include the ex Authors in Authors String in the list if the valid publication authors mention them as the code suggests but as the code does not require them to be included everywhere someone might want to match a list of names lacking ex Authors with the list data.
+Name matching can be an issue with ex Authors. The default is to include the ex Authors in Authors String in the list if the valid publication authors mention them as the Code suggests but as the Code does not require them to be included everywhere someone might want to match a list of names lacking ex Authors with the list data.
 There is also the chance that the list doesn't yet include the ex Authors 
 
 ### Homonyms
@@ -246,11 +246,11 @@ Homonyms are far more common than isonyms (although putting a figure on that is 
 
 ### Orthographical variants
 
-The term Orthographical variant causes some confusion. Under the code they are "the various spelling, compounding, and inflectional forms of a name or its final epithet (including typographical errors) when only one nomenclatural type is involved" (Art. 61). 
+The term Orthographical variant causes some confusion. Under the Code they are "the various spelling, compounding, and inflectional forms of a name or its final epithet (including typographical errors) when only one nomenclatural type is involved" (Art. 61). 
 
-Names do not have fixed spellings. There are allowances for typographical or orthographical errors/variations and standardizations as well correction of terminations for the gender of the genus (see Art.60 and linked articles). Future codes might add more conditions under which the spelling of a name might be changed and these will act retrospectively. Theoretically two names might have different letters in them but when one or both of them are corrected for gender and other spelling rules as applied today they might turn out to be homonyms – even though they did not have the exact same spelling when they were published or indeed for many years of use in the literature. 
+Names do not have fixed spellings. There are allowances for typographical or orthographical errors/variations and standardizations as well correction of terminations for the gender of the genus (see Art.60 and linked articles). Future Codes might add more conditions under which the spelling of a name might be changed and these will act retrospectively. Theoretically two names might have different letters in them but when one or both of them are corrected for gender and other spelling rules as applied today they might turn out to be homonyms – even though they did not have the exact same spelling when they were published or indeed for many years of use in the literature. 
 
-As outlined above we define a name as an object represented by a record in the names table. It has a unique internal ID, a prescribed external ID (the WFO ID) and between one and three name part words. Whether a name record is created for a name/designation found in literature is a __judgement call__ made by the data editors. The spelling of the name record is not considered by the system other than to nudge editors not to create homonyms unwittingly. How then are orthographical variants handled?
+As outlined above we define a name as an object represented by a record in the names table. It has a unique internal ID, a prescribed external ID (the WFO ID) and between one and three name part words. Whether a name record is created for the spelling of a name found in the literature is a __judgement call__ made by the data editors. The spelling of the name record is not considered by the system other than to nudge editors not to create homonyms unwittingly. How then are orthographical variants handled?
 
 #### Automatic corrections
 
@@ -264,7 +264,7 @@ If the spelling of a name is corrected manually, for whatever reason, then the e
 
 If a variant spelling of the currently accepted name is in use and may cause confusion, i.e. someone might find it in the literature and look it up in the WFO Plant List then a separate name record should be created for this spelling, the nomenclatural type should be set to "orthovar" and the name should be made a synonym of the correctly spelled name. The creation of these variant spelling records is a __judgement call__ made by the data editors. This enables us to capture changes in spelling that are significant and not rare typing or OCR errors. We do not create name records for every possible spelling variant that has ever occured or the database would become enormous. Spelling errors, rather than published versions of the name, are handled by fuzzy matching techniques.
 
-**Analogy** If I paint my house a different colour the address and postal code does not change. If I think that my friends won't be able to find my house because they are looking for a red one when it is now blue then I can erect a red Potemkin facade with a sign on it pointing to my house. I only need to do this if I think the colour change is significant and people will genuinely look for my house based on the old colour.
+**Analogy** If I paint my house a different colour the address and postal Code does not change. If I think that my friends won't be able to find my house because they are looking for a red one when it is now blue then I can erect a red Potemkin facade with a sign on it pointing to my house. I only need to do this if I think the colour change is significant and people will genuinely look for my house based on the old colour.
 
 ## Misapplied names
 
@@ -325,14 +325,14 @@ modified; for example ä, ö, ü become, respectively, ae, oe, ue (not æ or œ,
 see below); é, è, ê become e; ñ becomes n; ø becomes oe (not œ); å becomes
 ao.
 
-Correctable spellings and removal of diacritics as specified by the code occurs as names are added to the database. They can't be added back in on export. When searching for names the effect of diacritics and correctable spellings in the search string will depend on the specific algorthm used. 
+Correctable spellings and removal of diacritics as specified by the Code occurs as names are added to the database. They can't be added back in on export. When searching for names the effect of diacritics and correctable spellings in the search string will depend on the specific algorthm used. 
 
 
 ## Autonyms
 
-According to the nomeclatural code the creation of a subdivision within a genus or a species automatically creates a null taxon called the autonym which holds everything that isn't specified as being part of the named subdivisions. Autonyms include the type specimen for the species and genus (Art. 22.3 and 26.3 of code). These taxa simply repeat the name of the genus or species as their own name and have no author strings. In line with these rules the WFO backbone system automatically creates and destroys autonym taxa as infrageneric and infraspecific taxa are added and removed from the taxonomic hierarchy.
+According to the nomeclatural Code the creation of a subdivision within a genus or a species automatically creates a null taxon called the autonym which holds everything that isn't specified as being part of the named subdivisions. Autonyms include the type specimen for the species and genus (Art. 22.3 and 26.3 of Code). These taxa simply repeat the name of the genus or species as their own name and have no author strings. In line with these rules the WFO backbone system automatically creates and destroys autonym taxa as infrageneric and infraspecific taxa are added and removed from the taxonomic hierarchy.
 
-Above the level of genus the code has no notion of autonyms. The creation of a new subfamily does not result in the creation of an associated autonym subfamily to hold the type and all other material that wasn't considered by the author of the subfamily. In a large scale, collaborative project like the WFO backbone this can result in a counter intuitive classification. A taxon of the rank class may __directly__ contain several subclasses, some orders and a family or two. This is something that wouldn't occur in a single written publication but is the logical result of combining multiple publications. It simply reflects that the work hasn't been done to specify where all the subtaxa fall at every rank. Such a classification probably wouldn't be accepted by a journal editor! The user interface will therefore always highlight where this occurs to flag it as bad practice.
+Above the level of genus the Code has no notion of autonyms. The creation of a new subfamily does not result in the creation of an associated autonym subfamily to hold the type and all other material that wasn't considered by the author of the subfamily. In a large scale, collaborative project like the WFO backbone this can result in a counter intuitive classification. A taxon of the rank class may __directly__ contain several subclasses, some orders and a family or two. This is something that wouldn't occur in a single written publication but is the logical result of combining multiple publications. It simply reflects that the work hasn't been done to specify where all the subtaxa fall at every rank. Such a classification probably wouldn't be accepted by a journal editor! The user interface will therefore always highlight where this occurs to flag it as bad practice.
 
 ## Ranks
 
