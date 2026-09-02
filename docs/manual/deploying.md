@@ -40,8 +40,10 @@ There are multiple ways the Website and List API could be deployed. They both ne
 
 1. __All on one machine:__ This is the simplest approach and is probably the one to start with. A single Linux box with SOLR 8.*, PHP 8.* and two Apache virtual hosts, one for the website and one for the List API.
 2. __Split out the index:__ Apache SOLR is given its own machine. (This could be a Docker container instance if the infrastructure supports that.) A second machine hosts the Website and List API.
-3. __Parallelise the front end:__ An enhancement of 2 would be to have multiple machines serving the website and api applications but all talking to the same SOLR index. A hardware based round robin DNS (or similar) load balance would need to maintain user sessions between the machines.
-4. __Parallelise the back end:__ There are many options to scale SOLR index performance using SolrCloud. Unlikely to be necessary.
+3. __Parallelise the front end:__ An enhancement of 2 would be to have multiple machines serving the website and api applications but all talking to the same SOLR index.
+    - A three machine set up would have SOLR on one machine, Website on another and List API on a third. This might give the best robustness to complexity ratio as issues can be isolated to individual machines.
+    - If multiple instances of the website are deployed then something like a hardware based round robin DNS load balancer that maintained user sessions would needed. These assign users randomly to machines but all a user's calls go to the same machine. Probably beyond what we need.
+5. __Parallelise the back end:__ There are many options to scale SOLR index performance using SolrCloud. Unlikely to be necessary.
 
 There could be multiple instances of the publishing applications deployed around the world. An institution could, for example, have its own instance of the List API locally for performance and stability. There is only one issue with this approach. The taxonomic backbone is imported as a six monthly JSON dump file but the text content [is pushed to the live index](index_structure.md) by the Airflow application from Fyllo. Currently the workflow can only target one instance at a time but methods for cloning between SOLR indexes could be developed if the functionality was needed.
 
