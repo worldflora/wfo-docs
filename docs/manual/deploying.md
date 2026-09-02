@@ -1,4 +1,6 @@
-## Deploying the WFO Infrastructure
+---
+title: Deploying the WFO Infrastructure
+---
 
 The infrastructure consists of 5 applications in two groups (publishing and curation) that interact.
 Each application has its own GitHub repository (or two in the case of Rhakhis) with associated README.md documentation describing how to 
