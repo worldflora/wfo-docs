@@ -40,7 +40,7 @@ There are multiple ways the Website and List API could be deployed. They both ne
 3. __Parallelise the front end:__ An enhancement of 2 would be to have multiple machines serving the website and api applications but all talking to the same SOLR index. A hardware based round robin DNS (or similar) load balance would need to maintain user sessions between the machines.
 4. __Parallelise the back end:__ There are many options to scale SOLR index performance using SolrCloud. Unlikely to be necessary.
 
-There is no reason 
+There could be multiple instances of the publishing applications deployed around the world. An institution could, for example, have its own instance of the List API locally for performance and stability. There is only one issue with this approach. The taxonomic backbone is imported as a six monthly JSON dump file but the text content is pushed to the live index by the Airflow application from Fyllo. Currently the workflow can only target one instance at a time but methods for cloning between SOLR indexes could be developed if the functionality was needed.
 
 #### Curation applications locations
 
