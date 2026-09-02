@@ -14,6 +14,7 @@ Details of the components themselves are given in the README.md files of their i
 - [New Public Website](https://github.com/worldflora/wfo-p2) - the new public facing website that combines the most recent classification from Rhakhis with the content from Fyllo. __This is currently under development__
 - [Current deployments](current_deployments.md) - where the applications above are currently deployed.
 - [Index Structure](index_structure.md) - understanding how data populates the SOLR index is key to understanding how the components of the architecture are related.
+- [Deploying](deploying.md) - an overview of how to deploy the WFO Infrastructure.
 
 ## Very high level overview
 
