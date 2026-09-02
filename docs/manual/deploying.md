@@ -15,8 +15,7 @@ might be installed and how they interact.
 
 ### Design pattern
 
-Apart from Apache Airflow (which uses workflows written in Python) and the Rhakhis front end (which is ) the 
-applications run on the LAMP (Linux, Apache, MySQL, PHP) application stack and have the same basic design pattern.
+Apart from Apache Airflow and the Rhakhis UI the applications have the __roughly__ the same design pattern.
 
 - __WFO HOME__ <- a base directory in which to install the applications. This will typically be /var/wfo or similar
   - __application__ <- the application directory. This is typically a direct clone of the GitHub repository created with `git clone <url>`.
@@ -31,4 +30,20 @@ applications run on the LAMP (Linux, Apache, MySQL, PHP) application stack and h
 ### Locations
 
 Data curation applications and the data publishing applications should never be on the same machine. They function entirely separately and have different requirements.
+
+#### Publishing applications locations.
+
+There are multiple ways the Website and List API could be deployed. They both need to interact with a Apache SOLR index which should be on the same machine or LAN in a production environment. (In development/testing environments they can talk to SOLR over the internet but this will be much slower.)
+
+1. __All on one machine:__ This is the simplest approach and is probably the one to start with. A single Linux box with SOLR 8.* and PHP 8.* hosts two Apache virtual hosts, one for the website and one for the List API.
+2. __Split out the index:__ Apache SOLR is given its own machine. (This could be a Docker container instance if the infrastructure supports that.) A second machine hosts the Website and List API.
+3. __Parallelise the front end:__ An enhancement of 2 would be to have multiple machines serving the website and api applications but all talking to the same SOLR index. A hardware based round robin DNS (or similar) load balance would need to maintain user sessions between the machines.
+4. __Parallelise the back end:__ There are many options to scale SOLR index performance using SolrCloud. Unlikely to be necessary.
+
+There is no reason 
+
+#### Curation applications locations
+
+Ideally these should all be on the same machine or same LAN. Airflow needs to access the MySQL database behind Rhakhis but not Fyllo. Airflow also needs to be able access the publishing server over HTTPS for API calls.
+
 
