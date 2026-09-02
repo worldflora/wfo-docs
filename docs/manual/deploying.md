@@ -35,7 +35,7 @@ Data curation applications and the data publishing applications should never be 
 
 #### Publishing applications locations.
 
-There are multiple ways the Website and List API could be deployed. They both need to interact with a Apache SOLR index which should be on the same machine or LAN in a production environment. (In development/testing environments they can talk to SOLR over the internet but this will be much slower.)
+There are multiple ways the Website and List API could be deployed. They both need to interact with an Apache SOLR index which should be on the same machine or LAN in a production environment. (In development/testing environments they can talk to SOLR over the internet but this will be much slower.)
 
 1. __All on one machine:__ This is the simplest approach and is probably the one to start with. A single Linux box with SOLR 8.* and PHP 8.* hosts two Apache virtual hosts, one for the website and one for the List API.
 2. __Split out the index:__ Apache SOLR is given its own machine. (This could be a Docker container instance if the infrastructure supports that.) A second machine hosts the Website and List API.
