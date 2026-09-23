@@ -1,4 +1,6 @@
-# Notes for September 2026 Council Meeting
+---
+title: Notes for September 2026 Council Meeting
+---
 
 15 minutes isn't long enough to give a full demo of the website or cover how the data pipeline works.
 
