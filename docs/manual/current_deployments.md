@@ -29,9 +29,10 @@ This is a technical description of the current deployments of applications to su
     - [fyllo.rbge.info](https://fyllo.rbge.info)
     - Airflow
   - __prajna6__ is a test server running at the Royal Botanic Garden Edinburgh. It is the same configuration as the AWS live server.
+    - [wfo-test.rbge.info](https://wfo-test.rbge.info)
     - [rhakhis-test.rbge.info](https://rhakhis-test.rbge.info)
     - [list-test.rbge.info](https://list-test.rbge.info)
-    - [wfo-test.rbge.info](https://wfo-test.rbge.info)
+    - [list-weekly.rbge.info](https://list-weekly.rbge.info)
   - __MOBOT About__ is another Ubuntu Linux server running on the Missouri Botanic Garden infrastructure.
     - [list.worldfloraonline.org](https://list.worldfloraonline.org)
     - Craft CMS system (not documented here)
