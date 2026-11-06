@@ -509,7 +509,6 @@ than storing that evidence directly within Rhakhis.
 
 ### References Overview
 
-INSERT VIDEO HERE.
 
 #### Adding References
 
@@ -532,16 +531,7 @@ All names should have nomenclatural references. Eventually they will all have li
 
 The process of adding a reference is the same for both. 
 
-**ADD VIDEO HERE**
-
 ### Types of Reference
-
-
-### What if I don't have a URI for my reference?
-
-#### Database
-
-If the database isn't available online then we can't link to it. If you have a heritage database that is unlikely to be made available online but can be stored in an archival way (e.g. CSV files not Microsoft Access) then you could consider submitting it to [Zenodo](https://zenodo.org/) for safe keeping. This will create a DOI for the dataset that you can then use as the link.
 
 #### Literature
 
@@ -554,16 +544,24 @@ It is common to have a list of literature references with no URIs. Typically thi
 
 We will work to come up with more detailed guidance on creating links to literature in the future.
 
+#### Database
+
+If the database isn't available online then we can't link to it. If you have a heritage database that is unlikely to be made available online but can be stored in an archival way (e.g. CSV files not Microsoft Access) then you could consider submitting it to [Zenodo](https://zenodo.org/) for safe keeping. This will create a DOI for the dataset that you can then use as the link.
+
 #### Person
 
 If the person is alive then you should use their [ORCID](https://orcid.org/) as the link. If they don't have one you could ask them to register. If they don't want to register then you can't link to them. As a human they have a right not to be involved.
 
-If the person is historical (a.k.a. dead) then you can link to them in [WikiData](https://www.wikidata.org/), creating an entry if need be. Don't try and solve the problem of no ORCID by moving someone from the alive to historical. That wouldn't be ethical.
+If the person is historical (a.k.a. dead) then you can link to them in [WikiData](https://www.wikidata.org/), creating an entry if need be. Don't try and solve the problem of no ORCID by moving someone from the alive to historical. That would not be ethical.
+
+<img width="919" height="595" alt="image" src="https://github.com/user-attachments/assets/c898e251-1463-43ff-8a25-a23f5b45019b" />
+
 
 #### Specimens
 
 We only provide the ability to cite specimens if they are available online as an entry in a catalogue or image. If you have an image of the specimen and it is unlikely to be put online by the holding institution then you might consider uploading it to [Zenodo](https://zenodo.org/) where it will be given a DOI that you can cite. If you only have text you can add it to the comments on the name.
 
+<img width="894" height="574" alt="image" src="https://github.com/user-attachments/assets/267b8888-e4e8-4daf-8a78-7612e7b5597e" />
 
 
 # Curators
