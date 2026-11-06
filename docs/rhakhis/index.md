@@ -4,31 +4,85 @@ title: Rhakhis Handbook
 
 Guide to Using Rhakhis - the World Flora Online's taxonomic backbone curation tool.
 
-It is currently a work in progress (14-7-2023) and is being added to and amended as we go. We are currently adding how to videos through the document to guide users.
+## Related Documentation
 
-If you are looking for the [Concepts Model](https://github.com/rogerhyam/wfo-plant-list-docs/blob/main/docs/concepts.md) this explains the reasons and process behind Rhakhis' functionality rather than how to use the editor.
+The Rhakhis documentation consists of three complementary resources:
 
-[1. Getting Started](#getting-started)<br><br>
-[2. Navigation tabs](#navigation-tabs)<br>
-&nbsp;[2.1. A-Z](#a-z)<br>
-&nbsp;[2.2. Matching](#matching)<br>
-&nbsp;[2.3. Browse](#browse)<br>
-&nbsp;[2.4. Add a Name](#add-name)<br>
-&nbsp;[2.5. Stats](#stats)<br>
-&nbsp;[2.6. User](#user)<br>
-&nbsp;[2.7. Activity](#activity)<br>
-&nbsp;[2.8. Data](#data)<br><br>
-[3. Name Record](#name-records)<br>
-&nbsp;[3.1. Overview](#name-record-overview)<br>
-&nbsp;[3.2. Adding a new name](#adding-a-new-name)<br><br>
-[4. Editing Records](#editing-records)<br>
-&nbsp;[4.1. Nomencaltural Data](#nomencaltural-data)<br>
-&nbsp;[4.2. Placement of Names](#placement-of-names)<br><br>
-[5. References](#references)<br>
-&nbsp;[5.1. References Overview](#references-overview)<br>
-&nbsp;[5.2. Taxonomic References](#taxonomic-references)<br>
-&nbsp;[5.3. Nomenclatural References](#nomenclatural-references)<br>
-&nbsp;[5.4. Adding References](#adding-references)<br>
+- **Rhakhis Handbook** – explains how to use the Rhakhis user interface.
+- **Concepts Model** – explains the nomenclatural and taxonomic concepts that underpin Rhakhis.
+- **Suggested Curatorial Workflows** – recommended procedures for common curation tasks.
+
+New users are encouraged to consult all three resources.
+
+## Quick Start
+
+If you are new to Rhakhis, follow these steps:
+
+1. Sign in using your ORCID iD.
+2. Locate a name using the A–Z or Matching search.
+3. Open the relevant name record.
+4. Review or update the nomenclatural information.
+5. Assign the appropriate rank.
+6. Add authorship and protologue data where required.
+7. Place the name as either:
+   - an accepted taxon, or
+   - a synonym.
+8. Add supporting taxonomic and nomenclatural references.
+9. Save and review the record.
+
+For detailed procedures, consult the Suggested Curatorial Workflows documentation.
+
+## Glossary
+
+### Accepted taxon
+
+A name currently accepted within the World Flora Online classification.
+
+### Synonym
+
+A name linked to an accepted taxon within the classification.
+
+### Unplaced name
+
+A nomenclatural record that has not yet been assigned a position in the classification.
+
+### Deprecated record
+
+A record excluded from normal use but retained for historical and data management purposes.
+
+### Basionym
+
+The original name upon which a later name is based.
+
+### Nomenclatural status
+
+The nomenclatural standing of a name (for example valid, illegitimate, invalid or conserved).
+
+### Taxonomic placement
+
+The position of a name within the accepted classification.
+
+### Curator
+
+A user with editing permissions for a specified section of the backbone.
+
+## Contents
+
+1. [Getting Started](#getting-started)
+2. [Navigation Tabs](#navigation-tabs)
+   - [A–Z](#a-z)
+   - [Matching](#matching)
+   - [Browse](#browse)
+   - [Add Name](#add-name)
+   - [Stats](#stats)
+   - [Users](#users)
+   - [Activity](#activity)
+   - [Data](#data)
+3. [Name Records](#name-records)
+4. [Editing Records](#editing-records)
+5. [Placement of Names](#placement-of-names)
+6. [References](#references)
+7. [Curators](#curators)
 
 # Getting Started
 
@@ -46,11 +100,11 @@ The navigation tabs will become live and you can start using the system.
 >[Add Name](https://list.worldfloraonline.org/rhakhis/ui/index.html#add). Allows you add a new name to the backbone, but check if it is already in. It forces an acknowledgement if there is a homonym.
 >[Stats](https://list.worldfloraonline.org/rhakhis/ui/index.html#stats) tab generates a table of how many accepted taxa, synonyms, genera, species etc there are at the selected rank.
 >[Users](https://list.worldfloraonline.org/rhakhis/ui/index.html#users) tab lists who has signed up, a link to their ORCID profile and the groups they have been assigned to curate.
->[Activity](https://list.worldfloraonline.org/rhakhis/ui/index.html#activity) tab shows you who last edited records in the backbone, at the moment it's select by User, we may implement by Family.
+>[Activity](https://list.worldfloraonline.org/rhakhis/ui/index.html#activity) tab shows you who last edited records in the backbone, at the moment it's select by User, we may implement by family.
 >Under the [Data tab](https://list.worldfloraonline.org/rhakhis/ui/#data) you'll find snapshot of data in different formats to download.
 
 
-As a first time user you can view and download data but you cannot edit anything. If you are part of a Taxonomic Expert Network please contact your TEN Focal who can assign you to your group. If you are a new TEN email Alan Elliott to be assigned to your group.
+As a first time user you can view and download data but you cannot edit anything. If you are part of a Taxonomic Expert Network (TEN) please contact your TEN Focal who can assign you to your group. If you are a new TEN email Alan Elliott to be assigned to your group.
 
 [back to top](#rhakhis-users-handbook)
 
@@ -58,31 +112,30 @@ As a first time user you can view and download data but you cannot edit anything
 
 ### A-Z
 
-Begin by typing the name you are looking for. Rhakhis will begin suggesting names with the 1st letter typed. Keep typing until you see the record you find the Name you require.
+Begin by typing the name you are looking for. Rhakhis begins suggesting names as soon as the first character is entered. Keep typing until you see the record you find the Name you require.
 
   
 
-This method of searching for a name returns exact what you type. For example if you type _Poa annua_ it will return the records that begin with _Poa annua._ If you misspell the name _Poa annum_ it will return no results. If you are unsure of spellings please use [Matching](https://list.worldfloraonline.org/rhakhis/ui/index.html#match) as its returns "like" results.
+This search returns only names that match the text entered. For example if you type _Poa annua_ it will return the records that begin with _Poa annua._ If you misspell the name _Poa annum_ it will return no results. If you are unsure of spellings please use [Matching](https://list.worldfloraonline.org/rhakhis/ui/index.html#match) as its returns "like" results.
 
   
 
 If you are searching for an infraspecific name do not insert the rank as it will return no results. Search only the name parts, for example "_Poa annua supina"._ This will return results for both the variety and subspecies records of this name.
 
-**Color Coding of Records**
+## Record Colours
 
-The results will show different coloured records. 
+| Colour | Meaning |
+|---------|---------|
+| Red | Deprecated record |
+| Yellow | Placed record (accepted taxon or synonym) |
+| Grey | Unplaced nomenclatural record |
 
-Red records are **deprecated** \- these signify that they should not be used, but can be resurrected by Curators. These can be deprecated from a number of reasons including duplication, being linked to a suppressed IPNI record, fossil names, errors, or names outside the scope of the WFO.
-
-Yellow are records **placed** within classification and can be accepted names or synonyms.
-
-Grey are currently **unplaced** records. These are effectively a nomenclatural records with no taxonomic status.
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/bc855ede-0f01-45a5-b39c-b4d259756aab/image.png)
   
 ### Matching
 
-Matching requires at least 4 characters to work. It will suggest more then just the exact string searched this is useful where you are unsure of the epithet ending.
+The Matching search requires at least four characters before suggestions are returned. It will suggest more than just the exact string searched this is useful where you are unsure of the epithet ending.
 
   
 
@@ -126,13 +179,13 @@ Who has logged in to the system and the groups they curate.
 
 If you are part of a Taxonomic Expert Network you will be assigned as the curator of the taxon and this gives you rights to edit that taxon, any descendant taxa and any synonyms of those taxa.
 
-Once you have been made the Curator for your Family you can edit everything it contains. You will also now have the ability to assign colleagues as curators to any point in the part of the backbone you are assigned.
+Once you have been made the curator for your family you can edit everything it contains. You will also now have the ability to assign colleagues as curators to any point in the part of the backbone you are assigned.
 
 Unplaced names are not controlled by this authorization mechanism. An unplaced name can be edited by any user who is an editor of any taxon, but once that name is placed within the taxonomic hierarchy it is controlled by the editors of the associated taxa and becomes "locked" into the consensus taxonomy.
 
 ### Activity
 
-This tab shows the most recent least edit to a record by a user. We plan to implement a filter by Family.
+This tab shows the most recent edits made to records by users. We plan to implement a filter by family.
 
 ### Data
 
@@ -145,13 +198,14 @@ If you think of others please, contact Roger Hyam.
 
 ### Name Record Overview 
 
-**Color Coding of Records**
+## Record Colours
 
-Red records are **deprecated** \- these signify that they should not be used, but can be resurrected by Curators. These can be deprecated from a number of reasons including duplication, being linked to a suppressed IPNI record, fossil names, errors, or names outside the scope of the WFO.
+| Colour | Meaning |
+|---------|---------|
+| Red | Deprecated record |
+| Yellow | Placed record (accepted taxon or synonym) |
+| Grey | Unplaced nomenclatural record |
 
-Yellow are records **placed** within classification and can be accepted names or synonyms.
-
-Grey are currently **unplaced** records. These are effectively nomenclatural records with no taxonomic status.
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/bc855ede-0f01-45a5-b39c-b4d259756aab/image.png)
 
@@ -172,12 +226,12 @@ For a **species** name two parts are required. The **Genus** and the **epithet**
 
 For an **infraspecific name** the **Genus**, the **species** **epithet** and **infraspecific epithet** are required. For example: _Poa annua annua, Rhododendron ponticum ponticum_.
 
-For **supra-generic ranks** (subfamily, subfamily, supertribe, tribe) these only require a one part name. For example: *Ericoideae*, *Phyllodoceae*, *Rhodoreae*.
+For **supra-generic ranks** (subfamily, tribe, supertribe and related ranks) these only require a one part name. For example: *Ericoideae*, *Phyllodoceae*, *Rhodoreae*.
 
 
 >**You select the rank in the name record once it has been created.**
 
-Rhakhis will check if the name exists before allowing you to continue. It the name does not exist the Create button will become active and you can create the record.
+Rhakhis will check if the name exists before allowing you to continue. If the name does not exist the Create button will become active and you can create the record.
  
 ![](https://t2197470.p.clickup-attachments.com/t2197470/a4aade91-4077-4a29-8c97-1a659e09022f/image.png)
 
@@ -194,7 +248,7 @@ It is now time to start editing.
 
 # Editing Records
 
-As a curator you can edit any unplaced record and any records that are within the group you are assigned to curate. Sometimes you may find a name that has been placed as a synonym in a Family outside what you are able to curate. Please contact Alan Elliot in this instance.
+As a curator you can edit any unplaced record and any records that are within the group you are assigned to curate. Sometimes you may find a name that has been placed as a synonym in a family outside what you are able to curate. Please contact Alan Elliot in this instance.
 
 ### Rank
 
@@ -317,7 +371,7 @@ This is how to place a name record that has yet to be placed in the classificati
 >When making a name a synonym any Nomenclatural status is acceptable to Rhakhis, with the exception of Deprecated.
                 
 
-1) In the Placment box, select _Sink into synonymy within..._
+1) In the Placement box, select _Sink into synonymy within..._
 
 2) Begin typing the accepted name into box. Rhakhis will begin to suggest accepted names to select from. When you find the accepted name select it using your cursor.
 
@@ -325,7 +379,7 @@ The name will now be placed as a synonym of the accepted name.
 
 # Moving a synonym
 
-1) In the Placment box, select _Change to synonym of..._
+1) In the Placement box, select _Change to synonym of..._
 
 2) Begin typing the accepted name in to box. Rhakhis will begin to suggest accepted names to select from. When you find the accepted name select it using your cursor.
 
@@ -342,7 +396,7 @@ To add a basionym to a record
 
 3) If the basionym name is not there then you can type in the box and search for the required name.
 
-Rhakhis prevents the creation of basionym chains. You cannot place a name as the basionym when the proposed basionym record already has a basionym of its own. This is usuallly the reason you cannot find a name when searching. This will require further editing of records if the data is not correct in Rhakhis. This can often be difficult to resolve. Please contact Alan Elliott if assistance is required.
+Rhakhis prevents the creation of basionym chains. You cannot place a name as the basionym when the proposed basionym record already has a basionym of its own. This is usually the reason you cannot find a name when searching. This will require further editing of records if the data is not correct in Rhakhis. This can often be difficult to resolve. Please contact Alan Elliott if assistance is required.
 
 
 ### Nomenclatural Reference
