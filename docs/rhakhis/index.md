@@ -2,7 +2,7 @@
 title: Rhakhis Handbook
 ---
 
-Guide to Using Rhakhis - the World Flora Online's taxonomic backbone curation tool.
+Guide to using Rhakhis, the World Flora Online taxonomic backbone curation tool.
 
 ## Related Documentation
 
@@ -16,21 +16,19 @@ New users are encouraged to consult all three resources.
 
 ## Quick Start
 
-If you are new to Rhakhis, follow these steps:
+For first-time users:
 
 1. Sign in using your ORCID iD.
-2. Locate a name using the A–Z or Matching search.
-3. Open the relevant name record.
-4. Review or update the nomenclatural information.
-5. Assign the appropriate rank.
-6. Add authorship and protologue data where required.
-7. Place the name as either:
-   - an accepted taxon, or
-   - a synonym.
-8. Add supporting taxonomic and nomenclatural references.
-9. Save and review the record.
+2. Contact your TEN focal or Alan Elliott to be given curatorial rights.
+3. Search for a name using the A–Z or Matching tab.
+4. Open the relevant name record.
+5. Review nomenclatural details and assign the correct rank.
+6. Add or update authorship and protologue information.
+7. Place the name as either an accepted taxon or a synonym.
+8. Add supporting references.
+9. Save your changes.
 
-For detailed procedures, consult the Suggested Curatorial Workflows documentation.
+For detailed procedures, see the Suggested Curatorial Workflows documentation.
 
 ## Glossary
 
@@ -66,6 +64,27 @@ The position of a name within the accepted classification.
 
 A user with editing permissions for a specified section of the backbone.
 
+### Homotypic name
+
+A name based on the same type specimen as another name.
+
+### Protologue
+
+The original publication in which a name was established.
+
+## Understanding Rhakhis
+
+> Key Concept
+>
+> Rhakhis separates nomenclatural information from taxonomic opinion.
+>
+> Names can exist as nomenclatural records without being placed in the
+> classification. Taxonomic placement determines whether a name is an
+> accepted taxon, a synonym or remains unplaced.
+>
+> Understanding this distinction will make most of Rhakhis' behaviour
+> intuitive.
+
 ## Contents
 
 1. [Getting Started](#getting-started)
@@ -94,17 +113,19 @@ First sign-in with your [ORCID iD](https://orcid.org/).
 
 The navigation tabs will become live and you can start using the system.
 
->The [A-Z tab](https://list.worldfloraonline.org/rhakhis/ui/#alpha) you can just start typing the name you are interested in and matching names will be suggested - like looking it up in an index.
->If you want to find a name that you might not be sure of the ending you can use the [Matching tab](https://list.worldfloraonline.org/rhakhis/ui/#match).
->The [Browse tab](https://list.worldfloraonline.org/rhakhis/ui/#browse) allows you to navigate the hierarchy of names and synonyms.
->[Add Name](https://list.worldfloraonline.org/rhakhis/ui/index.html#add). Allows you add a new name to the backbone, but check if it is already in. It forces an acknowledgement if there is a homonym.
->[Stats](https://list.worldfloraonline.org/rhakhis/ui/index.html#stats) tab generates a table of how many accepted taxa, synonyms, genera, species etc there are at the selected rank.
->[Users](https://list.worldfloraonline.org/rhakhis/ui/index.html#users) tab lists who has signed up, a link to their ORCID profile and the groups they have been assigned to curate.
->[Activity](https://list.worldfloraonline.org/rhakhis/ui/index.html#activity) tab shows you who last edited records in the backbone, at the moment it's select by User, we may implement by family.
->Under the [Data tab](https://list.worldfloraonline.org/rhakhis/ui/#data) you'll find snapshot of data in different formats to download.
+The main navigation tabs are:
+
+- **A–Z** – search for names using an exact-match style lookup.
+- **Matching** – search using partial strings and approximate matches.
+- **Browse** – navigate through the taxonomic hierarchy.
+- **Add Name** – create new nomenclatural records.
+- **Stats** – view summary statistics for the backbone.
+- **Users** – view users and curator assignments.
+- **Activity** – review recent editing activity.
+- **Data** – download data exports.
 
 
-As a first time user you can view and download data but you cannot edit anything. If you are part of a Taxonomic Expert Network (TEN) please contact your TEN Focal who can assign you to your group. If you are a new TEN email Alan Elliott to be assigned to your group.
+As a first time user you can view and download data but you cannot edit anything. If you are part of a Taxonomic Expert Network (TEN) please contact your TEN focal who can assign you to your group. If you are a new TEN email Alan Elliott to be assigned to your group.
 
 [back to top](#rhakhis-users-handbook)
 
@@ -112,24 +133,17 @@ As a first time user you can view and download data but you cannot edit anything
 
 ### A-Z
 
-Begin by typing the name you are looking for. Rhakhis begins suggesting names as soon as the first character is entered. Keep typing until you see the record you find the Name you require.
+Begin by typing the name you are looking for. Rhakhis begins suggesting names as soon as the first character is entered. Continue typing until the required record appears in the results list.
 
   
-
-This search returns only names that match the text entered. For example if you type _Poa annua_ it will return the records that begin with _Poa annua._ If you misspell the name _Poa annum_ it will return no results. If you are unsure of spellings please use [Matching](https://list.worldfloraonline.org/rhakhis/ui/index.html#match) as its returns "like" results.
+This search returns names that begin with the text entered. For example if you type _Poa annua_ it will return the records that begin with _Poa annua._ If you misspell the name _Poa annum_ it will return no results. If you are unsure of a spelling, use the Matching tab, which returns similar results in addition to exact matches.
 
   
 
 If you are searching for an infraspecific name do not insert the rank as it will return no results. Search only the name parts, for example "_Poa annua supina"._ This will return results for both the variety and subspecies records of this name.
 
-## Record Colours
-
-| Colour | Meaning |
-|---------|---------|
-| Red | Deprecated record |
-| Yellow | Placed record (accepted taxon or synonym) |
-| Grey | Unplaced nomenclatural record |
-
+For an explanation of record colours see
+[Name Record Overview](#name-record-overview).
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/bc855ede-0f01-45a5-b39c-b4d259756aab/image.png)
   
@@ -147,11 +161,11 @@ _"Poa annua_ subsp. _supina"_ for example will return the subspecies record and 
 
 ### Browse
 
-The Browse Tab opens at our root record which is called Code, referring to the _International Code of Nomenclature for algae, fungi, and plants._
+The Browse tab opens at the root record, named Code, which represents the _International Code of Nomenclature for algae, fungi and plants_.
 
   
 
-From here you can navigate down through the hierarchy using the Box to the Right called "Phyla". This has the main "groups" that the WFO curate: Angiosperms: Bryophytes, Gymnosperms and Pteridophytes.
+From here you can navigate down through the hierarchy using the box to the Right called "Phyla". This contains the principal taxonomic groups curated within the WFO backbone: Angiosperms, Bryophytes, Gymnosperms and Pteridophytes.
 
   
 
@@ -175,13 +189,25 @@ The current family level statistics. These regenerate over time. Your edits will
 
 ### Users
 
-Who has logged in to the system and the groups they curate. 
+The Users tab lists registered users, links to their ORCID profiles and the taxonomic groups they are authorised to curate.
 
 If you are part of a Taxonomic Expert Network you will be assigned as the curator of the taxon and this gives you rights to edit that taxon, any descendant taxa and any synonyms of those taxa.
 
 Once you have been made the curator for your family you can edit everything it contains. You will also now have the ability to assign colleagues as curators to any point in the part of the backbone you are assigned.
 
+> Why?
+>
+> Once a name is placed within the classification it becomes part of the
+> consensus taxonomy maintained by the responsible TEN. Edit permissions
+> help prevent accidental changes outside a curator's area of expertise.
+
 Unplaced names are not controlled by this authorization mechanism. An unplaced name can be edited by any user who is an editor of any taxon, but once that name is placed within the taxonomic hierarchy it is controlled by the editors of the associated taxa and becomes "locked" into the consensus taxonomy.
+
+> Why?
+>
+> Unplaced names are treated as nomenclatural records rather than part
+> of the consensus classification. This allows specialists to improve
+> nomenclatural information before taxonomic placement is decided.
 
 ### Activity
 
@@ -198,7 +224,7 @@ If you think of others please, contact Roger Hyam.
 
 ### Name Record Overview 
 
-## Record Colours
+#### Record Colours
 
 | Colour | Meaning |
 |---------|---------|
@@ -211,6 +237,12 @@ If you think of others please, contact Roger Hyam.
 
 
 ### Adding a new name
+
+> Why?
+>
+> Homonyms are legitimate parts of botanical nomenclature. Rhakhis
+> therefore permits their creation but requires explicit acknowledgement
+> to reduce accidental duplication.
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/847250597?h=15009c38d6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="New Recording - 21/07/2023, 08:59:52"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
@@ -229,7 +261,7 @@ For an **infraspecific name** the **Genus**, the **species** **epithet** and **i
 For **supra-generic ranks** (subfamily, tribe, supertribe and related ranks) these only require a one part name. For example: *Ericoideae*, *Phyllodoceae*, *Rhodoreae*.
 
 
->**You select the rank in the name record once it has been created.**
+> ⚠️ You select the rank in the name record once it has been created.
 
 Rhakhis will check if the name exists before allowing you to continue. If the name does not exist the Create button will become active and you can create the record.
  
@@ -237,7 +269,8 @@ Rhakhis will check if the name exists before allowing you to continue. If the na
 
 Rhakhis will also suggest name records that exist that might be the same thing.
 
-If you add a name that is a 100% match on the name parts, then you must, click the checkboxes to acknowledge that you are about to add another homonym before the Create button becomes active.
+If the name parts exactly match an existing record, you must acknowledge that you are about to create an additional homonym before the Create button becomes active.
+
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/be3905c7-8421-4e4b-acc8-ee2c6e20ae72/image.png)
 
@@ -258,6 +291,13 @@ Please select the appropriate rank from the drop down. Rhakhis will default to G
   
 
 ### Nomenclatural Status
+
+> Why?
+>
+> Rhakhis separates nomenclatural validity from taxonomic placement.
+> A name must have a nomenclatural status of **Valid** or **Conserved** before it can be
+> placed as an accepted taxon in the classification.
+
 
 The default nomenclatural Status is **Unknown**. Please select what is correct. If you are unsure leave it as unknown.
   
@@ -283,9 +323,21 @@ The default nomenclatural Status is **Unknown**. Please select what is correct. 
 
 **valid** \- use this when you know a name meets the requirements set out in the Code. Only valid names can be placed in the classification as an accepted taxon.
 
+> Why?
+>
+> Deprecated records are retained rather than deleted so that historical
+> decisions remain traceable and external references to those records do
+> not break.
+
 ### Author string
   
 Should follow the Standard Form abbreviation.
+
+> Why?
+>
+> Using IPNI standard abbreviations ensures author citations are
+> consistent across the World Flora Online backbone and compatible with
+> other nomenclatural resources.
 
 Please refer to IPNI. [www.ipni.org](http://www.ipni.org/)
 
@@ -311,6 +363,12 @@ We are looking for no spaces between author's initials and last name.
 
 If you find errors in IPNI please feedback authorship corrections directly to IPNI editors.
 
+> Why?
+>
+> Full authorship preserves the complete nomenclatural history of a name
+> and allows users to distinguish names that may otherwise appear
+> identical.
+
 
 ### Protologue information
 
@@ -319,6 +377,12 @@ Should follow the Standard Form abbreviation.
 Please refer to IPNI. [www.ipni.org](http://www.ipni.org/)
 
 Using advanced search and the Publications Tab.
+
+> Why?
+>
+> The protologue represents the original published description of a name
+> and is one of the most important pieces of nomenclatural evidence for
+> later taxonomic work.
   
 
 **Examples:**
@@ -344,13 +408,23 @@ Please also add the Year.
 
 <br><br>
 
->**Please note if you need to synonymise a name already placed in the classification but outside of the group are are assigned, please contact your TEN Focal, or Alan Elliott, for assistance.**
+> ⚠️ Curator permissions apply to placed names.
+>
+> If a name is already placed within a section of the classification that
+> you do not curate, please contact your TEN focal or Alan Elliott for
+> assistance.
 
-# Placement of an accepted record
+### Placing an Accepted Taxon
  
+> Why?
+>
+> Rhakhis only allows placement beneath an appropriate accepted parent.
+> This prevents names being assigned to invalid positions within the
+> classification and helps maintain a consistent taxonomic hierarchy.
+
 To place as an accepted taxon
 
-1) Change the Nomenclatural status to Valid. The nomenclatural status of a name must be Valid to be an accepted name. 
+1) Change the Nomenclatural status to Valid. The nomenclatural status of a name must be Valid to be an accepted taxon. 
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/8704f3ac-3942-4510-afa0-0141d84d6c35/image.png)
 
@@ -360,11 +434,11 @@ Rhakhis will suggest the appropriate parent in this example, _Agapetes_ as it ca
 
 ![](https://t2197470.p.clickup-attachments.com/t2197470/818abc38-5ec0-4b67-a833-03bb8e02b9e8/image.png)
 
-Rhakhis will not allow you to place names that do not align with an accepted parent record. For example _Lathyrus_ _sylvestris_ can only be an accepted name in _Lathyrus_, or an accepted infrageneric group within _Lathyrus_. The same is true for infraspecific names. For example _Lathyrus_ _latifolius_ subsp. _latifolius_ can only be placed as an accepted name within _Lathyrus latifolius_.
+Rhakhis will not allow you to place names that do not align with an accepted parent record. For example _Lathyrus_ _sylvestris_ can only be an accepted taxon in _Lathyrus_, or an accepted infrageneric group within _Lathyrus_. The same is true for infraspecific names. For example _Lathyrus_ _latifolius_ subsp. _latifolius_ can only be placed as an accepted taxon within _Lathyrus latifolius_.
 
 If Rhakhis does not suggest an appropriate parent record it is because the name is not present in the database or is not accepted in the classification.  
 
-# Placing as a synonym
+### Placing a Synonym
 
 This is how to place a name record that has yet to be placed in the classification, the elements of the record is mostly grey, into synonymy.
 
@@ -373,20 +447,25 @@ This is how to place a name record that has yet to be placed in the classificati
 
 1) In the Placement box, select _Sink into synonymy within..._
 
-2) Begin typing the accepted name into box. Rhakhis will begin to suggest accepted names to select from. When you find the accepted name select it using your cursor.
+2) Begin typing the accepted taxon into box. Rhakhis will begin to suggest accepted taxa to select from. When you find the accepted taxon select it using your cursor.
 
-The name will now be placed as a synonym of the accepted name. 
+The name will now be placed as a synonym of the accepted taxon. 
 
-# Moving a synonym
+### Moving a Synonym
+
+> Why?
+>
+> Moving an accepted taxon affects all names linked to it. Requiring
+> curators to explicitly reassign synonyms helps ensure that taxonomic
+> changes are deliberate and fully reviewed.
 
 1) In the Placement box, select _Change to synonym of..._
 
-2) Begin typing the accepted name in to box. Rhakhis will begin to suggest accepted names to select from. When you find the accepted name select it using your cursor.
+2) Begin typing the accepted taxon in to box. Rhakhis will begin to suggest accepted taxa to select from. When you find the accepted taxon select it using your cursor.
 
-If you are moving a currently accepted name you will need to transfer all the existing synonyms to the new accepted name before finally transferring the accepted name to the synonym. We have enforced this to make curators to make a conscious decision when moving synonyms. 
+If you are moving a currently accepted taxon you will need to transfer all the existing synonyms to the new accepted taxon before finally transferring the accepted taxon to the synonym. We have enforced this to make curators to make a conscious decision when moving synonyms. 
 
-
-# Adding a Basionym
+### Adding a Basionym
 
 To add a basionym to a record
 
@@ -398,6 +477,11 @@ To add a basionym to a record
 
 Rhakhis prevents the creation of basionym chains. You cannot place a name as the basionym when the proposed basionym record already has a basionym of its own. This is usually the reason you cannot find a name when searching. This will require further editing of records if the data is not correct in Rhakhis. This can often be difficult to resolve. Please contact Alan Elliott if assistance is required.
 
+> Why?
+>
+> A basionym is intended to identify the original name upon which later
+> combinations are based. Preventing basionym chains ensures these
+> relationships remain unambiguous and traceable.
 
 ### Nomenclatural Reference
 
@@ -412,6 +496,17 @@ The work plan to improve usability of Rhakhis will bring in other pieces of nome
 >As of July 2023: 600k BHL links to historic publications and 45K DOI link to more recent protologues supplied by IPNI have been added. 
 
 # References
+
+## Why References Matter
+
+Rhakhis does not attempt to duplicate the functionality of specialist
+bibliographic, specimen or nomenclatural databases. Instead, it records
+persistent links to authoritative external resources that support
+taxonomic and nomenclatural decisions.
+
+References therefore provide the evidence behind a classification rather
+than storing that evidence directly within Rhakhis.
+
 ### References Overview
 
 INSERT VIDEO HERE.
@@ -420,9 +515,16 @@ INSERT VIDEO HERE.
 
 The scope of Rhakhis is nomenclature and taxonomy. We are working to make it as complete and authoritative as possible. Progress would be slower if we also tried build a system for managing ancillary data and, for example, incorporated a full citation manager or specimen catalogue. Those functions are better performed by other systems elsewhere on the internet. Certain classes of data are therefore handled by _References_ to other systems. These can be presented as decorated links in user interfaces and documents or can be explored by software agents.
 
+> Why?
+>
+> Rhakhis focuses on nomenclature and taxonomy. Specialist systems are
+> generally better suited to managing bibliographic, specimen and
+> publication data. Rhakhis therefore links to authoritative sources
+> rather than attempting to duplicate them.
+
 ### Taxonomic References
 
-Each branch of the taxonomy within Rhakhis is supported by some external source. We therefore aim to have a Reference in the Taxonomic Source section for each accepted name that links to the authority we use to assert that taxon exists and has those synonyms. Ideally this will be a single database reference and/or a single literature reference although this isn't currently enforced by the system. An analogy is the linking to external sources for statements of fact in Wikipedia. Sometimes this Reference may be at a higher level within the taxonomy than the current taxon e.g. a single Taxonomic Source for a whole genus or family.
+Each branch of the taxonomy within Rhakhis is supported by some external source. We therefore aim to have a Reference in the Taxonomic Source section for each accepted taxon that links to the authority we use to assert that taxon exists and has those synonyms. Ideally this will be a single database reference and/or a single literature reference although this isn't currently enforced by the system. An analogy is the linking to external sources for statements of fact in Wikipedia. Sometimes this Reference may be at a higher level within the taxonomy than the current taxon e.g. a single Taxonomic Source for a whole genus or family.
 
 ### Nomenclatural References
 
@@ -466,4 +568,15 @@ We only provide the ability to cite specimens if they are available online as an
 
 # Curators
 
+Curators are responsible for maintaining the accuracy of the World Flora
+Online backbone within the taxonomic scope assigned to them.
 
+Curators can:
+
+- create new name records;
+- edit nomenclatural data;
+- place names as accepted taxa or synonyms;
+- add references;
+- assign curator permissions within their area of responsibility.
+
+If you require curator access, please contact your TEN focal or Alan Elliott.
