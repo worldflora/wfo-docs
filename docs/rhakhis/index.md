@@ -22,11 +22,9 @@ For first-time users:
 2. Contact your TEN focal or Alan Elliott to be given curatorial rights.
 3. Search for a name using the A–Z or Matching tab.
 4. Open the relevant name record.
-5. Review nomenclatural details and assign the correct rank.
-6. Add or update authorship and protologue information.
-7. Place the name as either an accepted taxon or a synonym.
+5. Review nomenclatural details and make corrections if needed.
+6. Place the name as either an accepted taxon or a synonym.
 8. Add supporting references.
-9. Save your changes.
 
 For detailed procedures, see the Suggested Curatorial Workflows documentation.
 
