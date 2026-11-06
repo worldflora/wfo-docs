@@ -9,8 +9,8 @@ Guide to using Rhakhis, the World Flora Online taxonomic backbone curation tool.
 The Rhakhis documentation consists of three complementary resources:
 
 - **Rhakhis Handbook** – explains how to use the Rhakhis user interface.
-- **Concepts Model** – explains the nomenclatural and taxonomic concepts that underpin Rhakhis.
-- **Suggested Curatorial Workflows** – recommended procedures for common curation tasks.
+- [**Concepts Model**]((https://plant-list-docs.rbge.info/concepts.html)) – explains the nomenclatural and taxonomic concepts that underpin Rhakhis.
+- [**Suggested Curatorial Workflows**](https://github.com/worldflora/wfo-tens/wiki/WFO-Suggested-Curatorial-workflows) – recommended procedures for common curation tasks.
 
 New users are encouraged to consult all three resources.
 
@@ -554,6 +554,7 @@ If the person is alive then you should use their [ORCID](https://orcid.org/) a
 
 If the person is historical (a.k.a. dead) then you can link to them in [WikiData](https://www.wikidata.org/), creating an entry if need be. Don't try and solve the problem of no ORCID by moving someone from the alive to historical. That would not be ethical.
 
+This example is uses a member of the TEN who has checked the protologe and based on their knowledge of the group decided on the placement. The comment explains the reason for the placement.
 <img width="919" height="595" alt="image" src="https://github.com/user-attachments/assets/c898e251-1463-43ff-8a25-a23f5b45019b" />
 
 
@@ -561,6 +562,7 @@ If the person is historical (a.k.a. dead) then you can link to them in [WikiDat
 
 We only provide the ability to cite specimens if they are available online as an entry in a catalogue or image. If you have an image of the specimen and it is unlikely to be put online by the holding institution then you might consider uploading it to [Zenodo](https://zenodo.org/) where it will be given a DOI that you can cite. If you only have text you can add it to the comments on the name.
 
+This example is to a specimen on Jstor Plants. The comment gives the narrative for the decision and is visible on the public portal.
 <img width="894" height="574" alt="image" src="https://github.com/user-attachments/assets/267b8888-e4e8-4daf-8a78-7612e7b5597e" />
 
 
