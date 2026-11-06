@@ -9,7 +9,7 @@ Guide to using Rhakhis, the World Flora Online taxonomic backbone curation tool.
 The Rhakhis documentation consists of three complementary resources:
 
 - **Rhakhis Handbook** – explains how to use the Rhakhis user interface.
-- [**Concepts Model**]((https://plant-list-docs.rbge.info/concepts.html) – explains the nomenclatural and taxonomic concepts that underpin Rhakhis.
+- [**Concepts Model**](https://plant-list-docs.rbge.info/concepts.html) – explains the nomenclatural and taxonomic concepts that underpin Rhakhis.
 - [**Suggested Curatorial Workflows**](https://github.com/worldflora/wfo-tens/wiki/WFO-Suggested-Curatorial-workflows) – recommended procedures for common curation tasks.
 
 New users are encouraged to consult all three resources.
