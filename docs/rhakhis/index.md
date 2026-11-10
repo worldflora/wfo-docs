@@ -309,15 +309,20 @@ The default nomenclatural Status is **Unknown**. Please select what is correct. 
 
 **invalid -** a name not validly published. The only placement activity you can do with invalid is to make it a synonym.
 
-**rejected -** Name rejected by the Nomenclature Committee of the ICBN. See the lists here
+**isonym -** a name for that is identical in spelling and based on the exact same nomenclatural type, but was published independently at a different time, either by the same author or different authors. 
 
+**later homonym -** a name that is spelled identically (or confusingly similarly), to an earlier-published name for a different taxon at the same rank. Recent examples Code have been more forgiving on where similar spellings, while potentially confusing are acceptable if relating to a person or a geography). 
+
+**ortho var -** a name that is not the acceptable spelling, but is useful to maintain when it has been used in the literature. 
+
+**rejected -** Name rejected by the Nomenclature Committee of the ICBN. See the lists here
 [https://naturalhistory2.si.edu/botany/codes-proposals/](https://naturalhistory2.si.edu/botany/codes-proposals/)
 
 **sanctioned -** fungal name equivalent of conserved. Do not use for names in the WFO.
 
 **superfluous -** The only placement activity you can do with unknown is make it a synonym.
 
-**unknown -** default status. The only placement activity you can do with unknown is make it a synonym.
+**unknown -** default status. The only placement activity you can do with unknown is make the name a synonym.
 
 **valid** \- use this when you know a name meets the requirements set out in the Code. Only valid names can be placed in the classification as an accepted taxon.
 
@@ -339,7 +344,7 @@ Should follow the Standard Form abbreviation.
 
 Please refer to IPNI. [www.ipni.org](http://www.ipni.org/)
 
-Using advanced search and the Author Tab.
+Use the advanced search and the Author Tab in IPNI to check.
 
 **Examples**
 
